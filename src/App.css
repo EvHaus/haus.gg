@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Geo:200,300,400');
+
+body {
+	background: #222;
+	color: #FFF;
+	display: flex;
+	font-family: "Geo", sans-serif;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}

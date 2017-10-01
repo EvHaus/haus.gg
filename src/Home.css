@@ -1,0 +1,97 @@
+.logo {
+	align-items: center;
+	bottom: 0;
+	color: #DDD;
+	display: flex;
+	font-size: 42px;
+	font-weight: 100;
+	justify-content: center;
+	left: 0;
+	padding-top: 300px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.logoLetter {
+	color: #FFF;
+	font-weight: 400
+}
+
+.logoDot,
+.logoDomain {
+	color: #4F4F61;
+	font-size: 32px;
+	font-weight: 100;
+	line-height: 20px;
+	margin-top: 8px;
+}
+
+.logoDomain {
+	font-weight: bold;
+}
+
+.view {
+	bottom: 0;
+	left: 0;
+	perspective: 400;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.orb {
+	animation-name: rotate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	bottom: 0;
+	height: 120px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: rotateX(60deg) rotateZ(-30deg);
+	transform-style: preserve-3d;
+	width: 120px;
+}
+
+.orbCircle {
+	border-radius: 100%;
+	box-shadow: 0 0 60px currentColor, inset 0 0 60px currentColor;
+	box-sizing: border-box;
+	height: 120px;
+	position: absolute;
+	transform-style: preserve-3d;
+	width: 120px;
+}
+
+.orbCircle::before,
+.orbCircle::after {
+	border-radius: 100%;
+	bottom: 0;
+	box-shadow: 0 0 60px 2px currentColor;
+	box-sizing: border-box;
+	content: "";
+	display: block;
+	left: 0;
+	height: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0;
+}
+
+.orbCircle::before { transform: translateZ(-90px) }
+.orbCircle::after { transform: translateZ(90px) }
+.orbCircle:nth-child(1) { transform: rotateZ(72deg) rotateX(63.435deg) }
+.orbCircle:nth-child(2) { transform: rotateZ(144deg) rotateX(63.435deg) }
+.orbCircle:nth-child(3) { transform: rotateZ(216deg) rotateX(63.435deg) }
+.orbCircle:nth-child(4) { transform: rotateZ(288deg) rotateX(63.435deg) }
+.orbCircle:nth-child(5) { transform: rotateZ(360deg) rotateX(63.435deg) }
+
+@keyframes rotate {
+	0% { transform: rotateX(0) rotateY(0) rotateZ(0) }
+	100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg) }
+}

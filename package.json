@@ -1,0 +1,21 @@
+{
+	"name": "haus.gg",
+	"version": "0.1.0",
+	"license": "MIT",
+	"scripts": {
+		"start": "razzle start",
+		"build": "razzle build",
+		"test": "yarn flow && razzle test --env=jsdom",
+		"start:prod": "NODE_ENV=production node build/server.js"
+	},
+	"dependencies": {
+		"express": "4.16.1",
+		"razzle": "0.8.3",
+		"react": "16.0.0",
+		"react-dom": "16.0.0",
+		"react-router-dom": "4.2.2"
+	},
+	"devDependencies": {
+		"flow-bin": "0.56.0"
+	}
+}
