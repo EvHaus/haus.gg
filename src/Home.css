@@ -8,6 +8,7 @@
 	justify-content: center;
 	left: 0;
 	padding-top: 300px;
+	pointer-events: none;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -48,6 +49,7 @@
 	height: 120px;
 	left: 0;
 	margin: auto;
+	pointer-events: none;
 	position: absolute;
 	right: 0;
 	top: 0;

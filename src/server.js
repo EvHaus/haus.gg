@@ -1,3 +1,5 @@
+/* eslint-disable indent */
+
 import App from './App';
 import React from 'react';
 import { StaticRouter } from 'react-router-dom';
@@ -23,6 +25,17 @@ server
     } else {
       res.status(200).send(
         `<!doctype html>
+    <!--
+                  _
+                 | |
+      _____   __ | |__   __ _ _   _ ___
+     / _ \\ \\ / / | '_ \\ / _\` | | | / __|
+    |  __/\\ V /  | | | | (_| | |_| \\__ \\
+     \\___| \\_/   |_| |_|\\__,_|\\__,_|___/
+
+    If this code works - I totally wrote it.
+    Otherwise, I don't know where it came from.
+    -->
     <html lang="">
     <head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

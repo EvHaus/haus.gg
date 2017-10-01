@@ -5,6 +5,7 @@
 	"scripts": {
 		"start": "razzle start",
 		"build": "razzle build",
+		"deploy": "pm2 deploy ecosystem.json production setup -l",
 		"test": "yarn flow && razzle test --env=jsdom",
 		"start:prod": "NODE_ENV=production node build/server.js"
 	},
