@@ -4,8 +4,8 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "razzle start",
-		"build": "razzle build",
-		"deploy": "pm2 deploy ecosystem.json production setup -l",
+		"build": "RAZZLE_PUBLIC_DIR=/var/www/public PORT=80 razzle build",
+		"deploy": "node scripts/deploy.js",
 		"test": "yarn flow && razzle test --env=jsdom",
 		"start:prod": "NODE_ENV=production node build/server.js"
 	},
@@ -17,6 +17,9 @@
 		"react-router-dom": "4.2.2"
 	},
 	"devDependencies": {
-		"flow-bin": "0.56.0"
+		"archiver": "2.0.3",
+		"flow-bin": "0.56.0",
+		"prompt": "1.0.0",
+		"ssh2": "0.5.5"
 	}
 }

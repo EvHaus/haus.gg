@@ -6,13 +6,13 @@
 
 ## Development
 
-- Use `Bash on Ubuntu on Windows` to run the app
-- Use `cmd` to install packages
+- Use `Bash on Windows` or `cmd`
 - Run `yarn start` to launch server
 
 Then open http://localhost:3000/ to see the app.
 
 # Deployment
 
-- Run `yarn build && yarn deploy` to publish the app
+- Use `Bash on Windows` (do NOT use `cmd`)
+- Run `yarn build && yarn deploy` to build and deploy the app
 - Confirm the deployment at [www.haus.gg](www.haus.gg)
