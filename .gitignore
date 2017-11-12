@@ -11,4 +11,5 @@ scripts/build.zip
 .env.development.local
 .env.test.local
 .env.production.local
+package-lock.json
 server.txt
