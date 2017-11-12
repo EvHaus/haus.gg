@@ -6,19 +6,21 @@
 		"start": "razzle start",
 		"build": "RAZZLE_PUBLIC_DIR=/var/www/public PORT=80 razzle build",
 		"deploy": "node scripts/deploy.js",
-		"test": "yarn flow && razzle test --env=jsdom",
+		"eslint": "eslint-cumul8 scripts src",
+		"test": "yarn flow && yarn eslint && razzle test --env=jsdom",
 		"start:prod": "NODE_ENV=production node build/server.js"
 	},
 	"dependencies": {
-		"express": "4.16.1",
-		"razzle": "0.8.3",
-		"react": "16.0.0",
-		"react-dom": "16.0.0",
+		"express": "4.16.2",
+		"razzle": "0.8.4",
+		"react": "16.1.0",
+		"react-dom": "16.1.0",
 		"react-router-dom": "4.2.2"
 	},
 	"devDependencies": {
-		"archiver": "2.0.3",
-		"flow-bin": "0.56.0",
+		"archiver": "2.1.0",
+		"eslint-config-cumul8": "6.11.4",
+		"flow-bin": "0.59.0",
 		"prompt": "1.0.0",
 		"ssh2": "0.5.5"
 	}

@@ -18,7 +18,7 @@ const askForPassword = () => {
 		return prompt.get([{
 			hidden: true,
 			message: 'What is your SSH private key passphrase?',
-			name: 'password'
+			name: 'password',
 		}], (err, result) => {
 			if (err) throw err;
 			return resolve(result.password);
@@ -38,7 +38,7 @@ const connectToServer = (password) => {
 			host: HOST,
 			username: USER,
 			privateKey: fs.readFileSync('/home/globex/.ssh/id_rsa'),
-			passphrase: password
+			passphrase: password,
 		});
 	});
 };
@@ -100,17 +100,17 @@ const uploadToServer = (server, source) => {
 					`unzip -ao ${target} && ` +
 					`rm -f build.zip`,
 					(err, stream) => {
-					if (err) throw err;
-					stream.on('close', (code, signal) => {
-						console.log("    Package unzipped!");
-						resolve();
-					}).on('data', (data) => {
+						if (err) throw err;
+						stream.on('close', (code, signal) => {
+							console.log("    Package unzipped!");
+							resolve();
+						}).on('data', (data) => {
 						// console.log('STDOUT: ' + data);
-					}).stderr.on('data', (data) => {
-						console.log('STDERR: ' + data);
-						reject(data);
+						}).stderr.on('data', (data) => {
+							console.log(`STDERR: ${data}`);
+							reject(data);
+						});
 					});
-				});
 			}, (err) => reject);
 		});
 	});
@@ -127,19 +127,19 @@ const restartServer = (server) => {
 			`yarn &&` +
 			`forever restart ${TARGET_DIR}/server.js`,
 			(err, stream) => {
-			if (err) throw err;
-			stream.on('close', (code, signal) => {
-				if (code !== 127) {
-					console.log("    Server restarted!");
-					resolve();
-				}
-			}).on('data', (data) => {
+				if (err) throw err;
+				stream.on('close', (code, signal) => {
+					if (code !== 127) {
+						console.log("    Server restarted!");
+						resolve();
+					}
+				}).on('data', (data) => {
 				// console.log('STDOUT: ' + data);
-			}).stderr.on('data', (data) => {
+				}).stderr.on('data', (data) => {
 				// console.log('STDERR: ' + data);
-				reject(data);
+					reject(data);
+				});
 			});
-		});
 	});
 };
 
@@ -156,9 +156,7 @@ const Deploy = () => {
 			.then(zipUpCurrentDirectory)
 			.then((zipPackage) => uploadToServer(this.server, zipPackage.path))
 			.then(() => restartServer(this.server))
-			.then(() => {
-				this.server.end();
-			})
+			.then(() => this.server.end())
 			.catch((err) => {
 				console.error(err);
 				this.server.end();

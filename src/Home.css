@@ -1,29 +1,39 @@
+.view {
+	bottom: 0;
+	left: 0;
+	perspective: 400;
+	position: absolute;
+	right: 0;
+	top: 0;
+	user-select: none;
+}
+
 .logo {
 	align-items: center;
 	bottom: 0;
-	color: #DDD;
 	display: flex;
 	font-size: 42px;
-	font-weight: 100;
 	justify-content: center;
 	left: 0;
-	padding-top: 300px;
+	padding-top: 140px;
 	pointer-events: none;
 	position: absolute;
 	right: 0;
 	top: 0;
+	user-select: none;
 }
 
-.logoLetter {
-	color: #FFF;
-	font-weight: 400
+.logoEv {
+	color: #999;
+	margin-right: 8px;
 }
+
+.logoHaus { color: #FFF }
 
 .logoDot,
 .logoDomain {
 	color: #4F4F61;
 	font-size: 32px;
-	font-weight: 100;
 	line-height: 20px;
 	margin-top: 8px;
 }
@@ -32,27 +42,28 @@
 	font-weight: bold;
 }
 
-.view {
+.icons {
+	align-items: center;
 	bottom: 0;
+	display: flex;
+	justify-content: center;
 	left: 0;
-	perspective: 400;
 	position: absolute;
 	right: 0;
 	top: 0;
 }
 
 .orb {
-	animation-name: rotate;
 	animation-iteration-count: infinite;
+	animation-name: orbRotate;
 	animation-timing-function: ease-in-out;
 	bottom: 0;
 	height: 120px;
 	left: 0;
 	margin: auto;
-	pointer-events: none;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: -100px;
 	transform: rotateX(60deg) rotateZ(-30deg);
 	transform-style: preserve-3d;
 	width: 120px;
@@ -93,7 +104,16 @@
 .orbCircle:nth-child(4) { transform: rotateZ(288deg) rotateX(63.435deg) }
 .orbCircle:nth-child(5) { transform: rotateZ(360deg) rotateX(63.435deg) }
 
-@keyframes rotate {
+@keyframes orbRotate {
 	0% { transform: rotateX(0) rotateY(0) rotateZ(0) }
 	100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg) }
+}
+
+@keyframes orbZoom {
+	0% { transform: scale(1) }
+	50% { transform: translateY(40px) scale(2) }
+	80% { transform: scale(0.8) }
+	90% { transform: scale(1.1) }
+	95% { transform: scale(0.9) }
+	100% { transform: scale(1) }
 }
