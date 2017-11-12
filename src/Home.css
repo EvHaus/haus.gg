@@ -117,3 +117,8 @@
 	95% { transform: scale(0.9) }
 	100% { transform: scale(1) }
 }
+
+.icons { margin-top: 260px }
+
+.iconLink { color: #686F80 }
+.iconLink:hover { color: #FFF }
