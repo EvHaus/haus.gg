@@ -1,9 +1,9 @@
 /* eslint-disable no-console, import/no-commonjs */
 
-const archiver = require("archiver");
-const fs = require("fs");
-const path = require("path");
-const prompt = require("prompt");
+const archiver = require('archiver');
+const fs = require('fs');
+const path = require('path');
+const prompt = require('prompt');
 const Client = require('ssh2').Client;
 
 // Deployment Server Configuration
@@ -32,7 +32,7 @@ const connectToServer = (password) => {
 		const c = new Client();
 		console.log(`Connecting to ${HOST}...`);
 		c.on('ready', () => {
-			console.log("    Connected!");
+			console.log('    Connected!');
 			resolve(c);
 		}).connect({
 			host: HOST,
@@ -50,7 +50,7 @@ const ensureTargetDirectoryExists = (server) => {
 		server.exec(`mkdir -p ${TARGET_DIR}`, (err, stream) => {
 			if (err) throw err;
 			stream.on('close', (code, signal) => {
-				console.log("    Directory exists!");
+				console.log('    Directory exists!');
 				resolve();
 			}).on('data', (data) => {
 				// console.log('STDOUT: ' + data);
@@ -65,12 +65,12 @@ const ensureTargetDirectoryExists = (server) => {
 // Creates a ZIP of the current directory
 const zipUpCurrentDirectory = () => {
 	return new Promise((resolve, reject) => {
-		console.log("Creating deployment archive...");
+		console.log('Creating deployment archive...');
 		const output = fs.createWriteStream(path.join(__dirname, 'build.zip'));
 		const archive = archiver('zip');
 
 		output.on('close', () => {
-			console.log("    Deployment package created!");
+			console.log('    Deployment package created!');
 			resolve(output);
 		});
 
@@ -102,7 +102,7 @@ const uploadToServer = (server, source) => {
 					(err, stream) => {
 						if (err) throw err;
 						stream.on('close', (code, signal) => {
-							console.log("    Package unzipped!");
+							console.log('    Package unzipped!');
 							resolve();
 						}).on('data', (data) => {
 						// console.log('STDOUT: ' + data);
@@ -130,13 +130,13 @@ const restartServer = (server) => {
 				if (err) throw err;
 				stream.on('close', (code, signal) => {
 					if (code !== 127) {
-						console.log("    Server restarted!");
+						console.log('    Server restarted!');
 						resolve();
 					}
 				}).on('data', (data) => {
 				// console.log('STDOUT: ' + data);
 				}).stderr.on('data', (data) => {
-				// console.log('STDERR: ' + data);
+					// console.log('STDERR: ' + data);
 					reject(data);
 				});
 			});

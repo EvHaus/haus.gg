@@ -1,3 +1,5 @@
+// @flow
+
 import app from './server';
 import http from 'http';
 
@@ -11,6 +13,7 @@ if (module.hot) {
 	// eslint-disable-next-line no-console
 	console.log('✅  Server-side HMR Enabled!');
 
+	// flow-disable-next-line
 	module.hot.accept('./server', () => {
 		// eslint-disable-next-line no-console
 		console.log('🔁  HMR Reloading `./server`...');

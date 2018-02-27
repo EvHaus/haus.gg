@@ -14,6 +14,6 @@ const App = (): Element<typeof Switch> => (
 	</Switch>
 );
 
-App.displayName = "App";
+App.displayName = 'App';
 
 export default App;

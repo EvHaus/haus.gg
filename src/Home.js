@@ -15,7 +15,7 @@ type PropsType = {
 };
 
 export default class Home extends PureComponent<PropsType> {
-	static displayName = "Home";
+	static displayName = 'Home';
 
 	static defaultProps = {
 		circleColors: [

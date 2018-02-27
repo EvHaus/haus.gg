@@ -12,15 +12,15 @@
 	},
 	"dependencies": {
 		"express": "4.16.2",
-		"razzle": "0.8.4",
-		"react": "16.1.0",
-		"react-dom": "16.1.0",
+		"razzle": "0.8.12",
+		"react": "16.2.0",
+		"react-dom": "16.2.0",
 		"react-router-dom": "4.2.2"
 	},
 	"devDependencies": {
-		"archiver": "2.1.0",
-		"eslint-config-cumul8": "6.11.4",
-		"flow-bin": "0.59.0",
+		"archiver": "2.1.1",
+		"eslint-config-cumul8": "6.13.15",
+		"flow-bin": "0.66.0",
 		"prompt": "1.0.0",
 		"ssh2": "0.5.5"
 	}
