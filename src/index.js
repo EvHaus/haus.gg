@@ -9,6 +9,7 @@ let currentApp = app;
 
 server.listen(process.env.PORT || 3000);
 
+// flow-disable-next-line
 if (module.hot) {
 	// eslint-disable-next-line no-console
 	console.log('✅  Server-side HMR Enabled!');

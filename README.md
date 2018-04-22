@@ -1,12 +1,12 @@
 # haus.gg
 
-**This is my personal site**:
+**This is my personal site**
 
 - Built with `razzle`
 
 ## Development
 
-- Use `Bash on Windows` or `cmd`
+- Use `Bash on Windows` (or `cmd`)
 - Run `yarn start` to launch server
 
 Then open http://localhost:3000/ to see the app.

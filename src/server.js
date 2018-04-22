@@ -63,12 +63,10 @@ Otherwise, I don't know where it came from.
         ${assets.client.css ?
 		`<link rel="stylesheet" href="${assets.client.css}">` :
 		''}
-        ${process.env.NODE_ENV === 'production' ?
-		`<script src="${assets.client.js}" defer></script>` :
-		`<script src="${assets.client.js}" defer crossorigin></script>`}
     </head>
     <body>
         <div id="root">${markup}</div>
+		<script src="${assets.client.js}" defer crossorigin></script>
     </body>
 </html>`
 			);

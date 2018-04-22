@@ -1,4 +1,5 @@
 /* eslint-disable no-console, import/no-commonjs */
+/* eslint-disable flowtype/require-valid-file-annotation, flowtype/require-return-type, flowtype/require-parameter-type */
 
 const archiver = require('archiver');
 const fs = require('fs');
