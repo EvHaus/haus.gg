@@ -125,7 +125,7 @@ const restartServer = (server) => {
 		server.exec(
 			`cd ${TARGET_DIR} && ` +
 			`yarn &&` +
-			`forever restart ${TARGET_DIR}/server.js`,
+			`sudo service haus.gg restart`,
 			(err, stream) => {
 				if (err) throw err;
 				stream.on('close', (code, signal) => {
