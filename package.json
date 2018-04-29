@@ -3,36 +3,25 @@
 	"version": "0.2.0",
 	"license": "MIT",
 	"scripts": {
-		"start": "razzle start",
-		"build": "RAZZLE_PUBLIC_DIR=/var/www/public PORT=80 razzle build",
+		"build": "next build",
 		"deploy": "node scripts/deploy.js",
+		"dev": "next",
 		"eslint": "eslint-cumul8 scripts src",
-		"jest": "razzle test --env=jsdom",
-		"test": "yarn flow && yarn eslint",
-		"start:prod": "NODE_ENV=production node build/server.js"
+		"flow": "flow",
+		"start": "next start",
+		"test": "yarn flow && yarn eslint"
 	},
 	"dependencies": {
-		"express": "4.16.3",
-		"razzle": "2.0.0-alpha.9",
+		"next": "6.0.0",
 		"react": "16.3.2",
-		"react-dom": "16.3.2",
-		"react-router-dom": "4.2.2"
+		"react-dom": "16.3.2"
 	},
 	"devDependencies": {
 		"archiver": "2.1.1",
-		"babel-eslint": "8.2.3",
-		"eslint": "4.19.1",
+		"babel-plugin-transform-flow-strip-types": "6.22.0",
 		"eslint-config-cumul8": "7.0.6",
-		"eslint-plugin-babel": "5.1.0",
-		"eslint-plugin-cumul8": "1.4.3",
-		"eslint-plugin-flowtype": "2.46.3",
-		"eslint-plugin-import": "2.11.0",
-		"eslint-plugin-jasmine": "2.9.3",
-		"eslint-plugin-json": "1.2.0",
-		"eslint-plugin-jsx-a11y": "6.0.3",
-		"eslint-plugin-promise": "3.7.0",
-		"eslint-plugin-react": "7.7.0",
-		"flow-bin": "0.70.0",
+		"flow-bin": "0.71.0",
+		"flow-typed": "2.4.0",
 		"prompt": "1.0.0",
 		"ssh2": "0.6.0"
 	}
