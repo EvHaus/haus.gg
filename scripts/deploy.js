@@ -78,8 +78,9 @@ const zipUpCurrentDirectory = () => {
 		archive.on('error', reject);
 		archive.pipe(output);
 		archive.file('package.json');
+		archive.file('server.js');
 		archive.file('yarn.lock');
-		archive.directory('build', false);
+		archive.directory('.next');
 		archive.finalize();
 	});
 };
@@ -125,8 +126,8 @@ const restartServer = (server) => {
 		// we run `npm run restart` before AND after it to be safe
 		server.exec(
 			`cd ${TARGET_DIR} && ` +
-			`yarn &&` +
-			`sudo service haus.gg restart`,
+			`yarn --pure-lockfile &&` +
+			`pm2 restart npm --name "yarn" -- start`,
 			(err, stream) => {
 				if (err) throw err;
 				stream.on('close', (code, signal) => {

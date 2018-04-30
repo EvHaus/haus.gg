@@ -5,13 +5,15 @@
 	"scripts": {
 		"build": "next build",
 		"deploy": "node scripts/deploy.js",
-		"dev": "next",
+		"dev": "node server.js",
 		"eslint": "eslint-cumul8 scripts src",
 		"flow": "flow",
-		"start": "next start",
+		"start": "NODE_ENV=production node server.js",
 		"test": "yarn flow && yarn eslint"
 	},
 	"dependencies": {
+		"express": "4.16.3",
+		"greenlock-express": "2.1.1",
 		"next": "6.0.0",
 		"react": "16.3.2",
 		"react-dom": "16.3.2"
