@@ -1,44 +1,14 @@
 // @flow
 
-import React, {
-	type Element,
-	Fragment,
-	type Node,
-	PureComponent,
-} from 'react';
-import Head from 'next/head';
+// TODO: Blocked by https://github.com/zeit/next-plugins/issues/149
+// import './_document.css';
+import Document, {Head, Main, NextScript} from 'next/document';
+import React, {type Element} from 'react';
 
-type PropsType = {
-	children?: Node,
-	title?: string,
-};
-
-export default class Template extends PureComponent<PropsType> {
-	static displayName = 'Template';
-
-	static defaultProps = {
-		title: 'haus.gg',
-	};
-
-	componentDidMount () {
-		const el = document.getElementsByTagName('html')[0];
-		el.innerHTML = `<!--          _
-             | |
-  _____   __ | |__   __ _ _   _ ___
- / _ \\ \\ / / | '_ \\ / _\` | | | / __|
-|  __/\\ V /  | | | | (_| | |_| \\__ \\
- \\___| \\_/   |_| |_|\\__,_|\\__,_|___/
-
-If this code works - I totally wrote it.
-Otherwise, I don't know where it came from.
--->${el.innerHTML}`;
-	}
-
-	render (): Element<typeof Fragment> {
-		const {children, title} = this.props;
-
+export default class MyDocument extends Document {
+	render (): Element<'html'> {
 		return (
-			<Fragment>
+			<html lang='en'>
 				<Head>
 					<meta charSet='utf-8' />
 					<meta content='ie=edge' httpEquiv='x-ua-compatible' />
@@ -63,23 +33,15 @@ Otherwise, I don't know where it came from.
 
 					<link href='https://fonts.googleapis.com/css?family=Geo' rel='stylesheet' />
 					<link href='/static/favicon.ico' rel='icon' type='image/x-icon' />
+					<link href='/_next/static/style.css' rel='stylesheet' />
+
 					<title>haus.gg</title>
 				</Head>
-				{children}
-				<style global={true} jsx={true}>{`
-body {
-	background: #222;
-	color: #FFF;
-	display: flex;
-	font-family: "Geo", sans-serif;
-	height: 100%;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	width: 100%;
-}`}
-				</style>
-			</Fragment>
+				<body>
+					<Main />
+					<NextScript />
+				</body>
+			</html>
 		);
 	}
 }
