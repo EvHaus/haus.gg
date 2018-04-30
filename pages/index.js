@@ -37,16 +37,16 @@ export default class Home extends PureComponent<PropsType> {
 
 	componentDidMount () {
 		const el = document.getElementsByTagName('html')[0];
-		el.prepend(`             _
-             | |
+		const c = document.createComment(`          _
+		     | |
   _____   __ | |__   __ _ _   _ ___
  / _ \\ \\ / / | '_ \\ / _\` | | | / __|
 |  __/\\ V /  | | | | (_| | |_| \\__ \\
  \\___| \\_/   |_| |_|\\__,_|\\__,_|___/
 
 If this code works - I totally wrote it.
-Otherwise, I don't know where it came from.
--->`);
+Otherwise, I don't know where it came from.`);
+		el.prepend(c);
 	}
 
 	render (): Element<'div'> {
@@ -68,10 +68,8 @@ Otherwise, I don't know where it came from.
 		return (
 			<div className={styles.view}>
 				<div className={styles.logo}>
-					<span className={styles.logoEv}>ev</span>
-					<span className={styles.logoHaus}>haus</span>
-					<span className={styles.logoDot}>.</span>
-					<span className={styles.logoDomain}>gg</span>
+					<span className={styles.logoEv}>EV</span>
+					<span className={styles.logoHaus}>HAUS</span>
 				</div>
 				<div className={styles.orb} style={orbStyle}>
 					{Array(...Array(circleCount)).map((

@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
 					<meta content='Personal website of Ev Haus' name='twitter:description' />
 					<meta content='haus.gg' name='twitter:title' />
 
-					<link href='https://fonts.googleapis.com/css?family=Geo' rel='stylesheet' />
+					<link href='https://fonts.googleapis.com/css?family=Montserrat:200,400' rel='stylesheet' />
 					<link href='/static/favicon.ico' rel='icon' type='image/x-icon' />
 					<link href='/_next/static/style.css' rel='stylesheet' />
 
