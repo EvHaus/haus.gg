@@ -123,4 +123,5 @@
 .icons { margin-top: 260px }
 
 .iconLink { color: #4D568E }
+.iconLink + .iconLink { margin-left: 8px }
 .iconLink:hover { color: #FFF }
