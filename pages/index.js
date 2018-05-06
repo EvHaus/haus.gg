@@ -4,11 +4,8 @@
 // https://github.com/zeit/next-plugins/issues/149
 import './_document.css';
 import React, {type Element, PureComponent} from 'react';
-import Email from './../components/icons/Email';
-import Instagram from './../components/icons/Instagram';
-import LinkedIn from './../components/icons/LinkedIn';
 import styles from './index.css';
-import Twitter from './../components/icons/Twitter';
+import SocialIcon from './../components/SocialIcon';
 
 type PropsType = {
 	// Array of colors for the circle
@@ -93,34 +90,10 @@ Otherwise, I don't know where it came from.`);
 					})}
 				</div>
 				<div className={styles.icons}>
-					<a
-						className={styles.iconLink}
-						href='https://www.linkedin.com/in/evhaus'
-						rel='noopener noreferrer'
-						target='_blank'>
-						<LinkedIn />
-					</a>
-					<a
-						className={styles.iconLink}
-						href='https://twitter.com/EvHaus'
-						rel='noopener noreferrer'
-						target='_blank'>
-						<Twitter />
-					</a>
-					<a
-						className={styles.iconLink}
-						href='https://www.instagram.com/haus.gg'
-						rel='noopener noreferrer'
-						target='_blank'>
-						<Instagram />
-					</a>
-					<a
-						className={styles.iconLink}
-						href='mailto:ev@haus.gg'
-						rel='noopener noreferrer'
-						target='_blank'>
-						<Email />
-					</a>
+					<SocialIcon type='linkedin' />
+					<SocialIcon type='twitter' />
+					<SocialIcon type='instagram' />
+					<SocialIcon type='email' />
 				</div>
 			</div>
 		);

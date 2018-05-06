@@ -17,7 +17,8 @@
 		"greenlock-express": "2.1.1",
 		"next": "6.0.0",
 		"react": "16.3.2",
-		"react-dom": "16.3.2"
+		"react-dom": "16.3.2",
+		"react-tippy": "1.2.2"
 	},
 	"devDependencies": {
 		"archiver": "2.1.1",

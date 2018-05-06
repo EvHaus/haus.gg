@@ -1,0 +1,13 @@
+.wrapper + .wrapper { margin-left: 16px }
+.main { color: #4D568E }
+.main:hover { color: #FFF }
+
+:global .tippy-tooltip-content {
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 4px;
+	color: #7D86BE;
+	font-size: 11px;
+	margin-top: 8px;
+	padding: 4px 8px;
+	text-transform: uppercase;
+}
