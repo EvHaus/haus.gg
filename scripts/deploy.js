@@ -1,3 +1,5 @@
+/* eslint-disable import/no-commonjs, no-unused-vars, flowtype/require-valid-file-annotation */
+
 const Deploy = require('@globexdesigns/deploy');
 
 const D = new Deploy({
