@@ -12,21 +12,23 @@
 		"test": "yarn flow && yarn eslint"
 	},
 	"dependencies": {
-		"@zeit/next-css": "0.1.5",
+		"@zeit/next-css": "0.2.0",
 		"express": "4.16.3",
-		"greenlock-express": "2.1.1",
-		"next": "6.0.0",
-		"react": "16.3.2",
-		"react-dom": "16.3.2",
+		"greenlock-express": "2.1.6",
+		"next": "6.0.3",
+		"react": "16.4.1",
+		"react-dom": "16.4.1",
 		"react-tippy": "1.2.2"
 	},
 	"devDependencies": {
 		"archiver": "2.1.1",
 		"babel-plugin-transform-flow-strip-types": "6.22.0",
-		"eslint-config-cumul8": "7.0.6",
-		"flow-bin": "0.71.0",
+		"chalk": "^2.4.1",
+		"eslint-config-cumul8": "7.0.8",
+		"flow-bin": "0.74.0",
 		"flow-typed": "2.4.0",
-		"prompt": "1.0.0",
-		"ssh2": "0.6.0"
+		"inquirer": "^6.0.0",
+		"ora": "^2.1.0",
+		"ssh2": "0.6.1"
 	}
 }
