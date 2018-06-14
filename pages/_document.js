@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
 					<meta content='ie=edge' httpEquiv='x-ua-compatible' />
 					<meta content='haus.gg' name='application-name' />
 					<meta content='Personal website of Ev Haus' name='description' />
-					<meta content='razzle' name='generator' />
+					<meta content='next.js' name='generator' />
 					<meta content='General' name='rating' />
 					<meta content='#222' name='theme-color' />
 					<meta content='width=device-width,initial-scale=1,shrink-to-fit=no' name='viewport' />
