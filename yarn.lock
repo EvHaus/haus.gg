@@ -660,9 +660,9 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@globexdesigns/deploy@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@globexdesigns/deploy/-/deploy-0.2.0.tgz#b895377d07ff322f76df8211e56c480413c47117"
+"@globexdesigns/deploy@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@globexdesigns/deploy/-/deploy-0.2.2.tgz#6eb0e302f6110d076d4841ac49909942cf66a97e"
   dependencies:
     archiver "2.1.1"
     chalk "^2.4.1"
@@ -2049,7 +2049,7 @@ doctrine@1.5.0:
     esutils "^2.0.2"
     isarray "^1.0.0"
 
-doctrine@^2.0.2, doctrine@^2.1.0:
+doctrine@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/doctrine/-/doctrine-2.1.0.tgz#5cd01fc101621b42c4cd7f5d1a66243716d3f39d"
   dependencies:
@@ -2287,21 +2287,21 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-cumul8@7.0.8:
-  version "7.0.8"
-  resolved "https://registry.yarnpkg.com/eslint-config-cumul8/-/eslint-config-cumul8-7.0.8.tgz#20d72b86655c6632cbd2a952162a100fd25234fa"
+eslint-config-cumul8@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-cumul8/-/eslint-config-cumul8-8.0.0.tgz#5e851d086096dc0434a512b0e5b1f5254ec30015"
   dependencies:
     babel-eslint "8.2.3"
     eslint "4.19.1"
     eslint-plugin-babel "5.1.0"
     eslint-plugin-cumul8 "1.4.3"
-    eslint-plugin-flowtype "2.46.3"
+    eslint-plugin-flowtype "2.49.3"
     eslint-plugin-import "2.12.0"
     eslint-plugin-jasmine "2.10.1"
     eslint-plugin-json "1.2.0"
     eslint-plugin-jsx-a11y "6.0.3"
-    eslint-plugin-promise "3.7.0"
-    eslint-plugin-react "7.8.2"
+    eslint-plugin-promise "3.8.0"
+    eslint-plugin-react "7.9.1"
 
 eslint-import-resolver-node@^0.3.1:
   version "0.3.2"
@@ -2327,11 +2327,11 @@ eslint-plugin-cumul8@1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-cumul8/-/eslint-plugin-cumul8-1.4.3.tgz#2313f9b5363bae41e9223cb116e4095a8b52a9aa"
 
-eslint-plugin-flowtype@2.46.3:
-  version "2.46.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-2.46.3.tgz#7e84131d87ef18b496b1810448593374860b4e8e"
+eslint-plugin-flowtype@2.49.3:
+  version "2.49.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-2.49.3.tgz#ccca6ee5ba2027eb3ed36bc2ec8c9a842feee841"
   dependencies:
-    lodash "^4.15.0"
+    lodash "^4.17.10"
 
 eslint-plugin-import@2.12.0:
   version "2.12.0"
@@ -2370,18 +2370,18 @@ eslint-plugin-jsx-a11y@6.0.3:
     emoji-regex "^6.1.0"
     jsx-ast-utils "^2.0.0"
 
-eslint-plugin-promise@3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-3.7.0.tgz#f4bde5c2c77cdd69557a8f69a24d1ad3cfc9e67e"
+eslint-plugin-promise@3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-3.8.0.tgz#65ebf27a845e3c1e9d6f6a5622ddd3801694b621"
 
-eslint-plugin-react@7.8.2:
-  version "7.8.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.8.2.tgz#e95c9c47fece55d2303d1a67c9d01b930b88a51d"
+eslint-plugin-react@7.9.1:
+  version "7.9.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.9.1.tgz#101aadd15e7c7b431ed025303ac7b421a8e3dc15"
   dependencies:
-    doctrine "^2.0.2"
-    has "^1.0.1"
+    doctrine "^2.1.0"
+    has "^1.0.2"
     jsx-ast-utils "^2.0.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.1"
 
 eslint-rule-composer@^0.3.0:
   version "0.3.0"
@@ -3152,7 +3152,7 @@ has-values@^1.0.0:
     is-number "^3.0.0"
     kind-of "^4.0.0"
 
-has@^1.0.1:
+has@^1.0.1, has@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/has/-/has-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"
   dependencies:
@@ -3903,7 +3903,7 @@ lodash@3.7.x:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.7.0.tgz#3678bd8ab995057c07ade836ed2ef087da811d45"
 
-lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.5.1, lodash@^4.8.0:
+lodash@^4.17.10, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.5.1, lodash@^4.8.0:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 

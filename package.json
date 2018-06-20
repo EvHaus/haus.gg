@@ -21,9 +21,9 @@
 		"react-tippy": "1.2.2"
 	},
 	"devDependencies": {
-		"@globexdesigns/deploy": "0.2.0",
+		"@globexdesigns/deploy": "0.2.2",
 		"babel-plugin-transform-flow-strip-types": "6.22.0",
-		"eslint-config-cumul8": "7.0.8",
+		"eslint-config-cumul8": "8.0.0",
 		"flow-bin": "0.74.0",
 		"flow-typed": "2.4.0"
 	}
