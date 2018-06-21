@@ -4,8 +4,8 @@
 // https://github.com/zeit/next-plugins/issues/149
 import './_document.css';
 import React, {type Element, PureComponent} from 'react';
-import styles from './index.css';
 import SocialIcon from './../components/SocialIcon';
+import styles from './index.css';
 
 type PropsType = {
 	// Array of colors for the circle
