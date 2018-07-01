@@ -4,32 +4,8 @@
 // import './_document.css';
 import Document, {Head, Main, NextScript} from 'next/document';
 import React, {type Element} from 'react';
-import ReactGA from 'react-ga';
-
-const __DEV__ = process.env.NODE_ENV !== 'production';
-
-export const initGA = function () {
-	ReactGA.initialize('UA-250654-12', {
-		debug: __DEV__,
-	});
-};
-
-export const logPageView = (
-	pageName: string = window.location.pathname + window.location.search
-) => {
-	ReactGA.set({page: pageName});
-	ReactGA.pageview(pageName);
-};
 
 export default class MyDocument extends Document {
-	componentDidMount () {
-		if (!window.GA_INITIALIZED) {
-			initGA();
-			window.GA_INITIALIZED = true;
-		}
-		logPageView();
-	}
-
 	render (): Element<'html'> {
 		return (
 			<html lang='en'>
