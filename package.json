@@ -8,13 +8,14 @@
 		"dev": "node server.js",
 		"eslint": "eslint-cumul8 scripts src",
 		"flow": "flow",
+		"flow-typed:update": "flow-typed update --ignoreDeps dev",
 		"start": "NODE_ENV=production node server.js",
 		"test": "yarn flow && yarn eslint"
 	},
 	"dependencies": {
 		"@zeit/next-css": "0.2.0",
 		"express": "4.16.3",
-		"greenlock-express": "2.3.1",
+		"greenlock-express": "2.3.2",
 		"next": "6.1.1",
 		"react": "16.4.1",
 		"react-dom": "16.4.1",
@@ -22,10 +23,10 @@
 		"react-tippy": "1.2.2"
 	},
 	"devDependencies": {
+		"@babel/preset-flow": "7.0.0-beta.47",
 		"@globexdesigns/deploy": "0.2.5",
-		"babel-plugin-transform-flow-strip-types": "6.22.0",
 		"eslint-config-cumul8": "8.0.0",
-		"flow-bin": "0.75.0",
-		"flow-typed": "2.4.0"
+		"flow-bin": "0.77.0",
+		"flow-typed": "2.5.1"
 	}
 }
