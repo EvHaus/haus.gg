@@ -1,6 +1,6 @@
 {
 	"name": "haus.gg",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"license": "MIT",
 	"scripts": {
 		"build": "next build",
@@ -13,20 +13,20 @@
 		"test": "yarn flow && yarn eslint"
 	},
 	"dependencies": {
-		"@zeit/next-css": "0.2.0",
+		"@zeit/next-css": "0.2.1-canary.2",
 		"express": "4.16.3",
-		"greenlock-express": "2.3.2",
-		"next": "6.1.1",
+		"greenlock-express": "2.4.6",
+		"next": "7.0.0-canary.8",
 		"react": "16.4.2",
 		"react-dom": "16.4.2",
 		"react-ga": "2.5.3",
 		"react-tippy": "1.2.2"
 	},
 	"devDependencies": {
-		"@babel/preset-flow": "7.0.0-beta.47",
+		"@babel/preset-flow": "7.0.0",
 		"@globexdesigns/deploy": "0.2.5",
 		"eslint-config-cumul8": "8.0.0",
-		"flow-bin": "0.78.0",
+		"flow-bin": "0.80.0",
 		"flow-typed": "2.5.1"
 	}
 }

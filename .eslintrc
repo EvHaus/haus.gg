@@ -1,11 +1,10 @@
 {
-	"extends": "eslint-config-cumul8",
+    "extends": "eslint-config-cumul8",
     "rules": {
-        "no-process-env": "off",
-        "promise/no-native": "off",
-
         "flowtype/no-unused-expressions": "off",
         "lines-between-class-members": "off",
+        "no-process-env": "off",
+        "promise/no-native": "off",
         "react/prop-types": "off"
     }
 }
