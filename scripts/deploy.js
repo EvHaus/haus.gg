@@ -7,6 +7,6 @@ const D = new Deploy({
 	files: ['package.json', 'server.js', 'yarn.lock'],
 	host: '138.68.241.10',
 	private_key_path: '/home/globex/.ssh/id_rsa',
-	target_dir: '/var/www',
+	target_dir: '/var/www/haus.gg',
 	user: 'root',
 }).run();

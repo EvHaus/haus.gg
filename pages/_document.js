@@ -1,46 +1,68 @@
 // @flow
 
-// TODO: Blocked by https://github.com/zeit/next-plugins/issues/149
-// import './_document.css';
 import Document, {Head, Main, NextScript} from 'next/document';
 import React, {type Element} from 'react';
+import {Helmet} from 'react-helmet';
 
+type PropsType = {};
+
+const SITE_AUTHOR = 'Ev Haus';
 const SITE_NAME = 'haus.gg';
 const SITE_DESC = 'Personal website of Ev Haus';
+const TWITTER_USER = '@EvHaus';
+
+const DEFAULT_META = [
+	{charSet: 'utf-8'},
+	{content: 'ie=edge', httpEquiv: 'x-ua-compatible'},
+	{name: 'viewport', content: 'width=device-width,initial-scale=1,shrink-to-fit=no'},
+
+	{content: SITE_NAME, name: 'application-name'},
+	{content: SITE_DESC, name: 'description-name'},
+	{content: 'next.js', name: 'generator'},
+	{content: 'General', name: 'rating'},
+	{content: '#222', name: 'theme-color'},
+
+	{content: SITE_AUTHOR, property: 'article:author'},
+	{content: SITE_DESC, property: 'og:description'},
+	{content: 'en_US', property: 'og:locale'},
+	{content: SITE_NAME, property: 'og:site_name'},
+	{content: SITE_NAME, property: 'og:title'},
+	{content: 'website', property: 'og:type'},
+
+	{content: 'summary', property: 'twitter:card'},
+	{content: TWITTER_USER, property: 'twitter:creator'},
+	{content: SITE_DESC, property: 'twitter:description'},
+	{content: SITE_NAME, property: 'twitter:title'},
+];
 
 export default class MyDocument extends Document {
+	static async getInitialProps (...args: PropsType): {} {
+		const documentProps = await super.getInitialProps(...args);
+		return {...documentProps, helmet: Helmet.renderStatic()};
+	}
+
 	render (): Element<'html'> {
+		const {helmet} = this.props;
+		const htmlArgs = helmet.htmlAttributes.toComponent();
+		const bodyArgs = helmet.bodyAttributes.toComponent();
+		const headElements = Object.keys(this.props.helmet)
+			.filter((el: string): boolean => el !== 'htmlAttributes' && el !== 'bodyAttributes')
+			.map((el: string): Element<any> => helmet[el].toComponent());
+
 		return (
-			<html lang='en'>
+			<html {...htmlArgs}>
 				<Head>
-					<meta charSet='utf-8' />
-					<meta content='ie=edge' httpEquiv='x-ua-compatible' />
-					<meta content={SITE_NAME} name='application-name' />
-					<meta content={SITE_DESC} name='description' />
-					<meta content='next.js' name='generator' />
-					<meta content='General' name='rating' />
-					<meta content='#222' name='theme-color' />
-					<meta content='width=device-width,initial-scale=1,shrink-to-fit=no' name='viewport' />
-
-					<meta content='Ev Haus' property='article:author' />
-					<meta content={SITE_DESC} property='og:description' />
-					<meta content='en_US' property='og:locale' />
-					<meta content={SITE_NAME} property='og:site_name' />
-					<meta content={SITE_NAME} property='og:title' />
-					<meta content='website' property='og:type' />
-
-					<meta content='summary' name='twitter:card' />
-					<meta content='@EvHaus' name='twitter:creator' />
-					<meta content={SITE_DESC} name='twitter:description' />
-					<meta content={SITE_NAME} name='twitter:title' />
+					<Helmet
+						htmlAttributes={{lang: 'en'}}
+						meta={DEFAULT_META}
+						title={SITE_NAME} />
+					{headElements}
 
 					<link href='https://fonts.googleapis.com/css?family=Montserrat:200,400' rel='stylesheet' />
 					<link href='/static/favicon.ico' rel='icon' type='image/x-icon' />
 					<link href='/_next/static/style.css' rel='stylesheet' />
-
-					<title>{SITE_NAME}</title>
 				</Head>
-				<body>
+				<body {...bodyArgs}>
 					<Main />
 					<NextScript />
 				</body>
