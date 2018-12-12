@@ -42,7 +42,7 @@ export default class Home extends PureComponent<PropsType> {
 |  __/\\ V /  | | | | (_| | |_| \\__ \\
  \\___| \\_/   |_| |_|\\__,_|\\__,_|___/
 
-If this code works - I totally wrote it.
+If this code works - I wrote it.
 Otherwise, I don't know where it came from.`);
 		el.prepend(c);
 	}
@@ -90,6 +90,7 @@ Otherwise, I don't know where it came from.`);
 					<SocialIcon type='linkedin' />
 					<SocialIcon type='twitter' />
 					<SocialIcon type='instagram' />
+					<SocialIcon type='github' />
 					<SocialIcon type='email' />
 				</div>
 			</div>

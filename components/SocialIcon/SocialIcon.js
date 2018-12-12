@@ -2,6 +2,7 @@
 
 import React, {type Element, PureComponent} from 'react';
 import Email from './../icons/Email';
+import Github from './../icons/Github';
 import Instagram from './../icons/Instagram';
 import LinkedIn from './../icons/LinkedIn';
 import styles from './SocialIcon.css';
@@ -15,7 +16,7 @@ type ItemType = {
 };
 
 type PropsType = {
-	type: 'email' | 'instagram' | 'linkedin' | 'twitter',
+	type: 'email' | 'github' | 'instagram' | 'linkedin' | 'twitter',
 };
 
 export default class SocialIcon extends PureComponent<PropsType> {
@@ -48,6 +49,11 @@ export default class SocialIcon extends PureComponent<PropsType> {
 				icon: <Email />,
 				tooltip: 'Email',
 				url: 'mailto:ev@haus.gg',
+			};
+			case 'github': return {
+				icon: <Github />,
+				tooltip: 'Github',
+				url: 'https://github.com/EvHaus',
 			};
 			case 'instagram': return {
 				icon: <Instagram />,

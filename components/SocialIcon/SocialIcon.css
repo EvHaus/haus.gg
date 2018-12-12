@@ -1,5 +1,10 @@
 .wrapper + .wrapper { margin-left: 16px }
-.main { color: #4D568E }
+
+.main {
+	color: #4D568E;
+	transition: 250ms ease color;
+}
+
 .main:hover { color: #FFF }
 
 :global .tippy-tooltip-content {
