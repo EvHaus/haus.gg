@@ -1,6 +1,6 @@
 // @flow
 
-import React, {type Element, PureComponent} from 'react';
+import React, {type Element, memo} from 'react';
 import Email from './../icons/Email';
 import Github from './../icons/Github';
 import Instagram from './../icons/Instagram';
@@ -15,66 +15,67 @@ type ItemType = {
 	url: string,
 };
 
+type TypeType = 'email' | 'github' | 'instagram' | 'linkedin' | 'twitter';
+
 type PropsType = {
-	type: 'email' | 'github' | 'instagram' | 'linkedin' | 'twitter',
+	type: TypeType,
 };
 
-export default class SocialIcon extends PureComponent<PropsType> {
-	static displayName = 'SocialIcon';
-
-	render (): Element<typeof Tooltip> {
-		const item = this._getItem();
-
-		return (
-			<Tooltip
-				className={styles.wrapper}
-				position='bottom'
-				title={item.tooltip}>
-				<a
-					className={styles.main}
-					href={item.url}
-					rel='noopener noreferrer'
-					target='_blank'>
-					{item.icon}
-				</a>
-			</Tooltip>
-		);
+const getItem = (type: TypeType): ItemType => {
+	switch (type) {
+		case 'email': return {
+			icon: <Email />,
+			tooltip: 'Email',
+			url: 'mailto:ev@haus.gg',
+		};
+		case 'github': return {
+			icon: <Github />,
+			tooltip: 'Github',
+			url: 'https://github.com/EvHaus',
+		};
+		case 'instagram': return {
+			icon: <Instagram />,
+			tooltip: 'Instagram',
+			url: 'https://www.instagram.com/haus.gg',
+		};
+		case 'linkedin': return {
+			icon: <LinkedIn />,
+			tooltip: 'LinkedIn',
+			url: 'https://www.linkedin.com/in/evhaus',
+		};
+		case 'twitter': return {
+			icon: <Twitter />,
+			tooltip: 'Twitter',
+			url: 'https://twitter.com/EvHaus',
+		};
+		default: return {
+			icon: <span />,
+			tooltip: '',
+			url: '#',
+		};
 	}
+};
 
-	_getItem (): ItemType {
-		const {type} = this.props;
+export const SocialIcon = (
+	{type}: PropsType
+): Element<typeof Tooltip> => {
+	const item = getItem(type);
+	return (
+		<Tooltip
+			className={styles.wrapper}
+			position='bottom'
+			title={item.tooltip}>
+			<a
+				className={styles.main}
+				href={item.url}
+				rel='noopener noreferrer'
+				target='_blank'>
+				{item.icon}
+			</a>
+		</Tooltip>
+	);
+};
 
-		switch (type) {
-			case 'email': return {
-				icon: <Email />,
-				tooltip: 'Email',
-				url: 'mailto:ev@haus.gg',
-			};
-			case 'github': return {
-				icon: <Github />,
-				tooltip: 'Github',
-				url: 'https://github.com/EvHaus',
-			};
-			case 'instagram': return {
-				icon: <Instagram />,
-				tooltip: 'Instagram',
-				url: 'https://www.instagram.com/haus.gg',
-			};
-			case 'linkedin': return {
-				icon: <LinkedIn />,
-				tooltip: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/evhaus',
-			};
-			case 'twitter': return {
-				icon: <Twitter />,
-				tooltip: 'Twitter',
-				url: 'https://twitter.com/EvHaus',
-			};
-			default: return {
-				icon: <span />,
-				tooltip: '',
-				url: '#',
-			};
-		}
-	}
-}
+SocialIcon.displayName = 'SocialIcon';
+
+export default memo(SocialIcon);

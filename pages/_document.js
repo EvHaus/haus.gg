@@ -2,9 +2,8 @@
 
 import Document, {Head, Main, NextScript} from 'next/document';
 import React, {type Element} from 'react';
-import {Helmet} from 'react-helmet';
-
-type PropsType = {};
+import {type Context} from 'next';
+import Helmet from 'react-helmet';
 
 const SITE_AUTHOR = 'Ev Haus';
 const SITE_NAME = 'haus.gg';
@@ -36,7 +35,7 @@ const DEFAULT_META = [
 ];
 
 export default class MyDocument extends Document {
-	static async getInitialProps (...args: PropsType): {} {
+	static async getInitialProps (...args: Context): Promise<any> {
 		const documentProps = await super.getInitialProps(...args);
 		return {...documentProps, helmet: Helmet.renderStatic()};
 	}
@@ -50,6 +49,7 @@ export default class MyDocument extends Document {
 			.map((el: string): Element<any> => helmet[el].toComponent());
 
 		return (
+			// eslint-disable-next-line jsx-a11y/html-has-lang
 			<html {...htmlArgs}>
 				<Head>
 					<Helmet
@@ -57,7 +57,6 @@ export default class MyDocument extends Document {
 						meta={DEFAULT_META}
 						title={SITE_NAME} />
 					{headElements}
-
 					<link href='https://fonts.googleapis.com/css?family=Montserrat:200,400' rel='stylesheet' />
 					<link href='/static/favicon.ico' rel='icon' type='image/x-icon' />
 					<link href='/_next/static/style.css' rel='stylesheet' />

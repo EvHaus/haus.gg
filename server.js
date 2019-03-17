@@ -5,8 +5,8 @@ const express = require('express');
 const greenlock = require('greenlock-express');
 const next = require('next');
 
-const dev = process.env.NODE_ENV !== 'production';
-const app = next({dev});
+const __DEV__ = process.env.NODE_ENV !== 'production';
+const app = next({dev: __DEV__});
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
@@ -17,7 +17,7 @@ app.prepare().then(() => {
 	});
 
 	// In production `greenlock-express` will take over
-	if (!dev) {
+	if (!__DEV__) {
 		return greenlock.create({
 			app: server,
 			approveDomains (opts, certs, cb) {
