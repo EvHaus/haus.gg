@@ -34,7 +34,7 @@ const DEFAULT_META = [
 	{content: SITE_NAME, property: 'twitter:title'},
 ];
 
-export default class MyDocument extends Document {
+export default class _document extends Document {
 	static async getInitialProps (...args: Context): Promise<any> {
 		const documentProps = await super.getInitialProps(...args);
 		return {...documentProps, helmet: Helmet.renderStatic()};

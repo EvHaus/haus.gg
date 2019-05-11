@@ -2,6 +2,7 @@
 
 components
 pages
+utils
 
 [lints]
 

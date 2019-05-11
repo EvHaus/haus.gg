@@ -1,12 +1,12 @@
 {
 	"name": "haus.gg",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"license": "MIT",
 	"scripts": {
 		"build": "next build",
 		"deploy": "yarn build && node scripts/deploy.js",
 		"dev": "node server.js",
-		"eslint": "eslint-cumul8 scripts src",
+		"eslint": "eslint-cumul8 components pages scripts utils",
 		"flow": "flow",
 		"flow-typed:update": "flow-typed update --ignoreDeps dev",
 		"start": "NODE_ENV=production node server.js",
@@ -15,19 +15,19 @@
 	"dependencies": {
 		"@zeit/next-css": "1.0.1",
 		"express": "4.16.4",
-		"greenlock-express": "2.6.8",
-		"next": "8.0.3",
-		"react": "16.8.4",
-		"react-dom": "16.8.4",
+		"greenlock-express": "2.7.6",
+		"next": "8.1.0",
+		"react": "16.8.6",
+		"react-dom": "16.8.6",
 		"react-ga": "2.5.7",
-		"react-helmet": "5.2.0",
+		"react-helmet": "5.2.1",
 		"react-tippy": "1.2.3"
 	},
 	"devDependencies": {
 		"@babel/preset-flow": "7.0.0",
 		"@globexdesigns/deploy": "0.2.5",
-		"eslint-config-cumul8": "8.0.0",
-		"flow-bin": "0.95.1",
+		"eslint-config-cumul8": "8.0.50",
+		"flow-bin": "0.98.1",
 		"flow-typed": "2.5.1"
 	}
 }

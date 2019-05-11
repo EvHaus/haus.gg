@@ -1,10 +1,10 @@
 // @flow
 
 import React, {type Element, PureComponent} from 'react';
-import SocialIcon from './../components/SocialIcon';
+import SocialIcon from '../components/SocialIcon';
 import styles from './index.css';
 
-type PropsType = {
+type PropsType = {|
 	// Array of colors for the circle
 	circleColors: Array<string>,
 	// Number of circles in animation
@@ -13,10 +13,10 @@ type PropsType = {
 	circleOpacity: number,
 	// Speed of animation in ms
 	circleSpeed: number,
-};
+|};
 
-export default class Home extends PureComponent<PropsType> {
-	static displayName = 'Home';
+export default class index extends PureComponent<PropsType> {
+	static displayName = 'index';
 
 	static defaultProps = {
 		circleColors: [

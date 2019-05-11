@@ -1,7 +1,7 @@
 // @flow
 /* eslint-disable max-len */
 
-import React, {type Element} from 'react';
+import React, {type Element, memo} from 'react';
 
 export const Instagram = (): Element<'svg'> => (
 	<svg height='24' viewBox='0 0 448 512' width='24' xmlns='http://www.w3.org/2000/svg'>
@@ -11,4 +11,4 @@ export const Instagram = (): Element<'svg'> => (
 
 Instagram.displayName = 'Instagram';
 
-export default Instagram;
+export default memo<{||}>(Instagram);

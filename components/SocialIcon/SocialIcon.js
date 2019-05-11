@@ -1,25 +1,25 @@
 // @flow
 
 import React, {type Element, memo} from 'react';
-import Email from './../icons/Email';
-import Github from './../icons/Github';
-import Instagram from './../icons/Instagram';
-import LinkedIn from './../icons/LinkedIn';
+import Email from '../icons/Email';
+import Github from '../icons/Github';
+import Instagram from '../icons/Instagram';
+import LinkedIn from '../icons/LinkedIn';
 import styles from './SocialIcon.css';
 import {Tooltip} from 'react-tippy';
-import Twitter from './../icons/Twitter';
+import Twitter from '../icons/Twitter';
 
-type ItemType = {
+type ItemType = {|
 	icon: Element<any>,
 	tooltip: string,
 	url: string,
-};
+|};
 
 type TypeType = 'email' | 'github' | 'instagram' | 'linkedin' | 'twitter';
 
-type PropsType = {
+type PropsType = {|
 	type: TypeType,
-};
+|};
 
 const getItem = (type: TypeType): ItemType => {
 	switch (type) {
@@ -56,9 +56,9 @@ const getItem = (type: TypeType): ItemType => {
 	}
 };
 
-export const SocialIcon = (
-	{type}: PropsType
-): Element<typeof Tooltip> => {
+export const SocialIcon = ({
+	type,
+}: PropsType): Element<typeof Tooltip> => {
 	const item = getItem(type);
 	return (
 		<Tooltip
@@ -78,4 +78,4 @@ export const SocialIcon = (
 
 SocialIcon.displayName = 'SocialIcon';
 
-export default memo(SocialIcon);
+export default memo<PropsType>(SocialIcon);

@@ -1,7 +1,7 @@
 // @flow
 /* eslint-disable max-len */
 
-import React, {type Element} from 'react';
+import React, {type Element, memo} from 'react';
 
 export const LinkedIn = (): Element<'svg'> => (
 	<svg height='24' viewBox='0 0 448 512' width='24' xmlns='http://www.w3.org/2000/svg'>
@@ -11,4 +11,4 @@ export const LinkedIn = (): Element<'svg'> => (
 
 LinkedIn.displayName = 'LinkedIn';
 
-export default LinkedIn;
+export default memo<{||}>(LinkedIn);

@@ -6,7 +6,7 @@ import {initGA, logPageView} from '../utils/analytics';
 import React, {type Element} from 'react';
 import Router from 'next/router';
 
-export default class MyApp extends App {
+export default class _app extends App {
 	static async getInitialProps ({Component, ctx, router}: any): {} {
 		let pageProps = {};
 
