@@ -737,20 +737,20 @@
   resolved "https://registry.yarnpkg.com/@coolaj86/urequest/-/urequest-1.3.7.tgz#66a1d66378dd6534e9c8e68948bf09acf32bab77"
   integrity sha512-PPrVYra9aWvZjSCKl/x1pJ9ZpXda1652oJrPBYy5rQumJJMkmTBN3ux+sK2xAUwVvv2wnewDlaQaHLxLwSHnIA==
 
-"@globexdesigns/deploy@0.3.7":
-  version "0.3.7"
-  resolved "https://registry.yarnpkg.com/@globexdesigns/deploy/-/deploy-0.3.7.tgz#2ea33045245e1259ec3f366be0dcd6b7d65d78d0"
-  integrity sha512-/+bsYKuR60oWGOBI3qfz/f/dL1XC+BNWMpdGElea6zy/aORsUg6cb6EVYfAxnZjzxNKi5B7KGEzmuTyA1YfXSg==
+"@globexdesigns/deploy@0.3.9":
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/@globexdesigns/deploy/-/deploy-0.3.9.tgz#83eb06cb0ac169b2ba6694e21efa1464dbaf9786"
+  integrity sha512-zUqb5XXOY3cH9dYSevlhCYOULxm9eUeuxMwcaMLGg7ixe6OU1ZXIfnJdJximCRPcgjWoduJfzRCAXJboJNmu1w==
   dependencies:
     "@hapi/joi" "^15.0.3"
     archiver "^3.0.0"
     chalk "^2.4.2"
     commander "^2.20.0"
-    cosmiconfig "^5.2.0"
+    cosmiconfig "^5.2.1"
     glob "^7.1.4"
     inquirer "^6.3.1"
+    node-ssh "^6.0.0"
     ora "^3.4.0"
-    ssh2 "^0.8.4"
 
 "@hapi/address@2.x.x":
   version "2.0.0"
@@ -2068,14 +2068,14 @@ cosmiconfig@^4.0.0:
     parse-json "^4.0.0"
     require-from-string "^2.0.1"
 
-cosmiconfig@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.2.0.tgz#45038e4d28a7fe787203aede9c25bca4a08b12c8"
-  integrity sha512-nxt+Nfc3JAqf4WIWd0jXLjTJZmsPLrA9DDc4nRw2KFJQJK7DNooqSXrNI7tzLG50CF8axczly5UV929tBmh/7g==
+cosmiconfig@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.2.1.tgz#040f726809c591e77a17c0a3626ca45b4f168b1a"
+  integrity sha512-H65gsXo1SKjf8zmrJ67eJk8aIRKV5ff2D4uKZIBZShbhGSpEmsQOPW/SKMKYhSTrqR7ufy6RP69rPogdaPh/kA==
   dependencies:
     import-fresh "^2.0.0"
     is-directory "^0.3.1"
-    js-yaml "^3.13.0"
+    js-yaml "^3.13.1"
     parse-json "^4.0.0"
 
 crc32-stream@^2.0.0:
@@ -3852,7 +3852,7 @@ js-tokens@^3.0.2:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
-js-yaml@^3.12.0, js-yaml@^3.13.0, js-yaml@^3.9.0:
+js-yaml@^3.12.0, js-yaml@^3.13.1, js-yaml@^3.9.0:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
   integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
@@ -4591,6 +4591,17 @@ node-releases@^1.1.17:
   dependencies:
     semver "^5.3.0"
 
+node-ssh@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/node-ssh/-/node-ssh-6.0.0.tgz#3287bdb3fad4a898064ea1df2d601a65a1c5d724"
+  integrity sha512-R/nqH09/kZrXilSLizJgokw4hJTSADANnntjk6iNVfO95RPNQq9H19NeUvQof96WQB9dgOxpRgBV7d+snZP2DQ==
+  dependencies:
+    p-map "^2.1.0"
+    sb-promisify "^2.0.1"
+    sb-scandir "^2.0.0"
+    shell-escape "^0.2.0"
+    ssh2 "^0.8.2"
+
 nopt@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/nopt/-/nopt-4.0.1.tgz#d0d4685afd5415193c8c7505602d0d17cd64474d"
@@ -4843,10 +4854,15 @@ p-locate@^3.0.0:
   dependencies:
     p-limit "^2.0.0"
 
-p-map@^1.1.1:
+p-map@^1.1.1, p-map@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/p-map/-/p-map-1.2.0.tgz#e4e94f311eabbc8633a1e79908165fca26241b6b"
   integrity sha512-r6zKACMNhjPJMTl8KcFH4li//gkrXWfbD6feV8l6doRHlzljFWGJ2AP6iKaCJXyZmAUMOPtvbW7EXkbWO/pLEA==
+
+p-map@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/p-map/-/p-map-2.1.0.tgz#310928feef9c9ecc65b68b17693018a665cea175"
+  integrity sha512-y3b8Kpd8OAN444hxfBbFfj1FY/RjtTd8tzYwhUqNYXx0fXx2iX4maP4Qr6qhIKbQXI02wTLAda4fYUbDagTUFw==
 
 p-timeout@^1.1.1:
   version "1.2.1"
@@ -5745,6 +5761,19 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
+sb-promisify@^2.0.1:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/sb-promisify/-/sb-promisify-2.0.2.tgz#4277a54754488aa9675d886e354db894c9bdc981"
+  integrity sha1-QnelR1RIiqlnXYhuNU24lMm9yYE=
+
+sb-scandir@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/sb-scandir/-/sb-scandir-2.0.0.tgz#a02ad1fa44a8bd2bfaf30193d14d23c2f35ab6b2"
+  integrity sha512-SKbyMJB0DUt9OgN4tP2RBcn9OsR26DEpe+nwaDkQTNcrJSJI0FlLhXhBpTd/YEnlQ2GdLrbszSNekGLw4rweOQ==
+  dependencies:
+    p-map "^1.2.0"
+    sb-promisify "^2.0.1"
+
 scheduler@^0.13.6:
   version "0.13.6"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.6.tgz#466a4ec332467b31a91b9bf74e5347072e4cd889"
@@ -5892,6 +5921,11 @@ shebang-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
+
+shell-escape@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/shell-escape/-/shell-escape-0.2.0.tgz#68fd025eb0490b4f567a027f0bf22480b5f84133"
+  integrity sha1-aP0CXrBJC09WegJ/C/IkgLX4QTM=
 
 shell-quote@^1.6.1:
   version "1.6.1"
@@ -6050,7 +6084,7 @@ ssh2-streams@~0.4.4:
     bcrypt-pbkdf "^1.0.2"
     streamsearch "~0.1.2"
 
-ssh2@^0.8.4:
+ssh2@^0.8.2:
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/ssh2/-/ssh2-0.8.4.tgz#0a657d9371c1fe9f9e349bcff6144febee256aa6"
   integrity sha512-qztb9t4b34wJSiWVpeTMVVN/5KCuBoyctBc2BcSe/Uq4NRnF0gB16Iu5p72ILhdYATcMNwB5WppzPIEs/3wB8Q==
