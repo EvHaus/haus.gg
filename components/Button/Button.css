@@ -1,0 +1,20 @@
+.main {
+	background: transparent;
+	border: 2px solid #4D568E;
+	color: #7A83B8;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 100;
+	margin: auto;
+	padding: 8px 60px;
+	pointer-events: all;
+	text-transform: uppercase;
+	transition: 250ms ease border-color, 250ms ease color;
+}
+
+.main:focus,
+.main:hover {
+	border: 2px solid #FFF;
+	color: #FFF
+}

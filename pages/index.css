@@ -19,7 +19,7 @@
 	font-size: 42px;
 	justify-content: center;
 	left: 0;
-	letter-spacing: 4px;
+	letter-spacing: 1px;
 	padding-top: 140px;
 	pointer-events: none;
 	position: absolute;
@@ -32,7 +32,7 @@
 				 0 0 80px var(--glow2),
 				 0 0 100px var(--glow2),
 				 0 0 150px var(--glow2);
-	top: 0;
+	top: -60px;
 	user-select: none;
 }
 
@@ -51,9 +51,22 @@
 	display: flex;
 	justify-content: center;
 	left: 0;
+	pointer-events: none;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 320px;
+}
+
+.resume {
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+	top: 200px;
 }
 
 .orb {
@@ -66,7 +79,7 @@
 	margin: auto;
 	position: absolute;
 	right: 0;
-	top: -100px;
+	top: -160px;
 	transform: rotateX(60deg) rotateZ(-30deg);
 	transform-style: preserve-3d;
 	width: 120px;
@@ -120,5 +133,3 @@
 	95% { transform: scale(0.9) }
 	100% { transform: scale(1) }
 }
-
-.icons { margin-top: 260px }

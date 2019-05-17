@@ -6,7 +6,7 @@ utils
 
 [lints]
 
-deprecated-call-syntax=off
+deprecated-utility=off
 
 [options]
 

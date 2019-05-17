@@ -1,6 +1,7 @@
 // @flow
 
 import React, {type Element, PureComponent} from 'react';
+import Button from '../components/Button';
 import SocialIcon from '../components/SocialIcon';
 import styles from './index.css';
 
@@ -86,11 +87,15 @@ Otherwise, I don't know where it came from.`);
 						);
 					})}
 				</div>
+				<div className={styles.resume}>
+					<Button label='My Resume' link='/static/resume.pdf' />
+				</div>
 				<div className={styles.icons}>
 					<SocialIcon type='linkedin' />
 					<SocialIcon type='twitter' />
 					<SocialIcon type='instagram' />
 					<SocialIcon type='github' />
+					<SocialIcon type='stackoverflow' />
 					<SocialIcon type='email' />
 				</div>
 			</div>
