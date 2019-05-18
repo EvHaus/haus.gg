@@ -3331,7 +3331,7 @@ greenlock-express@2.7.8:
     greenlock "^2.7.17"
     redirect-https "^1.1.5"
 
-greenlock-store-fs@^3.0.2:
+greenlock-store-fs@3.0.2, greenlock-store-fs@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/greenlock-store-fs/-/greenlock-store-fs-3.0.2.tgz#54efe8f4977e6e62840b114361584ec34622b80a"
   integrity sha512-t4So75yKs1+7TqmxD5UKdf+zOQU0/4o0lb2auf5zUcAo7fwwNLOAXyWnnZRL3WuFBUiBGh1qXWleuMua0d3LPg==
@@ -5596,7 +5596,7 @@ recursive-copy@2.0.6:
     promise "^7.0.1"
     slash "^1.0.0"
 
-redirect-https@^1.1.5:
+redirect-https@1.3.0, redirect-https@^1.1.5:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/redirect-https/-/redirect-https-1.3.0.tgz#54a1bceacddad0c3178d435bcc8d6420b63f087a"
   integrity sha512-9GzwI/+Cqw3jlSg0CW6TgBQbhiVhkHSDvW8wjgRQ9IK34wtxS71YJiQeazSCSEqbvowHCJuQZgmQFl1xUHKEgg==
