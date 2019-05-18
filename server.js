@@ -1,7 +1,6 @@
 /* eslint-disable flowtype/require-valid-file-annotation, import/no-commonjs */
 /* eslint-disable flowtype/require-return-type, flowtype/require-parameter-type */
 
-const compression = require('compression');
 const express = require('express');
 const greenlock = require('greenlock-express');
 const http = require('http');
@@ -14,19 +13,13 @@ const app = next({dev: __DEV__});
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
-	// Handle HTTPS connections with HTTP/2
-	const server = __DEV__ ?
-		express() :
-		http2.createSecureServer(gLock.tlsOptions);
-
-	// In production enable GZIP compression
-	if (!__DEV__) server.use(compression());
-
-	// All routes go to the next app
-	server.get('*', (req, res) => handle(req, res));
-
-	// Development server is a lot simpler
+	// Dev server uses express and none of the greenlock and HTTP2 stuff
 	if (__DEV__) {
+		const server = express();
+
+		// All routes go to the next app
+		server.get('*', (req, res) => handle(req, res));
+
 		const port = parseInt(process.env.PORT, 10) || 3000;
 
 		return server.listen(port, (err) => {
@@ -36,7 +29,7 @@ app.prepare().then(() => {
 		});
 	}
 
-	// Enable greenlock
+	// Enable greenlock SSL
 	const gLock = greenlock.create({
 		approveDomains (opts, certs, cb) {
 			opts.domains = certs && certs.altnames || opts.domains;
@@ -52,6 +45,14 @@ app.prepare().then(() => {
 		server: 'https://acme-v02.api.letsencrypt.org/directory',
 		store: require('greenlock-store-fs'),
 		version: 'draft-11',
+	});
+
+	// Handle HTTPS connections with HTTP/2
+	const server = http2.createSecureServer(gLock.tlsOptions);
+
+	// All routes go to the next app
+	server.on('request', (req, res) => {
+		return app.render(req, res, '/', req.query);
 	});
 
 	// Handle HTTP connnections

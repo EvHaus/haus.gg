@@ -14,7 +14,6 @@
 	},
 	"dependencies": {
 		"@zeit/next-css": "1.0.1",
-		"compression": "1.7.4",
 		"express": "4.17.0",
 		"greenlock-express": "2.7.8",
 		"greenlock-store-fs": "3.0.2",
