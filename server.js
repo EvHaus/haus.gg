@@ -1,6 +1,7 @@
 /* eslint-disable flowtype/require-valid-file-annotation, import/no-commonjs */
 /* eslint-disable flowtype/require-return-type, flowtype/require-parameter-type */
 
+const compression = require('compression');
 const express = require('express');
 const greenlock = require('greenlock-express');
 const next = require('next');
@@ -11,6 +12,9 @@ const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
 	const server = express();
+
+	// In production enable GZIP compression
+	if (!__DEV__) server.use(compression());
 
 	server.get('*', (req, res) => {
 		return handle(req, res);
