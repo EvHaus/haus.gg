@@ -16,7 +16,9 @@ type ItemType = {|
 	url: string,
 |};
 
-type TypeType = 'email' | 'github' | 'instagram' | 'linkedin' | 'stackoverflow' | 'twitter';
+type TypeType = (
+	'email' | 'github' | 'instagram' | 'linkedin' | 'stackoverflow' | 'twitter'
+);
 
 type PropsType = {|
 	type: TypeType,

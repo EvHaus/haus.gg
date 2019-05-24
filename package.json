@@ -6,7 +6,7 @@
 		"build": "next build",
 		"deploy": "yarn build && deploy run -v",
 		"dev": "node server.js",
-		"eslint": "eslint-cumul8 components constants pages utils",
+		"eslint": "eslint-cumul8 .",
 		"flow": "flow",
 		"flow-typed:update": "rm -rf flow-typed && flow-typed install --ignoreDeps dev",
 		"start": "NODE_ENV=production node server.js",
