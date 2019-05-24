@@ -88,7 +88,7 @@ Otherwise, I don't know where it came from.`);
 					})}
 				</div>
 				<div className={styles.resume}>
-					<Button label='My Resume' link='/static/resume.pdf' />
+					<Button label='My Resume' link='/static/resume-ev-haus.pdf' />
 				</div>
 				<div className={styles.icons}>
 					<SocialIcon type='linkedin' />
