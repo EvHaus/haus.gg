@@ -33,7 +33,7 @@ export default class _app extends App {
 					htmlAttributes={{lang: 'en'}}
 					meta={DEFAULT_META}
 					title={SITE_NAME}
-					titleTemplate={`%s | ${SITE_NAME}`} />
+					titleTemplate={SITE_NAME} />
 				<Component {...pageProps} />
 			</Container>
 		);
