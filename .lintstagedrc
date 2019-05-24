@@ -1,5 +1,6 @@
 {
 	"**/*.js": [
+		"yarn flow",
 		"eslint-cumul8 . --fix",
 		"git add"
 	]
