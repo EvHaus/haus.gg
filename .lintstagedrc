@@ -1,0 +1,6 @@
+{
+	"*.{js}": [
+		"eslint-cumul8 . --fix",
+		"git add"
+	]
+}

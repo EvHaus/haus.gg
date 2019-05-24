@@ -1,6 +1,7 @@
 [include]
 
 components
+constants
 pages
 utils
 

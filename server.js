@@ -33,7 +33,7 @@ app.prepare().then(() => {
 	const gLock = greenlock.create({
 		approveDomains (opts, certs, cb) {
 			opts.domains = certs && certs.altnames || opts.domains;
-			opts.email = 'globexdesigns@gmail.com';
+			opts.email = 'ev@haus.gg';
 			opts.agreeTos = true;
 
 			cb(null, {
