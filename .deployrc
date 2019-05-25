@@ -2,6 +2,7 @@
 	host: '138.68.241.10',
 	private_key_path: '/home/globex/.ssh/id_rsa',
 	sources: [
+		'.babelrc',
 		'.next',
 		'static',
 		'package.json',
