@@ -1,3 +1,4 @@
+/* stylelint-disable-next-line selector-max-combinators */
 .wrapper + .wrapper { margin-left: 16px }
 
 .main {
@@ -8,6 +9,7 @@
 
 .main:hover { color: #FFF }
 
+/* stylelint-disable-next-line selector-max-combinators */
 :global .tippy-tooltip-content {
 	background: rgba(0, 0, 0, 0.6);
 	border-radius: 4px;

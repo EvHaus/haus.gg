@@ -1,3 +1,4 @@
+/* stylelint-disable-next-line selector-max-combinators, selector-max-type */
 :global body {
 	background: #222;
 	color: #FFF;

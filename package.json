@@ -5,13 +5,14 @@
 	"scripts": {
 		"build": "next build",
 		"deploy": "yarn build && deploy run -v",
-		"dev": "node server.js",
+		"dev": "node start.js",
 		"eslint": "eslint-cumul8 .",
 		"flow": "flow",
 		"flow-typed:update": "rm -rf flow-typed && flow-typed install --ignoreDeps dev",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
-		"start": "NODE_ENV=production node server.js",
-		"test": "yarn flow && yarn eslint && yarn packagelint"
+		"start": "NODE_ENV=production node start.js",
+		"stylelint": "stylelint-cumul8 components/**/*.css pages/**/*.css",
+		"test": "yarn flow && yarn eslint && yarn stylelint && yarn packagelint"
 	},
 	"dependencies": {
 		"@zeit/next-css": "1.0.1",
@@ -33,12 +34,14 @@
 	},
 	"devDependencies": {
 		"@babel/preset-flow": "7.0.0",
-		"@globexdesigns/deploy": "0.3.12",
+		"@babel/register": "7.4.4",
+		"@globexdesigns/deploy": "0.3.14",
 		"eslint-config-cumul8": "8.0.50",
 		"flow-bin": "0.98.1",
 		"flow-typed": "2.5.2",
 		"husky": "2.3.0",
 		"lint-staged": "8.1.7",
-		"prettier-package-json": "2.1.0"
+		"prettier-package-json": "2.1.0",
+		"stylelint-config-cumul8": "2.1.57"
 	}
 }

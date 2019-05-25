@@ -1,16 +1,18 @@
-/* eslint-disable flowtype/require-valid-file-annotation, import/no-commonjs */
-/* eslint-disable flowtype/require-return-type, flowtype/require-parameter-type */
+// @flow
 
-const compression = require('compression');
-const greenlock = require('greenlock-express');
-const http = require('http');
-const http2 = require('http2');
-const Koa = require('koa');
-const koaConnect = require('koa-connect');
-const koaSend = require('koa-send');
-const next = require('next');
-const redirectHttps = require('redirect-https');
-const Router = require('koa-router');
+import compression from 'compression';
+import greenlock from 'greenlock-express';
+import http from 'http';
+// flow-disable-next-line
+import http2 from 'http2';
+import Koa from 'koa';
+import koaConnect from 'koa-connect';
+import koaSend from 'koa-send';
+import next from 'next';
+import redirectHttps from 'redirect-https';
+import Router from 'koa-router';
+
+type CtxType = any;
 
 const ONE_YEAR = 1000 * 60 * 60 * 24 * 365;
 const PORT = parseInt(process.env.PORT, 10) || 3000;
@@ -19,23 +21,23 @@ const __DEV__ = process.env.NODE_ENV !== 'production';
 const app = next({dev: __DEV__});
 const handle = app.getRequestHandler();
 
-app.prepare().then(() => {
+app.prepare().then((): any => {
 	const server = new Koa();
 	const router = new Router();
 
 	// Enable gzip compression
 	server.use(koaConnect(compression()));
 
-	router.get('/robots.txt', (ctx) => koaSend(ctx, ctx.path, {
+	router.get('/robots.txt', (ctx: CtxType): any => koaSend(ctx, ctx.path, {
 		maxAge: ONE_YEAR,
 	}));
 
-	router.get('*', async (ctx) => {
+	router.get('*', async (ctx: CtxType) => {
 		await handle(ctx.req, ctx.res);
 		ctx.respond = false;
 	});
 
-	server.use(async (ctx, next) => {
+	server.use(async (ctx: CtxType, next: () => Promise<void>) => {
 		ctx.res.statusCode = 200;
 		await next();
 	});
@@ -45,7 +47,7 @@ app.prepare().then(() => {
 	// Dev server doesn't use any of the greenlock and HTTP2 stuff, so we can
 	// immediately serve the application.
 	if (__DEV__) {
-		return server.listen(PORT, (err) => {
+		return server.listen(PORT, (err: Error) => {
 			if (err) throw err;
 			// eslint-disable-next-line no-console
 			console.log(`> Ready on http://localhost:${PORT}`);
@@ -54,7 +56,7 @@ app.prepare().then(() => {
 
 	// Enable greenlock SSL
 	const gLock = greenlock.create({
-		approveDomains (opts, certs, cb) {
+		approveDomains (opts: any, certs: any, cb: any) {
 			opts.domains = certs && certs.altnames || opts.domains;
 			opts.email = 'ev@haus.gg';
 			opts.agreeTos = true;
@@ -81,11 +83,11 @@ app.prepare().then(() => {
 	});
 
 	// Handle HTTPS connections
-	return http2Server.listen(443, (err) => {
+	return http2Server.listen(443, (err: Error) => {
 		if (err) throw err;
 		// eslint-disable-next-line no-console
 		console.log('Listening for http2 requests on 443');
 	});
-}).catch((err) => {
+}).catch((err: Error) => {
 	throw err;
 });
