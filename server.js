@@ -1,13 +1,14 @@
 /* eslint-disable flowtype/require-valid-file-annotation, import/no-commonjs */
 /* eslint-disable flowtype/require-return-type, flowtype/require-parameter-type */
 
+const compression = require('compression');
 const greenlock = require('greenlock-express');
 const http = require('http');
 const http2 = require('http2');
 const Koa = require('koa');
+const koaConnect = require('koa-connect');
 const koaSend = require('koa-send');
 const next = require('next');
-const path = require('path');
 const redirectHttps = require('redirect-https');
 const Router = require('koa-router');
 
@@ -22,9 +23,11 @@ app.prepare().then(() => {
 	const server = new Koa();
 	const router = new Router();
 
+	// Enable gzip compression
+	server.use(koaConnect(compression()));
+
 	router.get('/robots.txt', (ctx) => koaSend(ctx, ctx.path, {
 		maxAge: ONE_YEAR,
-		root: path.join(__dirname, 'static'),
 	}));
 
 	router.get('*', async (ctx) => {
