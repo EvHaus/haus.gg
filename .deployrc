@@ -7,6 +7,7 @@
 		'package.json',
 		'robots.txt',
 		'server.js',
+		'start.js',
 		'yarn.lock'
 	],
 	target_dir: '/var/www/haus.gg',
