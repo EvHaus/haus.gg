@@ -1,0 +1,7 @@
+{
+  "extends": "stylelint-config-cumul8",
+  "rules": {
+      "color-no-hex": null,
+      "font-weight-notation": null
+  }
+}
