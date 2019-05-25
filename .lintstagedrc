@@ -3,5 +3,9 @@
 		"flow focus-check",
 		"eslint-cumul8 . --fix",
 		"git add"
+	],
+	"package.json": [
+		"prettier-package-json --use-tabs --write ./package.json",
+		"git add"
 	]
 }

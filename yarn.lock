@@ -1354,6 +1354,11 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
+author-regex@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/author-regex/-/author-regex-1.0.0.tgz#d08885be6b9bbf9439fe087c76287245f0a81450"
+  integrity sha1-0IiFvmubv5Q5/gh8dihyRfCoFFA=
+
 autodll-webpack-plugin@0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/autodll-webpack-plugin/-/autodll-webpack-plugin-0.4.2.tgz#36e98fbaf30c235d1d5d076330464ac80901415c"
@@ -2000,7 +2005,7 @@ commander@2.9.0:
   dependencies:
     graceful-readlink ">= 1.0.0"
 
-commander@^2.11.0, commander@^2.14.1, commander@^2.19.0, commander@^2.20.0, commander@^2.9.0:
+commander@^2.11.0, commander@^2.14.1, commander@^2.18.0, commander@^2.19.0, commander@^2.20.0, commander@^2.9.0:
   version "2.20.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
@@ -5368,6 +5373,13 @@ parse-asn1@^5.0.0:
     pbkdf2 "^3.0.3"
     safe-buffer "^5.1.1"
 
+parse-author@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/parse-author/-/parse-author-2.0.0.tgz#d3460bf1ddd0dfaeed42da754242e65fb684a81f"
+  integrity sha1-00YL8d3Q367tQtp1QkLmX7aEqB8=
+  dependencies:
+    author-regex "^1.0.0"
+
 parse-json@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/parse-json/-/parse-json-2.2.0.tgz#f480f40434ef80741f8469099f8dea18f55a4dc9"
@@ -5616,6 +5628,19 @@ prepend-http@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
+
+prettier-package-json@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/prettier-package-json/-/prettier-package-json-2.1.0.tgz#12160af8d24518f74c1f310d950caa467ec530b6"
+  integrity sha512-0AV5tsBPkhljw0pDWQqCZhm+9+cre6QWQfMlOunjjZNN1cotSRQdyBn/koJijnO7VYP4aVEp9tA8RhlBLcOcLA==
+  dependencies:
+    commander "^2.18.0"
+    fs-extra "^7.0.0"
+    glob "^7.1.3"
+    minimatch "^3.0.4"
+    parse-author "^2.0.0"
+    sort-object-keys "^1.1.2"
+    sort-order "^1.0.1"
 
 private@^0.1.6:
   version "0.1.8"
@@ -6430,6 +6455,16 @@ sort-keys@^2.0.0:
   integrity sha1-ZYU1WEhh7JfXMNbPQYIuH1ZoQSg=
   dependencies:
     is-plain-obj "^1.0.0"
+
+sort-object-keys@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/sort-object-keys/-/sort-object-keys-1.1.2.tgz#d3a6c48dc2ac97e6bc94367696e03f6d09d37952"
+  integrity sha1-06bEjcKsl+a8lDZ2luA/bQnTeVI=
+
+sort-order@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/sort-order/-/sort-order-1.0.1.tgz#d822b8cdb90ea6a9df968c4bd45987cf548199e6"
+  integrity sha1-2CK4zbkOpqnfloxL1FmHz1SBmeY=
 
 source-list-map@^2.0.0:
   version "2.0.1"
