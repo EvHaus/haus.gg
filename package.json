@@ -4,7 +4,7 @@
 	"version": "0.8.0",
 	"scripts": {
 		"build": "next build",
-		"deploy": "yarn build && deploy run -v",
+		"deploy": "yarn build && deploy run",
 		"dev": "node start.js",
 		"eslint": "eslint-cumul8 .",
 		"flow": "flow",
