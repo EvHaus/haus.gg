@@ -1,7 +1,7 @@
 {
 	"name": "haus.gg",
 	"license": "MIT",
-	"version": "0.7.0",
+	"version": "0.8.0",
 	"scripts": {
 		"build": "next build",
 		"deploy": "yarn build && deploy run -v",
