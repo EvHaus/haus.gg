@@ -1,14 +1,14 @@
 // @flow
 
 import React, {type Element, memo} from 'react';
-import Email from '../icons/Email';
-import Github from '../icons/Github';
-import Instagram from '../icons/Instagram';
-import LinkedIn from '../icons/LinkedIn';
-import StackOverflow from '../icons/StackOverflow';
+import Email from './icons/Email';
+import Github from './icons/Github';
+import Instagram from './icons/Instagram';
+import LinkedIn from './icons/LinkedIn';
+import StackOverflow from './icons/StackOverflow';
 import styles from './SocialIcon.css';
 import {Tooltip} from 'react-tippy';
-import Twitter from '../icons/Twitter';
+import Twitter from './icons/Twitter';
 
 type ItemType = {|
 	icon: Element<any>,

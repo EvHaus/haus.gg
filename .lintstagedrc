@@ -1,7 +1,7 @@
 {
 	"*.js": [
 		"flow focus-check",
-		"eslint-cumul8 . --fix",
+		"eslint-globex . --fix",
 		"git add"
 	],
 	"*.css": [

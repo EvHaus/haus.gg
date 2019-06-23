@@ -2,6 +2,7 @@
 
 import compression from 'compression';
 import greenlock from 'greenlock-express';
+import greenlockStoreFs from 'greenlock-store-fs';
 import http from 'http';
 // flow-disable-next-line
 import http2 from 'http2';
@@ -34,12 +35,17 @@ app.prepare().then((): any => {
 
 	router.get('*', async (ctx: CtxType) => {
 		await handle(ctx.req, ctx.res);
+
+		// eslint-disable-next-line require-atomic-updates
 		ctx.respond = false;
 	});
 
-	server.use(async (ctx: CtxType, next: () => Promise<void>) => {
+	server.use((
+		ctx: CtxType,
+		next: () => Promise<void>
+	): Promise<void> => {
 		ctx.res.statusCode = 200;
-		await next();
+		return next();
 	});
 
 	server.use(router.routes());
@@ -68,7 +74,7 @@ app.prepare().then((): any => {
 		},
 		configDir: '/tmp/etc/greenlock',
 		server: 'https://acme-v02.api.letsencrypt.org/directory',
-		store: require('greenlock-store-fs'),
+		store: greenlockStoreFs,
 		version: 'draft-11',
 	});
 

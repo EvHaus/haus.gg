@@ -1,5 +1,7 @@
 // @flow
 
+/* eslint-disable react/jsx-props-no-spreading */
+
 import Document, {Head, Main, NextScript} from 'next/document';
 import React, {type Element} from 'react';
 import {type Context} from 'next';

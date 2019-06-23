@@ -7,13 +7,13 @@ import styles from './index.css';
 
 type PropsType = {|
 	// Array of colors for the circle
-	circleColors: Array<string>,
+	+circleColors: Array<string>,
 	// Number of circles in animation
-	circleCount: boolean,
+	+circleCount: boolean,
 	// Opacity of circles in animation
-	circleOpacity: number,
+	+circleOpacity: number,
 	// Speed of animation in ms
-	circleSpeed: number,
+	+circleSpeed: number,
 |};
 
 export default class index extends PureComponent<PropsType> {

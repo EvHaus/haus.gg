@@ -1,5 +1,7 @@
 // @flow
 
+/* eslint-disable react/jsx-props-no-spreading */
+
 import './_app.css';
 import App, {Container} from 'next/app';
 import {DEFAULT_META, SITE_NAME} from '../constants/seo';
