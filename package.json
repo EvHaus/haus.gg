@@ -36,7 +36,7 @@
 		"@babel/preset-flow": "7.0.0",
 		"@babel/register": "7.4.4",
 		"@globexdesigns/deploy": "0.5.2",
-		"eslint-config-globex": "1.0.1",
+		"eslint-config-globex": "1.0.3",
 		"flow-bin": "0.101.1",
 		"flow-typed": "2.5.2",
 		"husky": "2.4.1",

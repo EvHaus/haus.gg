@@ -2886,10 +2886,10 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.4, escape-string-regexp@^
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-globex@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-globex/-/eslint-config-globex-1.0.1.tgz#593c196291c3bfd7fd25ba0258f694354722f040"
-  integrity sha512-jhROdq+bf3TH/LzH5Tx7FFV21fmSI9l+Z4xq6VrnwdRzSeJRHLrYtuyqU7KvNJ5Ag4bmh6ndPn+OEsx8iwMTjQ==
+eslint-config-globex@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-globex/-/eslint-config-globex-1.0.3.tgz#d1447925421ed88301c832c4c85dd6b1e6888009"
+  integrity sha512-8hEzfxccGF5jht7LpcPw5hnl7ZD7Quqeu0jr/c4qV5tT6LCizJPBaEQ+esYOsw1Pca7va05RmrzVoxLebKDqLg==
   dependencies:
     babel-eslint "10.0.2"
     eslint "6.0.0"

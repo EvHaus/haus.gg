@@ -35,8 +35,6 @@ app.prepare().then((): any => {
 
 	router.get('*', async (ctx: CtxType) => {
 		await handle(ctx.req, ctx.res);
-
-		// eslint-disable-next-line require-atomic-updates
 		ctx.respond = false;
 	});
 
