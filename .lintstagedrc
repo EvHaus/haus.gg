@@ -5,7 +5,7 @@
 		"git add"
 	],
 	"*.css": [
-		"stylelint-cumul8 --fix",
+		"stylelint-globex --fix",
 		"git add"
 	],
 	"package.json": [

@@ -11,7 +11,7 @@
 		"flow-typed:update": "rm -rf flow-typed && flow-typed install --ignoreDeps dev",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"start": "NODE_ENV=production node start.js",
-		"stylelint": "stylelint-cumul8 components/**/*.css pages/**/*.css",
+		"stylelint": "stylelint-globex components/**/*.css pages/**/*.css",
 		"test": "yarn flow && yarn eslint && yarn stylelint && yarn packagelint"
 	},
 	"dependencies": {
@@ -42,6 +42,6 @@
 		"husky": "2.4.1",
 		"lint-staged": "8.2.1",
 		"prettier-package-json": "2.1.0",
-		"stylelint-config-cumul8": "2.1.57"
+		"stylelint-config-globex": "1.0.0"
 	}
 }
