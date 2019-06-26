@@ -4,7 +4,7 @@
 	"version": "0.8.0",
 	"scripts": {
 		"build": "next build",
-		"deploy": "yarn build && deploy run",
+		"deploy": "yarn build && rocketry run",
 		"dev": "node start.js",
 		"eslint": "eslint-globex .",
 		"flow": "flow",
@@ -35,13 +35,13 @@
 	"devDependencies": {
 		"@babel/preset-flow": "7.0.0",
 		"@babel/register": "7.4.4",
-		"@globexdesigns/deploy": "0.5.2",
 		"eslint-config-globex": "1.0.3",
-		"flow-bin": "0.101.1",
-		"flow-typed": "2.5.2",
+		"flow-bin": "0.102.0",
+		"flow-typed": "2.5.3",
 		"husky": "2.4.1",
 		"lint-staged": "8.2.1",
 		"prettier-package-json": "2.1.0",
+		"rocketry": "0.6.0",
 		"stylelint-config-globex": "1.0.0"
 	}
 }

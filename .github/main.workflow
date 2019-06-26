@@ -18,5 +18,5 @@ action "Deploy" {
   uses = "Borales/actions-yarn@master"
   needs = ["Test"]
   args = "deploy"
-  secrets = ["DEPLOY_PW"]
+  secrets = ["ROCKETRY_PW"]
 }
