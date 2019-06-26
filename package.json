@@ -37,11 +37,11 @@
 		"@babel/register": "7.4.4",
 		"eslint-config-globex": "1.0.3",
 		"flow-bin": "0.102.0",
-		"flow-typed": "2.5.3",
+		"flow-typed": "2.5.2",
 		"husky": "2.4.1",
 		"lint-staged": "8.2.1",
 		"prettier-package-json": "2.1.0",
-		"rocketry": "0.6.0",
+		"rocketry": "0.5.3",
 		"stylelint-config-globex": "1.0.0"
 	}
 }
