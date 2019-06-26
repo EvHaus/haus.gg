@@ -3365,7 +3365,7 @@ flow-bin@0.102.0:
   resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.102.0.tgz#3d5de44bcc26d26585e932b3201988b766f9b380"
   integrity sha512-mYon6noeLO0Q5SbiWULLQeM1L96iuXnRtYMd47j3bEWXAwUW9EnwNWcn+cZg/jC/Dg4Wj/jnkdTDEuFtbeu1ww==
 
-flow-typed@2.5.3:
+flow-typed@2.5.2:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/flow-typed/-/flow-typed-2.5.2.tgz#967e83c762a1cbfcd52eebaece1ade77944f1714"
   integrity sha512-RrHRmp/Bof1vDG1AqBcwuyxMMoezkl7TxvimA5c6GKZOOb1fkkRZ81S+1qAuvb4rUka5fLlFomKCnpMnCsgP+g==
@@ -6917,9 +6917,9 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     inherits "^2.0.1"
 
 rocketry@0.6.0:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/rocketry/-/rocketry-0.5.3.tgz#679ebafa5a4f5863d85b2f9b519357523ccd10f6"
-  integrity sha512-ZPogTdsQnSZtmMfol7TYIshjnaS7wZRgptPwq8vzRehnMvr3cSplmDnZiMu5ddvnc+Z5+t+h4n4XAE68whr5YQ==
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/rocketry/-/rocketry-0.6.0.tgz#28f9e8833f046b54e1b392b37b28aa010b877d28"
+  integrity sha512-/m0FTvpiFpFAsiOBcdnsXRBQWYlARiZK8wJduRflzvYbbB8jarr/Xa1RtdltF1zn/wQdpu04DD6m+TS2i+CgXA==
   dependencies:
     "@hapi/joi" "^15.1.0"
     archiver "^3.0.0"

@@ -41,7 +41,7 @@
 		"husky": "2.4.1",
 		"lint-staged": "8.2.1",
 		"prettier-package-json": "2.1.0",
-		"rocketry": "0.5.3",
+		"rocketry": "0.6.0",
 		"stylelint-config-globex": "1.0.0"
 	}
 }
