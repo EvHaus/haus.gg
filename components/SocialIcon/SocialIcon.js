@@ -1,4 +1,4 @@
-// @flow
+// @flow strict
 
 import React, {type Element, memo} from 'react';
 import Email from './icons/Email';

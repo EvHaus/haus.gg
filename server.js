@@ -1,4 +1,4 @@
-// @flow
+// @flow strict
 
 import compression from 'compression';
 import greenlock from 'greenlock-express';

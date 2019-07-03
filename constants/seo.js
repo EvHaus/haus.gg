@@ -1,4 +1,4 @@
-// @flow
+// @flow strict
 
 export const SITE_AUTHOR = 'Ev Haus';
 

@@ -1,4 +1,4 @@
-// @flow
+// @flow strict
 
 import React, {type Element, PureComponent} from 'react';
 import Button from '../components/Button';

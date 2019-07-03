@@ -17,7 +17,7 @@
 	"dependencies": {
 		"@zeit/next-css": "1.0.1",
 		"compression": "expressjs/compression#pull/155/head",
-		"greenlock-express": "2.7.9",
+		"greenlock-express": "2.7.10",
 		"greenlock-store-fs": "3.0.2",
 		"koa": "2.7.0",
 		"koa-compress": "3.0.0",
@@ -35,11 +35,11 @@
 	"devDependencies": {
 		"@babel/preset-flow": "7.0.0",
 		"@babel/register": "7.4.4",
-		"eslint-config-globex": "1.0.3",
+		"eslint-config-globex": "2.0.0",
 		"flow-bin": "0.102.0",
 		"flow-typed": "2.5.2",
-		"husky": "2.4.1",
-		"lint-staged": "8.2.1",
+		"husky": "3.0.0",
+		"lint-staged": "9.0.1",
 		"prettier-package-json": "2.1.0",
 		"rocketry": "0.6.0",
 		"stylelint-config-globex": "1.0.0"

@@ -1,4 +1,4 @@
-// @flow
+// @flow strict
 
 import SocialIcon from './SocialIcon';
 
