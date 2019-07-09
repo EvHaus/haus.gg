@@ -2936,10 +2936,10 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-globex@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-globex/-/eslint-config-globex-2.0.0.tgz#7dd54315ea0b07138de0a4224e5a24847c6d1c41"
-  integrity sha512-4HivFde9HzYEX9bh8S8I9o5shUGMdH3jDrRdIlsMib3MPV+5HzUMuIKvN8vHKIz6KwTxX4MTJNj3nYuT0QSjcw==
+eslint-config-globex@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-globex/-/eslint-config-globex-2.0.1.tgz#f404d47c51e7aa0e27ae671163893bbfb218f1cc"
+  integrity sha512-Q9fcoBSf0rlMydyxOHqKTJ4Ool2mG0UUZzFUWIPphYS+ZldmogUIkoc9qtJFf4A7UKRmNR/uZ+0yVvRg+EzGPg==
   dependencies:
     babel-eslint "10.0.2"
     eslint "6.0.1"
@@ -7002,10 +7002,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rocketry@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/rocketry/-/rocketry-0.6.0.tgz#28f9e8833f046b54e1b392b37b28aa010b877d28"
-  integrity sha512-/m0FTvpiFpFAsiOBcdnsXRBQWYlARiZK8wJduRflzvYbbB8jarr/Xa1RtdltF1zn/wQdpu04DD6m+TS2i+CgXA==
+rocketry@0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/rocketry/-/rocketry-0.6.2.tgz#262cef206ed075625647fb753eda0c80fef2c289"
+  integrity sha512-1WII9poP4l+QCIahDcDmRHiENZ99MPfdkALiJ+lKSpiupm67Xtd8wLkK7hS3Lf+UkCzJ/b59OWSMbkLuAaVA4g==
   dependencies:
     "@hapi/joi" "^15.1.0"
     archiver "^3.0.0"
