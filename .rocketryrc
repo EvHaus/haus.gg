@@ -1,6 +1,5 @@
 {
 	host: '138.68.241.10',
-	private_key_path: '/home/globex/.ssh/id_rsa',
 	sources: [
 		'.babelrc',
 		'.next',
@@ -11,6 +10,5 @@
 		'start.js',
 		'yarn.lock'
 	],
-	target_dir: '/var/www/haus.gg',
-	user: 'root',
+	target_dir: '/var/www/haus.gg'
 }
