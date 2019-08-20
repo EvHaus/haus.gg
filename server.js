@@ -1,5 +1,7 @@
 // @flow strict
 
+/* eslint-disable no-console */
+
 import compression from 'compression';
 import greenlock from 'greenlock-express';
 import greenlockStoreFs from 'greenlock-store-fs';
@@ -53,43 +55,36 @@ app.prepare().then((): any => {
 	if (__DEV__) {
 		return server.listen(PORT, (err: Error) => {
 			if (err) throw err;
-			// eslint-disable-next-line no-console
 			console.log(`> Ready on http://localhost:${PORT}`);
 		});
 	}
 
 	// Enable greenlock SSL
 	const gLock = greenlock.create({
-		approveDomains (opts: any, certs: any, cb: any) {
-			opts.domains = certs && certs.altnames || opts.domains;
-			opts.email = 'ev@haus.gg';
-			opts.agreeTos = true;
-
-			cb(null, {
-				certs,
-				options: opts,
-			});
-		},
+		agreeTos: true,
+		approveDomains: ['haus.gg', 'www.haus.gg'],
 		configDir: '/tmp/etc/greenlock',
+		email: 'ev@haus.gg',
 		server: 'https://acme-v02.api.letsencrypt.org/directory',
 		store: greenlockStoreFs,
 		version: 'draft-11',
 	});
 
 	// Handle HTTPS connections with HTTP/2
-	const http2Server = http2.createSecureServer(gLock.tlsOptions, server.callback());
+	const http2Server = http2.createSecureServer({
+		...gLock.tlsOptions,
+		allowHTTP1: true,
+	}, server.callback());
 
 	// Handle HTTP connnections
 	const acmeChallengeHandler = gLock.middleware(redirectHttps());
 	http.createServer(acmeChallengeHandler).listen(80, () => {
-		// eslint-disable-next-line no-console
 		console.log('Listening for ACME http-01 challenges on 80');
 	});
 
 	// Handle HTTPS connections
 	return http2Server.listen(443, (err: Error) => {
 		if (err) throw err;
-		// eslint-disable-next-line no-console
 		console.log('Listening for http2 requests on 443');
 	});
 }).catch((err: Error) => {
