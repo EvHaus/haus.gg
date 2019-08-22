@@ -1,0 +1,24 @@
+name: Build, Test & Deploy
+
+on: push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: Test
+      run: |
+        yarn install --pure-lockfile
+        yarn test
+    - name: Deploy
+      env:
+        ROCKETRY_PW: ${{ secrets.ROCKETRY_PW }}
+      run: |
+        yarn deploy
