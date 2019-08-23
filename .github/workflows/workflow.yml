@@ -1,4 +1,4 @@
-name: Test
+name: Test & Deploy
 
 on: [push, pull_request]
 
@@ -15,10 +15,6 @@ jobs:
       run: |
         yarn install --pure-lockfile
         yarn test
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
     - name: Deploy
       if: github.event_name == 'push' && github.ref == 'refs/heads/master'
       env:
