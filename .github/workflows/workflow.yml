@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Deploy
-      if: github.event_name == pull && github.ref == refs/heads/master
+      if: github.event_name == 'pull'
       env:
         ROCKETRY_PW: ${{ secrets.ROCKETRY_PW }}
       run: |
