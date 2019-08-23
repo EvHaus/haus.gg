@@ -19,12 +19,8 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-    - name: Dump github context
-      env:
-        JOB_CONTEXT: ${{ toJson(github) }}
-      run: echo "$JOB_CONTEXT"
     - name: Deploy
-      if: github.event_name == 'pull' && github.branch == 'master'
+      if: github.event_name == 'pull' && github.ref == 'refs/heads/master'
       env:
         ROCKETRY_PW: ${{ secrets.ROCKETRY_PW }}
       run: |
