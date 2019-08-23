@@ -1,5 +1,7 @@
 # haus.gg
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/EvHaus/haus.gg.svg)](https://greenkeeper.io/)
+
 > This is my personal site
 
 - Built with `nextjs`
