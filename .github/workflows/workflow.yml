@@ -15,3 +15,13 @@ jobs:
       run: |
         yarn install --pure-lockfile
         yarn test
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull' && github.branch == 'master'
+    steps:
+    - name: Deploy
+      env:
+        ROCKETRY_PW: ${{ secrets.ROCKETRY_PW }}
+      run: |
+        yarn deploy
