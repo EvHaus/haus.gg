@@ -44,7 +44,9 @@ export default class index extends PureComponent<PropsType> {
  \\___| \\_/   |_| |_|\\__,_|\\__,_|___/
 
 If this code works - I wrote it.
-Otherwise, I don't know where it came from.`);
+Otherwise, I don't know where it came from.
+Oh dear. We've been hacked.
+`);
 		el.prepend(c);
 	}
 
