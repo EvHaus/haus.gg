@@ -16,7 +16,6 @@ jobs:
         yarn install --pure-lockfile
         yarn test
     - name: Deploy
-      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
       env:
         ROCKETRY_PW: ${{ secrets.ROCKETRY_PW }}
       run: |
