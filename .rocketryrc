@@ -5,6 +5,7 @@
 		'.next',
 		'static',
 		'package.json',
+		'pages',
 		'robots.txt',
 		'server.js',
 		'start.js',
