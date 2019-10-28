@@ -19,7 +19,7 @@
 		"compression": "expressjs/compression#pull/155/head",
 		"greenlock-express": "2.7.18",
 		"greenlock-store-fs": "3.0.2",
-		"koa": "2.10.0",
+		"koa": "2.11.0",
 		"koa-compress": "3.0.0",
 		"koa-connect": "2.0.1",
 		"koa-router": "7.4.0",
