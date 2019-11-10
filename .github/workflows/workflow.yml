@@ -21,6 +21,10 @@ jobs:
         ROCKETRY_PW: ${{ secrets.ROCKETRY_PW }}
       run: |
         yarn deploy
+    - name: Wait for server restart (5 seconds)
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '5s'
     - name: Verify
       uses: wei/curl@master
       with:
