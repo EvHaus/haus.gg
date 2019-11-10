@@ -21,3 +21,7 @@ jobs:
         ROCKETRY_PW: ${{ secrets.ROCKETRY_PW }}
       run: |
         yarn deploy
+    - name: Verify
+      uses: wei/curl@master
+      with:
+        args: https://www.haus.gg
