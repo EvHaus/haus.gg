@@ -36,7 +36,7 @@
 		"@babel/preset-flow": "7.7.4",
 		"@babel/register": "7.7.7",
 		"eslint-config-globex": "2.7.1",
-		"flow-bin": "0.114.0",
+		"flow-bin": "0.115.0",
 		"flow-typed": "2.6.2",
 		"husky": "3.1.0",
 		"lint-staged": "9.5.0",
