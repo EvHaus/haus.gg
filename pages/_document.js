@@ -21,6 +21,8 @@ export default class _document extends Document {
 			.filter((el: string): boolean => el !== 'htmlAttributes' && el !== 'bodyAttributes')
 			.map((el: string): Element<any> => helmet[el].toComponent());
 
+		// That script tag on the end -- that's a fix for crazy FOUC bug in Chrome
+		// See https://stackoverflow.com/questions/14389566
 		return (
 			// eslint-disable-next-line jsx-a11y/html-has-lang
 			<html {...htmlArgs}>
@@ -32,6 +34,7 @@ export default class _document extends Document {
 				<body {...bodyArgs}>
 					<Main />
 					<NextScript />
+					<script> </script>
 				</body>
 			</html>
 		);
