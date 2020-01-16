@@ -3,7 +3,7 @@
 	sources: [
 		'.babelrc',
 		'.next',
-		'static',
+		'public',
 		'package.json',
 		'pages',
 		'robots.txt',
