@@ -30,13 +30,13 @@ export default class _document extends Document {
 					{headElements}
 					<link
 						as='font'
-						crossOrigin={true}
+						crossOrigin='anonymous'
 						href='/fonts/montserrat-v14-latin-200.woff2'
 						rel='preload'
 						type='font/woff2' />
 					<link
 						as='font'
-						crossOrigin={true}
+						crossOrigin='anonymous'
 						href='/fonts/montserrat-v14-latin-regular.woff2'
 						rel='preload'
 						type='font/woff2' />

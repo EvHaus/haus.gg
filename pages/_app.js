@@ -3,6 +3,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 
 import './_app.css';
+import 'tippy.js/dist/tippy.css';
 import {DEFAULT_META, SITE_NAME} from '../constants/seo';
 import {initGA, logPageView} from '../utils/analytics';
 import React, {type Element, Fragment} from 'react';

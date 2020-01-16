@@ -45,13 +45,18 @@ body {
 	width: 100%;
 }
 
-/* Override for react-tippy styling */
-.tippy-tooltip-content {
-	background: rgba(0, 0, 0, 0.6);
+/* Theme for `@tippy.js/react` */
+.tippy-tooltip.haus-theme {
+	--TOOLTIP_BG: rgba(0, 0, 0, 0.6);
+	background: var(--TOOLTIP_BG);
 	border-radius: 4px;
 	color: #7D86BE;
 	font-size: 11px;
-	margin-top: 8px;
-	padding: 4px 8px;
+	line-height: inherit;
 	text-transform: uppercase;
+}
+
+/* stylelint-disable-next-line selector-max-combinators, selector-max-attribute */
+.tippy-tooltip.haus-theme[data-placement^="bottom"] > .tippy-arrow {
+	border-bottom-color: var(--TOOLTIP_BG);
 }

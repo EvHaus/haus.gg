@@ -8,7 +8,7 @@ import LinkedIn from './icons/LinkedIn';
 import Medium from './icons/Medium';
 import StackOverflow from './icons/StackOverflow';
 import styles from './SocialIcon.module.css';
-import {Tooltip} from 'react-tippy';
+import Tippy from '@tippy.js/react';
 import Twitter from './icons/Twitter';
 
 type ItemType = {|
@@ -72,13 +72,14 @@ const getItem = (type: TypeType): ItemType => {
 
 export const SocialIcon = ({
 	type,
-}: PropsType): Element<typeof Tooltip> => {
+}: PropsType): Element<typeof Tippy> => {
 	const item = getItem(type);
 	return (
-		<Tooltip
-			className={styles.wrapper}
-			position='bottom'
-			title={item.tooltip}>
+		<Tippy
+			content={item.tooltip}
+			distance={0}
+			placement='bottom'
+			theme='haus'>
 			<a
 				className={styles.main}
 				href={item.url}
@@ -86,7 +87,7 @@ export const SocialIcon = ({
 				target='_blank'>
 				{item.icon}
 			</a>
-		</Tooltip>
+		</Tippy>
 	);
 };
 

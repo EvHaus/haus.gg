@@ -7,6 +7,7 @@
 	font-size: 14px;
 	font-weight: 100;
 	margin: auto;
+	outline: none;
 	padding: 8px 60px;
 	pointer-events: all;
 	text-transform: uppercase;
