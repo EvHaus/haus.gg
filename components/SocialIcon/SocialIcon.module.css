@@ -1,0 +1,10 @@
+/* stylelint-disable-next-line selector-max-combinators */
+.wrapper + .wrapper { margin-left: 16px }
+
+.main {
+	color: #4D568E;
+	pointer-events: all;
+	transition: 250ms ease color;
+}
+
+.main:hover { color: #FFF }

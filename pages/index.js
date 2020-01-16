@@ -3,7 +3,7 @@
 import React, {type Element, PureComponent} from 'react';
 import Button from '../components/Button';
 import SocialIcon from '../components/SocialIcon';
-import styles from './index.css';
+import styles from './index.module.css';
 
 type PropsType = {|
 	// Array of colors for the circle
@@ -88,13 +88,14 @@ Otherwise, I don't know where it came from.`);
 					})}
 				</div>
 				<div className={styles.resume}>
-					<Button label='My Resume' link='/static/resume-ev-haus.pdf' />
+					<Button label='My Resume' link='/resume-ev-haus.pdf' />
 				</div>
 				<div className={styles.icons}>
 					<SocialIcon type='linkedin' />
 					<SocialIcon type='twitter' />
 					<SocialIcon type='instagram' />
 					<SocialIcon type='github' />
+					<SocialIcon type='medium' />
 					<SocialIcon type='stackoverflow' />
 					<SocialIcon type='email' />
 				</div>

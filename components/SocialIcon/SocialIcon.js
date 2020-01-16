@@ -5,8 +5,9 @@ import Email from './icons/Email';
 import Github from './icons/Github';
 import Instagram from './icons/Instagram';
 import LinkedIn from './icons/LinkedIn';
+import Medium from './icons/Medium';
 import StackOverflow from './icons/StackOverflow';
-import styles from './SocialIcon.css';
+import styles from './SocialIcon.module.css';
 import {Tooltip} from 'react-tippy';
 import Twitter from './icons/Twitter';
 
@@ -17,7 +18,7 @@ type ItemType = {|
 |};
 
 type TypeType = (
-	'email' | 'github' | 'instagram' | 'linkedin' | 'stackoverflow' | 'twitter'
+	'email' | 'github' | 'instagram' | 'linkedin' | 'medium' | 'stackoverflow' | 'twitter'
 );
 
 type PropsType = {|
@@ -45,6 +46,11 @@ const getItem = (type: TypeType): ItemType => {
 			icon: <LinkedIn />,
 			tooltip: 'LinkedIn',
 			url: 'https://www.linkedin.com/in/evhaus',
+		};
+		case 'medium': return {
+			icon: <Medium />,
+			tooltip: 'Medium',
+			url: 'https://medium.com/@EvHaus',
 		};
 		case 'stackoverflow': return {
 			icon: <StackOverflow />,

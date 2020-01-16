@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {type Element, memo} from 'react';
+import React, {type Element} from 'react';
 
 export const StackOverflow = (): Element<'svg'> => (
 	<svg height='24' viewBox='0 0 120 120' width='24' xmlns='http://www.w3.org/2000/svg'>
@@ -11,4 +11,4 @@ export const StackOverflow = (): Element<'svg'> => (
 
 StackOverflow.displayName = 'StackOverflow';
 
-export default memo<{||}>(StackOverflow);
+export default StackOverflow;

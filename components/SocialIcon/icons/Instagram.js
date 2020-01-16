@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {type Element, memo} from 'react';
+import React, {type Element} from 'react';
 
 export const Instagram = (): Element<'svg'> => (
 	<svg height='24' viewBox='0 0 448 512' width='24' xmlns='http://www.w3.org/2000/svg'>
@@ -10,4 +10,4 @@ export const Instagram = (): Element<'svg'> => (
 
 Instagram.displayName = 'Instagram';
 
-export default memo<{||}>(Instagram);
+export default Instagram;

@@ -29,7 +29,7 @@ export default class _document extends Document {
 				<Head>
 					{headElements}
 					<link href='https://fonts.googleapis.com/css?family=Montserrat:200,400' rel='stylesheet' />
-					<link href='/static/favicon.ico' rel='icon' type='image/x-icon' />
+					<link href='/favicon.ico' rel='icon' type='image/x-icon' />
 				</Head>
 				<body {...bodyArgs}>
 					<Main />

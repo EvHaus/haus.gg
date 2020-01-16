@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {type Element, memo} from 'react';
+import React, {type Element} from 'react';
 
 export const Github = (): Element<'svg'> => (
 	<svg height='24' viewBox='0 0 496 512' width='24' xmlns='http://www.w3.org/2000/svg'>
@@ -10,4 +10,4 @@ export const Github = (): Element<'svg'> => (
 
 Github.displayName = 'Github';
 
-export default memo<{||}>(Github);
+export default Github;

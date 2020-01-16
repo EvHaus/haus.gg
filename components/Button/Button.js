@@ -1,7 +1,7 @@
 // @flow strict
 
 import React, {type Element, memo, useCallback} from 'react';
-import styles from './Button.css';
+import styles from './Button.module.css';
 
 type PropsType = {|
 	label: string,
