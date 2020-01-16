@@ -28,7 +28,18 @@ export default class _document extends Document {
 			<html {...htmlArgs}>
 				<Head>
 					{headElements}
-					<link href='https://fonts.googleapis.com/css?family=Montserrat:200,400' rel='stylesheet' />
+					<link
+						as='font'
+						crossOrigin={true}
+						href='/fonts/muli-v12-latin-regular.woff2'
+						rel='preload'
+						type='font/woff2' />
+					<link
+						as='font'
+						crossOrigin={true}
+						href='/fonts/muli-v12-latin-700.woff2'
+						rel='preload'
+						type='font/woff2' />
 					<link href='/favicon.ico' rel='icon' type='image/x-icon' />
 				</Head>
 				<body {...bodyArgs}>
