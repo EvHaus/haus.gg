@@ -66,10 +66,10 @@ Otherwise, I don't know where it came from.`);
 
 		return (
 			<div className={styles.view}>
-				<div className={styles.logo}>
+				<h1 className={styles.logo}>
 					<span className={styles.logoEv}>EV</span>
 					<span className={styles.logoHaus}>HAUS</span>
-				</div>
+				</h1>
 				<div className={styles.orb} style={orbStyle}>
 					{Array(...Array(circleCount)).map((
 						v: void,
