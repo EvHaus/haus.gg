@@ -13,7 +13,7 @@ import Twitter from './icons/Twitter';
 
 type ItemType = {|
 	icon: Element<any>,
-	tooltip: string,
+	name: string,
 	url: string,
 |};
 
@@ -29,42 +29,42 @@ const getItem = (type: TypeType): ItemType => {
 	switch (type) {
 		case 'email': return {
 			icon: <Email />,
-			tooltip: 'Email',
+			name: 'Email',
 			url: 'mailto:ev@haus.gg',
 		};
 		case 'github': return {
 			icon: <Github />,
-			tooltip: 'Github',
+			name: 'Github',
 			url: 'https://github.com/EvHaus',
 		};
 		case 'instagram': return {
 			icon: <Instagram />,
-			tooltip: 'Instagram',
+			name: 'Instagram',
 			url: 'https://www.instagram.com/haus.gg',
 		};
 		case 'linkedin': return {
 			icon: <LinkedIn />,
-			tooltip: 'LinkedIn',
+			name: 'LinkedIn',
 			url: 'https://www.linkedin.com/in/evhaus',
 		};
 		case 'medium': return {
 			icon: <Medium />,
-			tooltip: 'Medium',
+			name: 'Medium',
 			url: 'https://medium.com/@EvHaus',
 		};
 		case 'stackoverflow': return {
 			icon: <StackOverflow />,
-			tooltip: 'Stack Overflow',
+			name: 'Stack Overflow',
 			url: 'https://stackoverflow.com/users/1330283/ev-haus',
 		};
 		case 'twitter': return {
 			icon: <Twitter />,
-			tooltip: 'Twitter',
+			name: 'Twitter',
 			url: 'https://twitter.com/EvHaus',
 		};
 		default: return {
 			icon: <span />,
-			tooltip: '',
+			name: '',
 			url: '#',
 		};
 	}
@@ -76,17 +76,17 @@ export const SocialIcon = ({
 	const item = getItem(type);
 	return (
 		<Tippy
-			content={item.tooltip}
+			content={item.name}
 			distance={0}
 			placement='bottom'
 			theme='haus'>
 			<a
+				aria-label={item.name}
 				className={styles.main}
 				href={item.url}
 				rel='noopener noreferrer'
 				target='_blank'>
 				{item.icon}
-				<span className={styles.hidden}>{item.tooltip}</span>
 			</a>
 		</Tippy>
 	);
