@@ -86,6 +86,7 @@ export const SocialIcon = ({
 				rel='noopener noreferrer'
 				target='_blank'>
 				{item.icon}
+				<span className={styles.hidden}>{item.tooltip}</span>
 			</a>
 		</Tippy>
 	);
