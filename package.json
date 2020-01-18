@@ -5,42 +5,31 @@
 	"scripts": {
 		"build": "next build",
 		"deploy": "yarn build && rocketry run",
-		"dev": "node start.js",
+		"dev": "next",
 		"eslint": "eslint-globex .",
 		"flow": "flow",
 		"flow-typed:update": "rm -rf flow-typed && flow-typed install --ignoreDeps dev",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
-		"start": "NODE_ENV=production node start.js",
+		"start": "next start",
 		"stylelint": "stylelint-globex components/**/*.css pages/**/*.css",
 		"test": "yarn flow && yarn eslint && yarn stylelint && yarn packagelint"
 	},
 	"dependencies": {
 		"@tippy.js/react": "3.1.1",
-		"compression": "expressjs/compression#pull/155/head",
-		"greenlock-express": "2.7.18",
-		"greenlock-store-fs": "3.0.2",
-		"koa": "2.11.0",
-		"koa-compress": "3.0.0",
-		"koa-connect": "2.0.1",
-		"koa-router": "7.4.0",
-		"koa-send": "5.0.0",
 		"next": "9.2.0",
 		"react": "16.12.0",
 		"react-dom": "16.12.0",
 		"react-ga": "2.7.0",
-		"react-helmet": "6.0.0-beta",
-		"redirect-https": "1.3.0"
+		"react-helmet": "6.0.0-beta"
 	},
 	"devDependencies": {
 		"@babel/preset-flow": "7.8.3",
-		"@babel/register": "7.8.3",
 		"eslint-config-globex": "2.7.1",
 		"flow-bin": "0.116.1",
 		"flow-typed": "2.6.2",
 		"husky": "4.0.10",
 		"lint-staged": "9.5.0",
 		"prettier-package-json": "2.1.3",
-		"rocketry": "0.7.2",
 		"stylelint-config-globex": "1.1.3"
 	}
 }
