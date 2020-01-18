@@ -15,7 +15,7 @@ export default class _app extends App {
 	componentDidMount () {
 		initGA();
 		logPageView();
-		Router.router.events.on('routeChangeComplete', logPageView);
+		Router.events.on('routeChangeComplete', logPageView);
 	}
 
 	render (): Element<typeof Fragment> {

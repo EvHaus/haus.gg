@@ -2,15 +2,14 @@
 
 /* eslint-disable react/jsx-props-no-spreading */
 
-import Document, {Head, Main, NextScript} from 'next/document';
+import Document, {type DocumentContext, Head, Main, NextScript} from 'next/document';
 import React, {type Element} from 'react';
-import {type Context} from 'next';
 import {Helmet} from 'react-helmet';
 
 export default class _document extends Document {
-	static async getInitialProps (...args: Context): Promise<any> {
-		const documentProps = await super.getInitialProps(...args);
-		return {...documentProps, helmet: Helmet.renderStatic()};
+	static async getInitialProps (ctx: DocumentContext): Promise<any> {
+		const initialProps = await Document.getInitialProps(ctx);
+		return {...initialProps, helmet: Helmet.renderStatic()};
 	}
 
 	render (): Element<'html'> {
