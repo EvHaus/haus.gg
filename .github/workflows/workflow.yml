@@ -1,4 +1,4 @@
-name: Test & Deploy
+name: Test
 
 on: push
 
@@ -15,17 +15,3 @@ jobs:
       run: |
         yarn install --pure-lockfile
         yarn test
-    - name: Deploy
-      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-      env:
-        ROCKETRY_PW: ${{ secrets.ROCKETRY_PW }}
-      run: |
-        yarn deploy
-    - name: Wait for server restart (10 seconds)
-      uses: jakejarvis/wait-action@master
-      with:
-        time: '10s'
-    - name: Verify
-      uses: wei/curl@master
-      with:
-        args: https://www.haus.gg
