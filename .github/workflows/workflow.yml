@@ -19,7 +19,7 @@ jobs:
       env:
         BUILD_ID: ${{ github.sha }}
         ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
-      run: |
+      run: >
         now deploy
         --local-config=./now.json
         --build-env NODE_ENV=production
