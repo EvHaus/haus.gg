@@ -1,15 +1,12 @@
 {
 	"*.js": [
 		"flow focus-check",
-		"eslint-globex . --fix",
-		"git add"
+		"eslint-globex . --fix"
 	],
 	"*.css": [
-		"stylelint-globex --fix",
-		"git add"
+		"stylelint-globex --fix"
 	],
 	"package.json": [
-		"prettier-package-json --use-tabs --write ./package.json",
-		"git add"
+		"prettier-package-json --use-tabs --write ./package.json"
 	]
 }
