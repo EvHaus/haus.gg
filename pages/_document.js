@@ -40,6 +40,7 @@ export default class _document extends Document {
 						rel='preload'
 						type='font/woff2' />
 					<link href='/favicon.ico' rel='icon' type='image/x-icon' />
+					<link href='https://www.google-analytics.com' rel='preconnect' />
 				</Head>
 				<body {...bodyArgs}>
 					<Main />
