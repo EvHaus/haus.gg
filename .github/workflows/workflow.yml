@@ -23,6 +23,7 @@ jobs:
         now
         --prod
         --build-env BUILD_ID=${BUILD_ID}
+        --confirm
         --env NODE_ENV=production
         --public
         --no-clipboard
