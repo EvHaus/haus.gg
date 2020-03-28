@@ -3,10 +3,10 @@
 import React, {type Element, memo, useCallback} from 'react';
 import styles from './Button.module.css';
 
-type PropsType = {|
+type PropsType = {
 	label: string,
 	link: string,
-|};
+};
 
 export const Button = ({
 	label,

@@ -11,19 +11,19 @@ import styles from './SocialIcon.module.css';
 import Tippy from '@tippy.js/react';
 import Twitter from './icons/Twitter';
 
-type ItemType = {|
+type ItemType = {
 	icon: Element<any>,
 	name: string,
 	url: string,
-|};
+};
 
 type TypeType = (
 	'email' | 'github' | 'instagram' | 'linkedin' | 'medium' | 'stackoverflow' | 'twitter'
 );
 
-type PropsType = {|
+type PropsType = {
 	type: TypeType,
-|};
+};
 
 const getItem = (type: TypeType): ItemType => {
 	switch (type) {
