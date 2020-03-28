@@ -1,5 +1,11 @@
 {
-    "extends": "eslint-config-globex",
+    "extends": [
+      "eslint-config-globex",
+      "eslint-config-globex/rules/flowtype",
+      "eslint-config-globex/rules/jasmine",
+      "eslint-config-globex/rules/jest",
+      "eslint-config-globex/rules/react"
+    ],
     "rules": {
         "flowtype/no-unused-expressions": "off",
         "jsx-a11y/html-has-lang": "off",
