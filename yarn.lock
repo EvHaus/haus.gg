@@ -3373,10 +3373,10 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-globex@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-globex/-/eslint-config-globex-3.1.0.tgz#011f6a1effdd453e9d1f0f198822076d209cd702"
-  integrity sha512-YlKreP7jwYNK3JG6VKzHiwtNl3SwPl8AQCRYKuIZVPF2fzbGcOfoD3m5M2DLkBs5blP2WP6OGNRDNuCeGAnz7Q==
+eslint-config-globex@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-globex/-/eslint-config-globex-3.1.1.tgz#13beef74d785d5f0d883f4c095cc78b9e5e1327c"
+  integrity sha512-gAh6p+IDxgdQ1B2GB3RX25REb4CC34mzcOxM2IKFpun3oEcogeKdK6OvhuTq1b2CzEzSzSHJp+aMJ66hdS/7Sw==
   dependencies:
     babel-eslint "10.1.0"
     eslint "7.0.0"
