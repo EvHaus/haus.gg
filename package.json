@@ -19,7 +19,7 @@
 		"react": "16.13.1",
 		"react-dom": "16.13.1",
 		"react-ga": "3.0.0",
-		"react-helmet": "6.0.0"
+		"react-helmet": "6.1.0"
 	},
 	"devDependencies": {
 		"@babel/preset-flow": "7.10.1",
