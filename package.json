@@ -25,7 +25,7 @@
 		"@babel/preset-flow": "7.10.4",
 		"eslint-config-globex": "3.3.0",
 		"flow-bin": "0.129.0",
-		"flow-typed": "3.1.0",
+		"flow-typed": "3.2.0",
 		"husky": "4.2.5",
 		"lint-staged": "10.2.11",
 		"prettier-package-json": "2.1.3",
