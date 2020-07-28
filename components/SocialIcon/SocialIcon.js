@@ -8,7 +8,7 @@ import LinkedIn from './icons/LinkedIn';
 import Medium from './icons/Medium';
 import StackOverflow from './icons/StackOverflow';
 import styles from './SocialIcon.module.css';
-import Tippy from '@tippy.js/react';
+import Tippy from '@tippyjs/react';
 import Twitter from './icons/Twitter';
 
 type ItemType = {
@@ -76,10 +76,10 @@ export const SocialIcon = ({
 	const item = getItem(type);
 	return (
 		<Tippy
+			className={styles.tippy}
 			content={item.name}
-			distance={0}
-			placement='bottom'
-			theme='haus'>
+			offset={[0, 0]}
+			placement='bottom'>
 			<a
 				aria-label={item.name}
 				className={styles.main}
