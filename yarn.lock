@@ -7158,10 +7158,10 @@ styled-jsx@3.3.0:
     stylis "3.5.4"
     stylis-rule-sheet "0.0.10"
 
-stylelint-config-globex@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-globex/-/stylelint-config-globex-2.0.0.tgz#3a3766016f1d0963b12004194d3f31d2dc14b743"
-  integrity sha512-A/hBNW79YUjlce0DqENl48ITYoU2rF4wB+/qLgM6lIv7KwbF5xB/YebtC0v8iWSYFZnyX3bK8OToUO3K4perzg==
+stylelint-config-globex@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-globex/-/stylelint-config-globex-2.1.0.tgz#2a33234133fbfe74df1601b0cf3d25c7ff4d7601"
+  integrity sha512-/pz9S99GZhbsd/L+Lj/EofQereWEDaootkxqx35hdiUWQYCFyqx2pkQ1DG+jB8flEMdlzIQBtMfScAJ+J+6d5w==
   dependencies:
     stylelint "13.7.0"
     stylelint-order "4.1.0"
