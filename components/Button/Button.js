@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {type Element, memo, useCallback} from 'react';
+import React, {type Element, useCallback} from 'react';
 import styles from './Button.module.css';
 
 type PropsType = {
@@ -23,6 +23,4 @@ export const Button = ({
 	);
 };
 
-Button.displayName = 'Button';
-
-export default memo<PropsType>(Button);
+export default Button;

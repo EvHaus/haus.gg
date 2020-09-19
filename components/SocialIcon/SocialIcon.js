@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {type Element, memo} from 'react';
+import React, {type Element} from 'react';
 import Email from './icons/Email';
 import Github from './icons/Github';
 import Instagram from './icons/Instagram';
@@ -92,6 +92,4 @@ export const SocialIcon = ({
 	);
 };
 
-SocialIcon.displayName = 'SocialIcon';
-
-export default memo<PropsType>(SocialIcon);
+export default SocialIcon;
