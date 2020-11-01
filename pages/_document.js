@@ -12,7 +12,7 @@ export default class _document extends Document {
 		return {...initialProps, helmet: Helmet.renderStatic()};
 	}
 
-	render (): Element<'html'> {
+	render (): Element<typeof Html> {
 		const {helmet} = this.props;
 		const htmlArgs = helmet.htmlAttributes.toComponent();
 		const bodyArgs = helmet.bodyAttributes.toComponent();
