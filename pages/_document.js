@@ -2,13 +2,12 @@
 
 /* eslint-disable react/jsx-props-no-spreading */
 
-// $FlowExpectedError[missing-export]
-import Document, {type DocumentContext, Head, Html, Main, NextScript} from 'next/document';
+import Document, {Head, Html, Main, NextScript} from 'next/document';
 import React, {type Element} from 'react';
 import {Helmet} from 'react-helmet';
 
 export default class _document extends Document {
-	static async getInitialProps (ctx: DocumentContext): Promise<any> {
+	static async getInitialProps (ctx: any): Promise<any> {
 		const initialProps = await Document.getInitialProps(ctx);
 		return {...initialProps, helmet: Helmet.renderStatic()};
 	}

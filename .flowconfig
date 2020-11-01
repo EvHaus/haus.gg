@@ -1,3 +1,8 @@
+[ignore]
+
+# See https://github.com/joarwilk/flowgen/issues/119
+.*/node_modules/flowgen/index.js.flow
+
 [include]
 
 components

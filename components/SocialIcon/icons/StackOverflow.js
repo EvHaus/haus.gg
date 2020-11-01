@@ -9,6 +9,4 @@ export const StackOverflow = (): Element<'svg'> => (
 	</svg>
 );
 
-StackOverflow.displayName = 'StackOverflow';
-
 export default StackOverflow;

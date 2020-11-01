@@ -8,6 +8,4 @@ export const LinkedIn = (): Element<'svg'> => (
 	</svg>
 );
 
-LinkedIn.displayName = 'LinkedIn';
-
 export default LinkedIn;

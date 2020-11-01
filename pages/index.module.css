@@ -23,8 +23,15 @@
 	pointer-events: none;
 	position: absolute;
 	right: 0;
-	/* stylelint-disable-next-line max-line-length */
-	text-shadow: 0 0 5px var(--glow), 0 0 10px var(--glow), 0 0 20px var(--glow), 0 0 40px var(--glow), 0 0 70px var(--glow2), 0 0 80px var(--glow2), 0 0 100px var(--glow2), 0 0 150px var(--glow2);
+	text-shadow:
+		0 0 5px var(--glow),
+		0 0 10px var(--glow),
+		0 0 20px var(--glow),
+		0 0 40px var(--glow),
+		0 0 70px var(--glow2),
+		0 0 80px var(--glow2),
+		0 0 100px var(--glow2),
+		0 0 150px var(--glow2);
 	top: -60px;
 	user-select: none;
 }

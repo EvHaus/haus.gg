@@ -8,6 +8,4 @@ export const Instagram = (): Element<'svg'> => (
 	</svg>
 );
 
-Instagram.displayName = 'Instagram';
-
 export default Instagram;

@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {type Element, useLayoutEffect} from 'react';
+import React, {type Element, useEffect} from 'react';
 import Button from '../components/Button';
 import SocialIcon from '../components/SocialIcon';
 import styles from './index.module.css';
@@ -30,7 +30,7 @@ const Index = ({
 	circleOpacity = 0.6,
 	circleSpeed = 10000,
 }: PropsType): Element<'div'> => {
-	useLayoutEffect(() => {
+	useEffect(() => {
 		const el = document.getElementsByTagName('html')[0];
 		const c = document.createComment(`              _
 			     | |

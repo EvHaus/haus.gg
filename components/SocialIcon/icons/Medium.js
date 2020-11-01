@@ -8,6 +8,4 @@ export const Medium = (): Element<'svg'> => (
 	</svg>
 );
 
-Medium.displayName = 'Medium';
-
 export default Medium;

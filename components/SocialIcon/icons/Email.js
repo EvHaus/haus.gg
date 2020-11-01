@@ -8,6 +8,4 @@ export const Email = (): Element<'svg'> => (
 	</svg>
 );
 
-Email.displayName = 'Email';
-
 export default Email;

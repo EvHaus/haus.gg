@@ -8,6 +8,4 @@ export const Github = (): Element<'svg'> => (
 	</svg>
 );
 
-Github.displayName = 'Github';
-
 export default Github;

@@ -8,6 +8,4 @@ export const Twitter = (): Element<'svg'> => (
 	</svg>
 );
 
-Twitter.displayName = 'Twitter';
-
 export default Twitter;
