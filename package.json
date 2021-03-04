@@ -14,7 +14,7 @@
 		"test": "yarn flow && yarn eslint && yarn stylelint && yarn packagelint"
 	},
 	"dependencies": {
-		"@tippyjs/react": "4.2.1",
+		"@tippyjs/react": "4.2.3",
 		"next": "10.0.7",
 		"react": "17.0.1",
 		"react-dom": "17.0.1",
