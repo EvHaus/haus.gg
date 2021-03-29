@@ -21,7 +21,7 @@
 		"react-ga": "3.3.0"
 	},
 	"devDependencies": {
-		"@babel/preset-flow": "7.12.13",
+		"@babel/preset-flow": "7.13.13",
 		"eslint-config-globex": "5.0.0",
 		"flow-bin": "0.147.0",
 		"flow-typed": "3.3.1",
