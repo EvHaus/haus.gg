@@ -4,8 +4,8 @@ import React, {type Element, useCallback} from 'react';
 import styles from './Button.module.css';
 
 type PropsType = {
-	label: string,
-	link: string,
+	+label: string,
+	+link: string,
 };
 
 export const Button = ({

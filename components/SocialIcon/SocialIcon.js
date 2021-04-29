@@ -12,9 +12,9 @@ import Tippy from '@tippyjs/react';
 import Twitter from './icons/Twitter';
 
 type ItemType = {
-	icon: Element<any>,
-	name: string,
-	url: string,
+	+icon: Element<any>,
+	+name: string,
+	+url: string,
 };
 
 type TypeType = (
@@ -22,7 +22,7 @@ type TypeType = (
 );
 
 type PropsType = {
-	type: TypeType,
+	+type: TypeType,
 };
 
 const getItem = (type: TypeType): ItemType => {
