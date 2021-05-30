@@ -40,7 +40,7 @@ const getItem = (type: TypeType): ItemType => {
 		case 'instagram': return {
 			icon: <Instagram />,
 			name: 'Instagram',
-			url: 'https://www.instagram.com/haus.gg',
+			url: 'https://www.instagram.com/evhaus',
 		};
 		case 'linkedin': return {
 			icon: <LinkedIn />,
