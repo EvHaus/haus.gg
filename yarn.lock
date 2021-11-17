@@ -3504,7 +3504,7 @@ __metadata:
     react: 17.0.2
     react-dom: 17.0.2
     react-ga: 3.3.0
-    stylelint-config-globex: 3.0.0
+    stylelint-config-globex: 3.1.0
   languageName: unknown
   linkType: soft
 
@@ -3656,7 +3656,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ignore@npm:^5.1.1, ignore@npm:^5.1.4, ignore@npm:^5.1.8":
+"ignore@npm:^5.1.1, ignore@npm:^5.1.4, ignore@npm:^5.1.9":
   version: 5.1.9
   resolution: "ignore@npm:5.1.9"
   checksum: 6f6b2235f4e63648116c5814f76b2d3d63fae9c21b8a466862e865732f59e787c9938a9042f9457091db6f0d811508ea3c8c6a60f35bafc4ceea08bbe8f96fd5
@@ -6634,19 +6634,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-config-globex@npm:3.0.0":
-  version: 3.0.0
-  resolution: "stylelint-config-globex@npm:3.0.0"
+"stylelint-config-globex@npm:3.1.0":
+  version: 3.1.0
+  resolution: "stylelint-config-globex@npm:3.1.0"
   dependencies:
-    stylelint: 14.0.1
-    stylelint-order: 5.0.0
+    stylelint: ^14.1.0
+    stylelint-order: ^5.0.0
   bin:
     stylelint-globex: bin/stylelint-globex.js
-  checksum: ee6e3eddac956c5a5108c41da266f97c2a3992550d59370f5437f098a30190d3cefb8e9d363691071e220786f9f92a488d2a6986a8c7cfef09a4e0090f8e5018
+  checksum: 0d9b31291be453e91ff383524b56a9bf27e7a032f77a850671c2bef9d8e4de1161815f225623d3a5c4194b83482f3bfc3e55089d090d71c7abc11f210b59ace2
   languageName: node
   linkType: hard
 
-"stylelint-order@npm:5.0.0":
+"stylelint-order@npm:^5.0.0":
   version: 5.0.0
   resolution: "stylelint-order@npm:5.0.0"
   dependencies:
@@ -6658,9 +6658,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:14.0.1":
-  version: 14.0.1
-  resolution: "stylelint@npm:14.0.1"
+"stylelint@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "stylelint@npm:14.1.0"
   dependencies:
     balanced-match: ^2.0.0
     cosmiconfig: ^7.0.1
@@ -6674,7 +6674,7 @@ __metadata:
     globby: ^11.0.4
     globjoin: ^0.1.4
     html-tags: ^3.1.0
-    ignore: ^5.1.8
+    ignore: ^5.1.9
     import-lazy: ^4.0.0
     imurmurhash: ^0.1.4
     is-plain-object: ^5.0.0
@@ -6697,12 +6697,12 @@ __metadata:
     strip-ansi: ^6.0.1
     style-search: ^0.1.0
     svg-tags: ^1.0.0
-    table: ^6.7.2
+    table: ^6.7.3
     v8-compile-cache: ^2.3.0
     write-file-atomic: ^3.0.3
   bin:
     stylelint: bin/stylelint.js
-  checksum: 7279f25282a7d61956921e05b570a7c587cb3292635b114565fe9b1e25eb3f2884aafe6c4e47b7deecadbf5f113e58a69e78a37dd8a8c2a88a566a08911aa910
+  checksum: c7a016ce0c0737cc5fa9ab8ab025cba2e534eae4ba936fc41d90de7e13e0947b6a78d68d2644572c0f743822444a4cdc25bb2f0bf3e3f9a8993a08b209b13e1a
   languageName: node
   linkType: hard
 
@@ -6777,7 +6777,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"table@npm:^6.7.2":
+"table@npm:^6.7.3":
   version: 6.7.3
   resolution: "table@npm:6.7.3"
   dependencies:
