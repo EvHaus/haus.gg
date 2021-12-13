@@ -183,6 +183,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-plugin-utils@npm:^7.16.5":
+  version: 7.16.5
+  resolution: "@babel/helper-plugin-utils@npm:7.16.5"
+  checksum: 3ff605f879a9ed287952b538a8334bb16e6cf7cf441f205713b1cf8043b047a965773b66e50575018504f349e16368acfe4702a2f376e16263733e2c7c6c3e39
+  languageName: node
+  linkType: hard
+
 "@babel/helper-replace-supers@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/helper-replace-supers@npm:7.16.0"
@@ -258,14 +265,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-flow@npm:^7.16.0":
-  version: 7.16.0
-  resolution: "@babel/plugin-syntax-flow@npm:7.16.0"
+"@babel/plugin-syntax-flow@npm:^7.16.5":
+  version: 7.16.5
+  resolution: "@babel/plugin-syntax-flow@npm:7.16.5"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.14.5
+    "@babel/helper-plugin-utils": ^7.16.5
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 21ce1b81581ef3c2a36a8342c9bfea2783115479d6833a25ef82055d6113562ebfef2b8a46dd13d9be94168bdcb0e77a5ca0aad917dab6225bfb6506970e2d81
+  checksum: 4ec6f677911d2decf9add796f686982a9a01a115278cd79bf4c4880f73e6c68c8e822104dbe569cd759e57a443058bb76b0532d53f827e4a853a1c8e11e07ba2
   languageName: node
   linkType: hard
 
@@ -280,28 +287,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-flow-strip-types@npm:^7.16.0":
-  version: 7.16.0
-  resolution: "@babel/plugin-transform-flow-strip-types@npm:7.16.0"
+"@babel/plugin-transform-flow-strip-types@npm:^7.16.5":
+  version: 7.16.5
+  resolution: "@babel/plugin-transform-flow-strip-types@npm:7.16.5"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.14.5
-    "@babel/plugin-syntax-flow": ^7.16.0
+    "@babel/helper-plugin-utils": ^7.16.5
+    "@babel/plugin-syntax-flow": ^7.16.5
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 589f65e8da13c710ee37ba01b6cfbeaa8ea2ee4bc150a1c3739403b78deeff43da766152014e74dda5c04ab14e3ad354c52dbb008f999bc3449a09e44032d216
+  checksum: 119dc58b5c7b4e518c6d7bdc6af77dd124f282df15b389a9f59ab5e48a2cfc1ed4e52930ce27d92fc226d3e15dbda225e94f4e4b2e8bd81cd42ec6163105d89a
   languageName: node
   linkType: hard
 
-"@babel/preset-flow@npm:7.16.0":
-  version: 7.16.0
-  resolution: "@babel/preset-flow@npm:7.16.0"
+"@babel/preset-flow@npm:7.16.5":
+  version: 7.16.5
+  resolution: "@babel/preset-flow@npm:7.16.5"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.14.5
+    "@babel/helper-plugin-utils": ^7.16.5
     "@babel/helper-validator-option": ^7.14.5
-    "@babel/plugin-transform-flow-strip-types": ^7.16.0
+    "@babel/plugin-transform-flow-strip-types": ^7.16.5
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 4417293f64d171bd4f063b2acdf7e88850ef15e1c72b4730798f7feb813785e1318bad6ae4c6bdb8d78b43a349be3e343e9d7902dc7a5b95a91abd53efe14904
+  checksum: 3a591704703deb168e738e575b5a20d62a42c0a8c408000d6b3f260f2fe8c6d388c76195c8609b16ac953066868c15e12aedf7a7505b9a01e41f44a1dca1e623
   languageName: node
   linkType: hard
 
@@ -3464,7 +3471,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "haus.gg@workspace:."
   dependencies:
-    "@babel/preset-flow": 7.16.0
+    "@babel/preset-flow": 7.16.5
     "@tippyjs/react": 4.2.6
     eslint-config-globex: 6.1.1
     flow-bin: 0.167.1
