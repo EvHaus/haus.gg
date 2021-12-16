@@ -3012,12 +3012,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-bin@npm:0.167.1":
-  version: 0.167.1
-  resolution: "flow-bin@npm:0.167.1"
+"flow-bin@npm:0.168.0":
+  version: 0.168.0
+  resolution: "flow-bin@npm:0.168.0"
   bin:
     flow: cli.js
-  checksum: 7633f3dd4ee7cd506a61364607627dedbaa94167126a8e98a103cdb8bd73ef71052759ef3f01b0330c3b13929b63006825dd82f4c671f4380caf97bfcc0953d5
+  checksum: 5f8552316af3e0bdd2bf54be511e5233ca71cc451fd046f8ebb77027a064a399755671ec59629c41fb701f541b27dc18c931ab386fb1b9f9d7fb63491f4e667b
   languageName: node
   linkType: hard
 
@@ -3474,7 +3474,7 @@ __metadata:
     "@babel/preset-flow": 7.16.5
     "@tippyjs/react": 4.2.6
     eslint-config-globex: 6.1.1
-    flow-bin: 0.167.1
+    flow-bin: 0.168.0
     flow-typed: 3.5.0
     husky: 7.0.4
     lint-staged: 12.1.2
