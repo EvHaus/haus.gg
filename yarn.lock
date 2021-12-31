@@ -174,10 +174,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-plugin-utils@npm:^7.16.5":
-  version: 7.16.5
-  resolution: "@babel/helper-plugin-utils@npm:7.16.5"
-  checksum: 3ff605f879a9ed287952b538a8334bb16e6cf7cf441f205713b1cf8043b047a965773b66e50575018504f349e16368acfe4702a2f376e16263733e2c7c6c3e39
+"@babel/helper-plugin-utils@npm:^7.16.7":
+  version: 7.16.7
+  resolution: "@babel/helper-plugin-utils@npm:7.16.7"
+  checksum: d08dd86554a186c2538547cd537552e4029f704994a9201d41d82015c10ed7f58f9036e8d1527c3760f042409163269d308b0b3706589039c5f1884619c6d4ce
   languageName: node
   linkType: hard
 
@@ -210,6 +210,13 @@ __metadata:
   version: 7.14.5
   resolution: "@babel/helper-validator-option@npm:7.14.5"
   checksum: 1b25c34a5cb3d8602280f33b9ab687d2a77895e3616458d0f70ddc450ada9b05e342c44f322bc741d51b252e84cff6ec44ae93d622a3354828579a643556b523
+  languageName: node
+  linkType: hard
+
+"@babel/helper-validator-option@npm:^7.16.7":
+  version: 7.16.7
+  resolution: "@babel/helper-validator-option@npm:7.16.7"
+  checksum: c5ccc451911883cc9f12125d47be69434f28094475c1b9d2ada7c3452e6ac98a1ee8ddd364ca9e3f9855fcdee96cdeafa32543ebd9d17fee7a1062c202e80570
   languageName: node
   linkType: hard
 
@@ -253,14 +260,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-flow@npm:^7.16.5":
-  version: 7.16.5
-  resolution: "@babel/plugin-syntax-flow@npm:7.16.5"
+"@babel/plugin-syntax-flow@npm:^7.16.7":
+  version: 7.16.7
+  resolution: "@babel/plugin-syntax-flow@npm:7.16.7"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.16.5
+    "@babel/helper-plugin-utils": ^7.16.7
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 4ec6f677911d2decf9add796f686982a9a01a115278cd79bf4c4880f73e6c68c8e822104dbe569cd759e57a443058bb76b0532d53f827e4a853a1c8e11e07ba2
+  checksum: b1ab0bd9b78e4aa5fb48714d6514f3d08d72693807c6044a5be4f301a9bb677b5648fbdae11c8bc93923da6b320a1898560c307933021bdb75ee39e577ed74ee
   languageName: node
   linkType: hard
 
@@ -275,28 +282,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-flow-strip-types@npm:^7.16.5":
-  version: 7.16.5
-  resolution: "@babel/plugin-transform-flow-strip-types@npm:7.16.5"
+"@babel/plugin-transform-flow-strip-types@npm:^7.16.7":
+  version: 7.16.7
+  resolution: "@babel/plugin-transform-flow-strip-types@npm:7.16.7"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.16.5
-    "@babel/plugin-syntax-flow": ^7.16.5
+    "@babel/helper-plugin-utils": ^7.16.7
+    "@babel/plugin-syntax-flow": ^7.16.7
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 119dc58b5c7b4e518c6d7bdc6af77dd124f282df15b389a9f59ab5e48a2cfc1ed4e52930ce27d92fc226d3e15dbda225e94f4e4b2e8bd81cd42ec6163105d89a
+  checksum: 4b4801c91d805d95957781e537f88e9f34c7f8a4c262c4d230af2ab7a920889c542860e505149a856d4c16916ffb02df4f3af161733adeedb7671555d1510bba
   languageName: node
   linkType: hard
 
-"@babel/preset-flow@npm:7.16.5":
-  version: 7.16.5
-  resolution: "@babel/preset-flow@npm:7.16.5"
+"@babel/preset-flow@npm:7.16.7":
+  version: 7.16.7
+  resolution: "@babel/preset-flow@npm:7.16.7"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.16.5
-    "@babel/helper-validator-option": ^7.14.5
-    "@babel/plugin-transform-flow-strip-types": ^7.16.5
+    "@babel/helper-plugin-utils": ^7.16.7
+    "@babel/helper-validator-option": ^7.16.7
+    "@babel/plugin-transform-flow-strip-types": ^7.16.7
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 3a591704703deb168e738e575b5a20d62a42c0a8c408000d6b3f260f2fe8c6d388c76195c8609b16ac953066868c15e12aedf7a7505b9a01e41f44a1dca1e623
+  checksum: b73c743a6bdfb51fe907adbc425a82469145ea15f32b43096804e28ba30921c4ac3199f86e11d1cefbce95c3a5404aaf3534152f5a12358c57303c05dfc51b4f
   languageName: node
   linkType: hard
 
@@ -3353,7 +3360,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "haus.gg@workspace:."
   dependencies:
-    "@babel/preset-flow": 7.16.5
+    "@babel/preset-flow": 7.16.7
     "@tippyjs/react": 4.2.6
     eslint-config-globex: 6.2.0
     flow-bin: 0.168.0
