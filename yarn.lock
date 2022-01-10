@@ -1782,7 +1782,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colors@npm:^1.4.0":
+"colors@npm:1.4.0":
   version: 1.4.0
   resolution: "colors@npm:1.4.0"
   checksum: 98aa2c2418ad87dedf25d781be69dc5fc5908e279d9d30c34d8b702e586a0474605b3a189511482b9d5ed0d20c867515d22749537f7bc546256c6014f3ebdcec
@@ -2931,12 +2931,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-typed@npm:3.6.0":
-  version: 3.6.0
-  resolution: "flow-typed@npm:3.6.0"
+"flow-typed@npm:3.6.1":
+  version: 3.6.1
+  resolution: "flow-typed@npm:3.6.1"
   dependencies:
     "@octokit/rest": ^18.12.0
-    colors: ^1.4.0
+    colors: 1.4.0
     flowgen: ^1.10.0
     fs-extra: ^8.1.0
     glob: ^7.1.6
@@ -2952,7 +2952,7 @@ __metadata:
     yargs: ^15.1.0
   bin:
     flow-typed: dist/cli.js
-  checksum: 26f2247d8e782137a8f458ca8a7fc8eedddc668c1d6c69dfc7c81aa19232b103645695bfbb1b3a43bea4b01e179597d4cf26505f11e288bdde64d8e6ee26227f
+  checksum: 790879ffc836f6ace0a98e6310287962ae339fae8e55b984a887479bc32eb3f3f098c809b4f0e378bc3f2b0a0ca8591d9542839d1f363609d70dc182f91df0bc
   languageName: node
   linkType: hard
 
@@ -3364,7 +3364,7 @@ __metadata:
     "@tippyjs/react": 4.2.6
     eslint-config-globex: 6.2.0
     flow-bin: 0.169.0
-    flow-typed: 3.6.0
+    flow-typed: 3.6.1
     husky: 7.0.4
     lint-staged: 12.1.7
     next: 12.0.7
