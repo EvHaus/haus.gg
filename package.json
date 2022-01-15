@@ -23,7 +23,7 @@
 	},
 	"devDependencies": {
 		"@babel/preset-flow": "7.16.7",
-		"eslint-config-globex": "6.2.0",
+		"eslint-config-globex": "6.3.0",
 		"flow-bin": "0.169.0",
 		"flow-typed": "3.6.1",
 		"husky": "7.0.4",
