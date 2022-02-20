@@ -1387,10 +1387,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-functions-list@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "css-functions-list@npm:3.0.0"
-  checksum: 4499ff204b4c172300f1f452bd684b50271fc31085879a5f1515301d01596d1f803f3fdd1c58cc3b24332448519e7584f92c8f81bdd10114c37f26f0c24c61ab
+"css-functions-list@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "css-functions-list@npm:3.0.1"
+  checksum: 8998406f9c6508180dad621bf91cfbf4649d922a57e2e5dd3fd909a2855e29d2f82cf176bd89a7598237b9e989126f8520e21479f2da51f37b1491a38fe72061
   languageName: node
   linkType: hard
 
@@ -2582,7 +2582,7 @@ __metadata:
     react: 17.0.2
     react-dom: 17.0.2
     react-ga: 3.3.0
-    stylelint-config-globex: 3.3.0
+    stylelint-config-globex: 3.3.1
   languageName: unknown
   linkType: soft
 
@@ -2897,13 +2897,6 @@ __metadata:
   dependencies:
     has-symbols: ^1.0.2
   checksum: 92805812ef590738d9de49d677cd17dfd486794773fb6fa0032d16452af46e9b91bb43ffe82c983570f015b37136f4b53b28b8523bfb10b0ece7a66c31a54510
-  languageName: node
-  linkType: hard
-
-"is-typedarray@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "is-typedarray@npm:1.0.0"
-  checksum: 3508c6cd0a9ee2e0df2fa2e9baabcdc89e911c7bd5cf64604586697212feec525aa21050e48affb5ffc3df20f0f5d2e2cf79b08caa64e1ccc9578e251763aef7
   languageName: node
   linkType: hard
 
@@ -4406,6 +4399,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"signal-exit@npm:^3.0.7":
+  version: 3.0.7
+  resolution: "signal-exit@npm:3.0.7"
+  checksum: a2f098f247adc367dffc27845853e9959b9e88b01cb301658cfe4194352d8d2bb32e18467c786a7fe15f1d44b233ea35633d076d5e737870b7139949d1ab6318
+  languageName: node
+  linkType: hard
+
 "slash@npm:^3.0.0":
   version: 3.0.0
   resolution: "slash@npm:3.0.0"
@@ -4664,15 +4664,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-config-globex@npm:3.3.0":
-  version: 3.3.0
-  resolution: "stylelint-config-globex@npm:3.3.0"
+"stylelint-config-globex@npm:3.3.1":
+  version: 3.3.1
+  resolution: "stylelint-config-globex@npm:3.3.1"
   dependencies:
-    stylelint: ^14.4.0
+    stylelint: ^14.5.1
     stylelint-order: ^5.0.0
   bin:
     stylelint-globex: bin/stylelint-globex.js
-  checksum: f45f40daa82e75ce04b49c64668a32e3975fd1c6789398465bcd5af3670598485e9530873553bbaee57bb5c06b93a59ba33bebc37303663f9ad1352f5e0f7d5b
+  checksum: 45fcd125f01372fcebaeee14660eee12777ce6c78f2f5c6e891b8ef29b054f8df863230d7e75ecec5f55791c0b300073f35b3bec5ee8ed61d3e7dc2350ac6d16
   languageName: node
   linkType: hard
 
@@ -4688,14 +4688,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^14.4.0":
-  version: 14.4.0
-  resolution: "stylelint@npm:14.4.0"
+"stylelint@npm:^14.5.1":
+  version: 14.5.1
+  resolution: "stylelint@npm:14.5.1"
   dependencies:
     balanced-match: ^2.0.0
     colord: ^2.9.2
     cosmiconfig: ^7.0.1
-    css-functions-list: ^3.0.0
+    css-functions-list: ^3.0.1
     debug: ^4.3.3
     execall: ^2.0.0
     fast-glob: ^3.2.11
@@ -4732,10 +4732,10 @@ __metadata:
     svg-tags: ^1.0.0
     table: ^6.8.0
     v8-compile-cache: ^2.3.0
-    write-file-atomic: ^4.0.0
+    write-file-atomic: ^4.0.1
   bin:
     stylelint: bin/stylelint.js
-  checksum: 06dda5cd95dabbd53c5c94621c29d22ec07fee4ad91552019d68ec64dbd7f442ac94189e930d80e989da027c355152eeaa4c4de51c37394dfe83efd42dc828d6
+  checksum: 200b25897e1561ef17ef31064971ba11f50afbd9cb9aa6e98bd66efc1a74bd06b91b9c64c307d7f96f5fff50d76531f3082f6680fed06bbc6933c503543c27e3
   languageName: node
   linkType: hard
 
@@ -4952,13 +4952,6 @@ __metadata:
   version: 0.8.1
   resolution: "type-fest@npm:0.8.1"
   checksum: d61c4b2eba24009033ae4500d7d818a94fd6d1b481a8111612ee141400d5f1db46f199c014766b9fa9b31a6a7374d96fc748c6d688a78a3ce5a33123839becb7
-  languageName: node
-  linkType: hard
-
-"typedarray-to-buffer@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "typedarray-to-buffer@npm:4.0.0"
-  checksum: c1e4dc6597c98de417c3363da88263d92aefd23569a892b2d8a9b9385858b2c7323f6cae010ecb73fa63cae403d20763b8cad9a25a77f5597a9fb3da506ac7df
   languageName: node
   linkType: hard
 
@@ -5202,15 +5195,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"write-file-atomic@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "write-file-atomic@npm:4.0.0"
+"write-file-atomic@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "write-file-atomic@npm:4.0.1"
   dependencies:
     imurmurhash: ^0.1.4
-    is-typedarray: ^1.0.0
-    signal-exit: ^3.0.2
-    typedarray-to-buffer: ^4.0.0
-  checksum: c3f10342e5808f0c55f876fec5e5a1d1b341e4dd6a2ba83a44068b9ee2063453c12b5b5afab3d028437fea64a4c8f0cf527297429b9a4cb3545c9c026fdf6577
+    signal-exit: ^3.0.7
+  checksum: 8f780232533ca6223c63c9b9c01c4386ca8c625ebe5017a9ed17d037aec19462ae17109e0aa155bff5966ee4ae7a27b67a99f55caf3f32ffd84155e9da3929fc
   languageName: node
   linkType: hard
 
