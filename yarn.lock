@@ -2222,9 +2222,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-typed@npm:3.6.1":
-  version: 3.6.1
-  resolution: "flow-typed@npm:3.6.1"
+"flow-typed@npm:3.7.0":
+  version: 3.7.0
+  resolution: "flow-typed@npm:3.7.0"
   dependencies:
     "@octokit/rest": ^18.12.0
     colors: 1.4.0
@@ -2243,7 +2243,7 @@ __metadata:
     yargs: ^15.1.0
   bin:
     flow-typed: dist/cli.js
-  checksum: 790879ffc836f6ace0a98e6310287962ae339fae8e55b984a887479bc32eb3f3f098c809b4f0e378bc3f2b0a0ca8591d9542839d1f363609d70dc182f91df0bc
+  checksum: 387bc75399b8d6e41d5342d57ea46b2bcd856ed27bf5b229e7fce62b0872424b9e15f5dbd967bf5d00c7985ead6e928d0bf725d8023ff0f00fb4a1c8d71d5019
   languageName: node
   linkType: hard
 
@@ -2574,7 +2574,7 @@ __metadata:
     "@tippyjs/react": 4.2.6
     eslint-config-globex: 6.3.0
     flow-bin: 0.172.0
-    flow-typed: 3.6.1
+    flow-typed: 3.7.0
     husky: 7.0.4
     lint-staged: 12.3.4
     next: 12.1.0
