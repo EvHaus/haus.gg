@@ -1,7 +1,7 @@
 [ignore]
 
-# See https://github.com/joarwilk/flowgen/issues/119
-.*/node_modules/flowgen/index.js.flow
+# See https://github.com/browserify/resolve/issues/271#issuecomment-1021307415
+.*/node_modules/resolve/test/resolver/malformed_package_json/package.json
 
 [include]
 
