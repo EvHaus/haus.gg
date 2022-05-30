@@ -27,7 +27,7 @@
 		"flow-bin": "0.179.0",
 		"flow-typed": "3.7.0",
 		"husky": "8.0.1",
-		"lint-staged": "12.4.2",
+		"lint-staged": "12.4.3",
 		"prettier-package-json": "2.6.3",
 		"stylelint-config-globex": "3.4.0"
 	},
