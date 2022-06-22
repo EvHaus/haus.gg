@@ -28,7 +28,7 @@
 		"flow-typed": "3.7.0",
 		"husky": "8.0.1",
 		"lint-staged": "13.0.2",
-		"prettier-package-json": "2.6.3",
+		"prettier-package-json": "2.6.4",
 		"stylelint-config-globex": "3.5.0"
 	},
 	"packageManager": "yarn@3.2.1"
