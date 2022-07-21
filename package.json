@@ -31,5 +31,5 @@
 		"prettier-package-json": "2.6.4",
 		"stylelint-config-globex": "3.5.0"
 	},
-	"packageManager": "yarn@3.2.1"
+	"packageManager": "yarn@3.2.2"
 }
