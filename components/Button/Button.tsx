@@ -6,14 +6,20 @@ import styles from './Button.module.css';
 type PropsType = {
 	label: string,
 	link: string,
+	onClick?: () => void,
 };
 
 export const Button = ({
 	label,
 	link,
+	onClick,
 }: PropsType) => {
 	const handleClick = () => {
-		window.location.href = link;
+		if (link) {
+			window.location.href = link;
+		} else if (onClick) {
+			onClick();
+		}
 	};
 
 	return (

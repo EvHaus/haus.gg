@@ -1,0 +1,13 @@
+export const AQUA = '#59E2CD';
+export const BLACK = '#000';
+export const BLUE = '#277FF5';
+export const BLUE_DARK = '#144A93';
+export const BLUE_LIGHT = '#A0C7FE';
+export const ORANGE = '#D16908';
+export const PINK = '#F0B8F1';
+export const PURPLE = '#6855BA';
+export const PURPLE_DARK = '#2B2253';
+export const RED = '#FE1E43';
+export const RED_DARK = '#960E28';
+export const WHITE = '#FFF';
+export const YELLOW = '#CDA636';

@@ -23,6 +23,12 @@ const CIRCLE_OPACITY = 0.6;
 const Index = () => {
 	const circleStyle = { opacity: CIRCLE_OPACITY };
 
+	// const handleClick = async () => {
+	// 	const result = await fetch('/api/resume');
+	// 	const payload = await result.json();
+	// 	window.open(payload.data.url);
+	// };
+
 	return (
 		<div className={styles.view}>
 			<h1 className={styles.logo}>
@@ -46,7 +52,7 @@ const Index = () => {
 				</div>
 			</div>
 			<div className={styles.resume}>
-				<Button label='My Resume' link='/resume-ev-haus.pdf' />
+				<Button label='My Resume' link='/api/resume' />
 			</div>
 			<div className={styles.icons}>
 				<SocialIcon type='linkedin' />
