@@ -1,8 +1,8 @@
 {
     "extends": [
       "eslint-config-globex",
-      "eslint-config-globex/rules/flowtype",
-      "eslint-config-globex/rules/next",
-      "eslint-config-globex/rules/react"
+      "./node_modules/@eslint-config-globex/flowtype",
+      "./node_modules/@eslint-config-globex/next",
+      "./node_modules/@eslint-config-globex/react"
     ]
 }
