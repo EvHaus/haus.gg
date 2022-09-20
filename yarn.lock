@@ -2095,12 +2095,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-bin@npm:0.187.0":
-  version: 0.187.0
-  resolution: "flow-bin@npm:0.187.0"
+"flow-bin@npm:0.187.1":
+  version: 0.187.1
+  resolution: "flow-bin@npm:0.187.1"
   bin:
     flow: cli.js
-  checksum: c1f8be72c34467f2b5742cc3c5654b9ad365902f2440b58db131cf0e5b56498e10b0a0b0e4b7f762a33bf80e1aafe00180b65fb9500868f6f09cfcad14c6b796
+  checksum: fca4873d01d0d601624a46be2dbebbe0a9a7b4585dc46128feea15afd1aad8922f0244f94e57044993f3f02e732d196cf22bb1fd25497079fd8f613bdb01bad2
   languageName: node
   linkType: hard
 
@@ -2461,7 +2461,7 @@ __metadata:
     "@eslint-config-globex/react": 7.0.0
     "@tippyjs/react": 4.2.6
     eslint-config-globex: 7.0.0
-    flow-bin: 0.187.0
+    flow-bin: 0.187.1
     flow-typed: 3.8.0
     husky: 8.0.1
     lint-staged: 13.0.3
