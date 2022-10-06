@@ -24,7 +24,7 @@
 	"devDependencies": {
 		"@babel/preset-flow": "7.18.6",
 		"@eslint-config-globex/flowtype": "7.2.0",
-		"@eslint-config-globex/next": "7.0.0",
+		"@eslint-config-globex/next": "7.2.0",
 		"@eslint-config-globex/react": "7.0.0",
 		"eslint-config-globex": "7.0.0",
 		"flow-bin": "0.188.1",
