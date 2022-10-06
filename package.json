@@ -26,7 +26,7 @@
 		"@eslint-config-globex/flowtype": "7.2.0",
 		"@eslint-config-globex/next": "7.2.0",
 		"@eslint-config-globex/react": "7.2.0",
-		"eslint-config-globex": "7.0.0",
+		"eslint-config-globex": "7.2.0",
 		"flow-bin": "0.188.2",
 		"flow-typed": "3.8.0",
 		"husky": "8.0.1",
