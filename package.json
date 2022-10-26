@@ -6,7 +6,6 @@
 		"build": "next build",
 		"dev": "next",
 		"eslint": "eslint-globex .",
-		"flow": "flow",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"prepare": "husky install",
 		"start": "next start",
