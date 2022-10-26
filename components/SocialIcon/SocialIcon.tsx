@@ -1,20 +1,18 @@
-// @flow strict
-
-import React, {type Element} from 'react';
 import Email from './icons/Email';
 import Github from './icons/Github';
 import Instagram from './icons/Instagram';
 import LinkedIn from './icons/LinkedIn';
 import Medium from './icons/Medium';
+import React from 'react';
 import StackOverflow from './icons/StackOverflow';
 import styles from './SocialIcon.module.css';
 import Tippy from '@tippyjs/react';
 import Twitter from './icons/Twitter';
 
 type ItemType = {
-	+icon: Element<any>,
-	+name: string,
-	+url: string,
+	icon: JSX.Element,
+	name: string,
+	url: string,
 };
 
 type TypeType = (
@@ -22,7 +20,7 @@ type TypeType = (
 );
 
 type PropsType = {
-	+type: TypeType,
+	type: TypeType,
 };
 
 const getItem = (type: TypeType): ItemType => {
@@ -72,7 +70,7 @@ const getItem = (type: TypeType): ItemType => {
 
 export const SocialIcon = ({
 	type,
-}: PropsType): Element<typeof Tippy> => {
+}: PropsType) => {
 	const item = getItem(type);
 	return (
 		<Tippy

@@ -1,8 +1,11 @@
 {
     "extends": [
       "eslint-config-globex",
-      "./node_modules/@eslint-config-globex/flowtype",
       "./node_modules/@eslint-config-globex/next",
-      "./node_modules/@eslint-config-globex/react"
-    ]
+      "./node_modules/@eslint-config-globex/react",
+      "./node_modules/@eslint-config-globex/typescript"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    }
 }

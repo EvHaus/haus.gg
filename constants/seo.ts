@@ -1,5 +1,3 @@
-// @flow strict
-
 export const SITE_AUTHOR = 'Ev Haus';
 
 export const SITE_NAME = 'Ev Haus';

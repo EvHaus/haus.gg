@@ -1,6 +1,6 @@
 {
-	"*.js": [
-		"flow focus-check",
+	"*.{ts,tsx}": [
+		"tsc --noEmit",
 		"eslint-globex . --fix"
 	],
 	"*.css": [

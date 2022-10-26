@@ -1,19 +1,17 @@
-// @flow strict
-
-import React, {type Element, useEffect} from 'react';
+import React, {useLayoutEffect} from 'react';
 import Button from '../components/Button';
 import SocialIcon from '../components/SocialIcon';
 import styles from './index.module.css';
 
 type PropsType = {
 	// Array of colors for the circle
-	+circleColors: Array<string>,
+	circleColors: Array<string>,
 	// Number of circles in animation
-	+circleCount: number,
+	circleCount: number,
 	// Opacity of circles in animation
-	+circleOpacity: number,
+	circleOpacity: number,
 	// Speed of animation in ms
-	+circleSpeed: number,
+	circleSpeed: number,
 };
 
 const Index = ({
@@ -29,8 +27,8 @@ const Index = ({
 	circleCount = 6,
 	circleOpacity = 0.6,
 	circleSpeed = 10000,
-}: PropsType): Element<'div'> => {
-	useEffect(() => {
+}: PropsType) => {
+	useLayoutEffect(() => {
 		const el = document.getElementsByTagName('html')[0];
 		const c = document.createComment(`              _
 			     | |
@@ -59,10 +57,7 @@ const Index = ({
 				<span className={styles.logoHaus}>HAUS</span>
 			</h1>
 			<div className={styles.orb} style={orbStyle}>
-				{Array(...Array(circleCount)).map((
-					v: void,
-					i: number
-				): Element<'div'> => {
+				{new Array(circleCount).map((v, i) => {
 					const circleStyleUnique = {
 						color: circleColors[i],
 					};
