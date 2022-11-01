@@ -70,19 +70,25 @@
 }
 
 .orb {
+	animation-duration: 10000ms;
 	animation-iteration-count: infinite;
-	animation-name: orbRotate;
+	animation-name: orbZoom;
 	animation-timing-function: ease-in-out;
-	bottom: 0;
 	height: 120px;
-	left: 0;
+	inset: -160px 0 0 0;
 	margin: auto;
 	position: absolute;
-	right: 0;
-	top: -160px;
 	transform: rotateX(60deg) rotateZ(-30deg);
 	transform-style: preserve-3d;
 	width: 120px;
+}
+
+.orbInner {
+	animation-duration: 10000ms;
+	animation-iteration-count: infinite;
+	animation-name: orbRotate;
+	animation-timing-function: ease-in-out;
+	transform-style: preserve-3d;
 }
 
 .orbCircle {
@@ -127,7 +133,7 @@
 
 @keyframes orbZoom {
 	0% { transform: scale(1) }
-	50% { transform: translateY(40px) scale(2) }
+	50% { transform: scale(2) }
 	80% { transform: scale(0.8) }
 	90% { transform: scale(1.1) }
 	95% { transform: scale(0.9) }
