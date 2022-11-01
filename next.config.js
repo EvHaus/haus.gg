@@ -7,10 +7,7 @@
  **/
 module.exports = {
 	experimental: {
+		appDir: true,
 		esmExternals: true,
-	},
-	i18n: {
-		defaultLocale: 'en',
-		locales: ['en'],
 	},
 };

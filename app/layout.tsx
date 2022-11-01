@@ -1,17 +1,31 @@
-import './_app.css';
+/*               _
+ *              | |
+ *   _____   __ | |__   __ _ _   _ ___
+ *  / _ \ \ / / | '_ \ / _` | | | / __|
+ * |  __/\ V /  | | | | (_| | |_| \__ \
+ * \___| \_/   |_| |_|\__,_|\__,_|___/
+ *
+ * If this code works - I wrote it.
+ * Otherwise, I don't know where it came from.
+ */
+
 import 'tippy.js/dist/tippy.css';
 import {SITE_AUTHOR, SITE_DESC, SITE_NAME, TWITTER_USER} from '../constants/seo';
-import type {AppProps} from 'next/app';
-import {GoogleAnalytics} from 'nextjs-google-analytics';
-import Head from 'next/head';
+import Analytics from '../components/Analytics';
+import {clsx} from 'clsx';
 import {Montserrat} from '@next/font/google';
 import React from 'react';
+import styles from './layout.module.css';
+
+type PropsType = {
+	children?: React.ReactNode,
+};
 
 const monserrat = Montserrat({subsets: ['latin']});
 
-const _app = ({ Component, pageProps }: AppProps) => (
-	<>
-		<Head>
+const Layout = ({ children }: PropsType) => (
+	<html className={clsx(styles.main, monserrat.className)} lang='en'>
+		<head>
 			<title>{SITE_NAME}</title>
 			<meta charSet='utf-8' />
 			<meta content='width=device-width,initial-scale=1,shrink-to-fit=no' name='viewport' />
@@ -31,13 +45,12 @@ const _app = ({ Component, pageProps }: AppProps) => (
 			<meta content={SITE_DESC} property='twitter:description' />
 			<meta content={SITE_NAME} property='twitter:title' />
 			<link href='https://www.google-analytics.com' rel='preconnect' />
-		</Head>
-		<div className={monserrat.className}>
-			<GoogleAnalytics />
-			{/* eslint-disable-next-line react/jsx-props-no-spreading */}
-			<Component {...pageProps} />
-		</div>
-	</>
+		</head>
+		<body>
+			{children}
+			<Analytics />
+		</body>
+	</html>
 );
 
-export default _app;
+export default Layout;

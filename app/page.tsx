@@ -1,7 +1,7 @@
 import Button from '../components/Button';
 import React from 'react';
 import SocialIcon from '../components/SocialIcon';
-import styles from './index.module.css';
+import styles from './page.module.css';
 
 // Array of colors for the circle
 const CIRCLE_COLORS = [

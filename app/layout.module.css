@@ -1,10 +1,8 @@
-/* stylelint-disable-next-line selector-max-type */
-body {
+.main {
 	background: #222;
 	color: #FFF;
 	display: flex;
 	flex-direction: column;
-	font-family: Montserrat, sans-serif;
 	height: 100%;
 	letter-spacing: 0.5px;
 	margin: 0;

@@ -1,3 +1,5 @@
+'use client';
+
 import Email from './icons/Email';
 import Github from './icons/Github';
 import Instagram from './icons/Instagram';

@@ -8,13 +8,14 @@
 		"eslint": "eslint-globex .",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"start": "next start",
-		"stylelint": "stylelint-globex components/**/*.css pages/**/*.css",
+		"stylelint": "stylelint-globex app/**/*.css components/**/*.css",
 		"test": "pnpm typescript && pnpm eslint && pnpm stylelint && pnpm packagelint",
 		"typescript": "tsc --noEmit"
 	},
 	"dependencies": {
 		"@next/font": "13.0.3",
 		"@tippyjs/react": "4.2.6",
+		"clsx": "1.2.1",
 		"next": "13.0.3",
 		"nextjs-google-analytics": "2.2.0",
 		"react": "18.2.0",
