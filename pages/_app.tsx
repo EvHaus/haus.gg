@@ -1,11 +1,11 @@
 import './_app.css';
 import 'tippy.js/dist/tippy.css';
-import React, {useEffect} from 'react';
 import {SITE_AUTHOR, SITE_DESC, SITE_NAME, TWITTER_USER} from '../constants/seo';
 import type {AppProps} from 'next/app';
-import Head from 'next/head';
 import {GoogleAnalytics} from 'nextjs-google-analytics';
+import Head from 'next/head';
 import {Montserrat} from '@next/font/google';
+import React from 'react';
 
 const monserrat = Montserrat({subsets: ['latin']});
 
