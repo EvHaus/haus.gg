@@ -1,0 +1,29 @@
+colors: false
+
+post-merge:
+  commands:
+    install:
+      run: yarn install --frozen-lockfile
+
+post-rebase:
+  commands:
+    install:
+      run: yarn install
+
+pre-commit:
+  parallel: true
+  commands:
+    stylelint:
+      glob: "*.{css}"
+      run: yarn stylelint-globex --fix {staged_files}
+    eslint:
+      glob: "*.{js,jsx,ts,tsx}"
+      run: yarn eslint-globex --fix {staged_files}
+    prettier-package-json:
+      glob: "package.json"
+      run: yarn prettier-package-json --use-tabs --write {staged_files}
+    typescript:
+      glob: "*.{ts,tsx}"
+      run: yarn tsc --project ./tsconfig.json --noEmit
+      
+       

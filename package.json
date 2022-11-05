@@ -7,7 +7,6 @@
 		"dev": "next",
 		"eslint": "eslint-globex .",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
-		"prepare": "husky install",
 		"start": "next start",
 		"stylelint": "stylelint-globex components/**/*.css pages/**/*.css",
 		"test": "yarn typescript && yarn eslint && yarn stylelint && yarn packagelint",
@@ -29,8 +28,7 @@
 		"@types/node": "18.11.9",
 		"@types/react": "18.0.25",
 		"eslint-config-globex": "7.3.0",
-		"husky": "8.0.1",
-		"lint-staged": "13.0.3",
+		"lefthook": "1.1.4",
 		"prettier-package-json": "2.7.0",
 		"stylelint-config-globex": "3.6.0",
 		"typescript": "4.8.4"
