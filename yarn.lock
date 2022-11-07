@@ -61,39 +61,39 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint-config-globex/next@npm:7.3.0":
-  version: 7.3.0
-  resolution: "@eslint-config-globex/next@npm:7.3.0"
+"@eslint-config-globex/next@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@eslint-config-globex/next@npm:7.4.0"
   dependencies:
-    "@next/eslint-plugin-next": ^13.0.0
+    "@next/eslint-plugin-next": ^13.0.2
   peerDependencies:
     next: "*"
-  checksum: ba3e8839e20deaf1bad049107b9270d153511555b033ccc377c578937467a1985b046e928a51296fe8f19cfd06af81a33ddc68f7afe42aef8a3f171738d3e50e
+  checksum: bd38729c0cce970f055d819b2ff071410ee200e189591687b44bba583915082071cbba85c34949c2384d86757e096b9217eebed4e4c42a12b48018aabafc6604
   languageName: node
   linkType: hard
 
-"@eslint-config-globex/react@npm:7.3.0":
-  version: 7.3.0
-  resolution: "@eslint-config-globex/react@npm:7.3.0"
+"@eslint-config-globex/react@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@eslint-config-globex/react@npm:7.4.0"
   dependencies:
     eslint-plugin-jsx-a11y: ^6.6.1
     eslint-plugin-react: ^7.31.10
     eslint-plugin-react-hooks: ^4.6.0
   peerDependencies:
     react: "*"
-  checksum: 01b7726be0f36f1f2da45e85b4dfcd92e2a1096b32c15af6826de0ae59b1aff5028df0cafb3a7bb279c38da13a0f9eb6877cab0902bb63c91244039ea2da5f5c
+  checksum: 4a5dd786033440d870c7116284ee4851172b7f72ec8a5a6917f32afcf2b7a3712ab939629f7405116a8a5d227038485bd6093726af5000d1bc77842b1b758b92
   languageName: node
   linkType: hard
 
-"@eslint-config-globex/typescript@npm:7.3.0":
-  version: 7.3.0
-  resolution: "@eslint-config-globex/typescript@npm:7.3.0"
+"@eslint-config-globex/typescript@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@eslint-config-globex/typescript@npm:7.4.0"
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^5.41.0
-    "@typescript-eslint/parser": ^5.41.0
+    "@typescript-eslint/eslint-plugin": ^5.42.0
+    "@typescript-eslint/parser": ^5.42.0
   peerDependencies:
     typescript: "*"
-  checksum: 8205ac4a7c1f746f02fee094ffb9c008f5f5580600a05934f79d8bc6692fa1107a8d9b1e52f62e624a9bc0e781e9fe966ddf0868267bd65f938a3830b1ff7a26
+  checksum: 7dfe1b7c224542ebe1bf95203c51c4a7274691d9a06ed8d6b85fc98d58afb28c84297d85d4e1a2c22b22e7862312d4b50064ae438b8163f1cbff7c319a7e3377
   languageName: node
   linkType: hard
 
@@ -153,7 +153,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:^13.0.0":
+"@next/eslint-plugin-next@npm:^13.0.2":
   version: 13.0.2
   resolution: "@next/eslint-plugin-next@npm:13.0.2"
   dependencies:
@@ -423,7 +423,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.41.0":
+"@typescript-eslint/eslint-plugin@npm:^5.42.0":
   version: 5.42.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.42.0"
   dependencies:
@@ -446,7 +446,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.41.0":
+"@typescript-eslint/parser@npm:^5.42.0":
   version: 5.42.0
   resolution: "@typescript-eslint/parser@npm:5.42.0"
   dependencies:
@@ -1979,9 +1979,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "haus.gg@workspace:."
   dependencies:
-    "@eslint-config-globex/next": 7.3.0
-    "@eslint-config-globex/react": 7.3.0
-    "@eslint-config-globex/typescript": 7.3.0
+    "@eslint-config-globex/next": 7.4.0
+    "@eslint-config-globex/react": 7.4.0
+    "@eslint-config-globex/typescript": 7.4.0
     "@next/font": 13.0.2
     "@tippyjs/react": 4.2.6
     "@types/node": 18.11.9
