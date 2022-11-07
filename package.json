@@ -27,7 +27,7 @@
 		"@eslint-config-globex/typescript": "7.3.0",
 		"@types/node": "18.11.9",
 		"@types/react": "18.0.25",
-		"eslint-config-globex": "7.3.0",
+		"eslint-config-globex": "7.4.0",
 		"lefthook": "1.1.4",
 		"prettier-package-json": "2.7.0",
 		"stylelint-config-globex": "3.6.0",
