@@ -7,7 +7,7 @@
 
 ## Development
 
-- Run `yarn dev` to launch local server
+- Run `pnpm dev` to launch local server
 
 Then open http://localhost:3000/ to see the app.
 

@@ -9,7 +9,7 @@
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"start": "next start",
 		"stylelint": "stylelint-globex components/**/*.css pages/**/*.css",
-		"test": "yarn typescript && yarn eslint && yarn stylelint && yarn packagelint",
+		"test": "pnpm typescript && pnpm eslint && pnpm stylelint && pnpm packagelint",
 		"typescript": "tsc --noEmit"
 	},
 	"dependencies": {
@@ -19,7 +19,7 @@
 		"nextjs-google-analytics": "2.2.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"react-ga": "3.3.1"
+		"tippy.js": "6.3.7"
 	},
 	"devDependencies": {
 		"@eslint-config-globex/next": "7.4.0",
@@ -32,6 +32,5 @@
 		"prettier-package-json": "2.7.0",
 		"stylelint-config-globex": "3.6.0",
 		"typescript": "4.8.4"
-	},
-	"packageManager": "yarn@3.2.4"
+	}
 }
