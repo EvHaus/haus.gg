@@ -3,27 +3,27 @@ colors: false
 post-merge:
   commands:
     install:
-      run: yarn install
+      run: pnpm install
 
 post-rebase:
   commands:
     install:
-      run: yarn install
+      run: pnpm install
 
 pre-commit:
   parallel: true
   commands:
     stylelint:
       glob: "*.{css}"
-      run: yarn stylelint-globex --fix {staged_files} && git add {staged_files}
+      run: pnpm stylelint-globex --fix {staged_files} && git add {staged_files}
     eslint:
       glob: "*.{js,jsx,ts,tsx}"
-      run: yarn eslint-globex --fix {staged_files} && git add {staged_files}
+      run: pnpm eslint-globex --fix {staged_files} && git add {staged_files}
     prettier-package-json:
       glob: "package.json"
-      run: yarn prettier-package-json --use-tabs --write {staged_files} && git add {staged_files}
+      run: pnpm prettier-package-json --use-tabs --write {staged_files} && git add {staged_files}
     typescript:
       glob: "*.{ts,tsx}"
-      run: yarn tsc --project ./tsconfig.json --noEmit
+      run: pnpm tsc --project ./tsconfig.json --noEmit
       
        
