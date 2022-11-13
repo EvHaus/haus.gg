@@ -1,19 +1,9 @@
-/*               _
- *              | |
- *   _____   __ | |__   __ _ _   _ ___
- *  / _ \ \ / / | '_ \ / _` | | | / __|
- * |  __/\ V /  | | | | (_| | |_| \__ \
- * \___| \_/   |_| |_|\__,_|\__,_|___/
- *
- * If this code works - I wrote it.
- * Otherwise, I don't know where it came from.
- */
-
 import {SITE_AUTHOR, SITE_DESC, SITE_NAME, TWITTER_USER} from '../constants/seo';
 import Analytics from '../components/Analytics';
 import {clsx} from 'clsx';
 import {Montserrat} from '@next/font/google';
 import React from 'react';
+import SillyComment from '../components/SillyComment';
 import styles from './layout.module.css';
 
 type PropsType = {
@@ -51,6 +41,7 @@ const Layout = ({ children }: PropsType) => (
 		<body>
 			{children}
 			<Analytics />
+			<SillyComment />
 		</body>
 	</html>
 );
