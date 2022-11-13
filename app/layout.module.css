@@ -3,10 +3,9 @@
 	color: #FFF;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	font-family: var(--font-montserrat);
 	letter-spacing: 0.5px;
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
-	width: 100%;
 }

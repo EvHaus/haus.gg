@@ -7,18 +7,3 @@
 }
 
 .main:focus, .main:hover { color: #FFF }
-
-.tippy {
-	--TOOLTIP_BG: rgba(0, 0, 0, 0.6);
-	background: var(--TOOLTIP_BG);
-	border-radius: 4px;
-	color: #7D86BE;
-	font-size: 11px;
-	line-height: inherit;
-	text-transform: uppercase;
-}
-
-/* stylelint-disable-next-line selector-max-combinators */
-.tippy > :global(.tippy-arrow) {
-	color: var(--TOOLTIP_BG);
-}

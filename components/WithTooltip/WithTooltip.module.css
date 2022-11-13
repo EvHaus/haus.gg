@@ -1,0 +1,26 @@
+.main {
+	background: rgba(0, 0, 0, 0.9);
+	border-radius: 4px;
+	box-shadow:
+		rgba(67, 90, 111, 0) 0 0 1px,
+		rgba(67, 90, 111, 0) 0 8px 10px -4px;
+	color: var(--N100);
+	font-size: 12px;
+	max-width: 320px;
+	min-height: 16px;
+	padding: 8px;
+	pointer-events: none;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	user-select: none;
+	z-index: 1000;
+}
+
+.arrow {
+	background: rgba(0, 0, 0, 0.9);
+	height: 8px;
+	position: absolute;
+	transform: rotate(45deg);
+	width: 8px;
+}

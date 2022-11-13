@@ -8,8 +8,8 @@ import Medium from './icons/Medium';
 import React from 'react';
 import StackOverflow from './icons/StackOverflow';
 import styles from './SocialIcon.module.css';
-import Tippy from '@tippyjs/react';
 import Twitter from './icons/Twitter';
+import WithTooltip from '../WithTooltip';
 
 type ItemType = {
 	icon: JSX.Element,
@@ -75,11 +75,7 @@ export const SocialIcon = ({
 }: PropsType) => {
 	const item = getItem(type);
 	return (
-		<Tippy
-			className={styles.tippy}
-			content={item.name}
-			offset={[0, 0]}
-			placement='bottom'>
+		<WithTooltip placement='bottom' tooltip={item.name}>
 			<a
 				aria-label={item.name}
 				className={styles.main}
@@ -88,7 +84,7 @@ export const SocialIcon = ({
 				target='_blank'>
 				{item.icon}
 			</a>
-		</Tippy>
+		</WithTooltip>
 	);
 };
 

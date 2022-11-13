@@ -9,7 +9,6 @@
  * Otherwise, I don't know where it came from.
  */
 
-import 'tippy.js/dist/tippy.css';
 import {SITE_AUTHOR, SITE_DESC, SITE_NAME, TWITTER_USER} from '../constants/seo';
 import Analytics from '../components/Analytics';
 import {clsx} from 'clsx';
@@ -21,10 +20,13 @@ type PropsType = {
 	children?: React.ReactNode,
 };
 
-const monserrat = Montserrat({subsets: ['latin']});
+const monserrat = Montserrat({
+	subsets: ['latin'],
+	variable: '--font-montserrat',
+});
 
 const Layout = ({ children }: PropsType) => (
-	<html className={clsx(styles.main, monserrat.className)} lang='en'>
+	<html className={clsx(styles.main, monserrat.variable)} lang='en'>
 		<head>
 			<title>{SITE_NAME}</title>
 			<meta charSet='utf-8' />
