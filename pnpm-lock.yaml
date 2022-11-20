@@ -13,7 +13,7 @@ specifiers:
   framer-motion: 7.6.7
   lefthook: 1.2.1
   next: 13.0.4
-  nextjs-google-analytics: 2.2.0
+  nextjs-google-analytics: 2.2.1
   prettier-package-json: 2.7.0
   react: 18.2.0
   react-dom: 18.2.0
@@ -27,7 +27,7 @@ dependencies:
   clsx: 1.2.1
   framer-motion: 7.6.7_biqbaboplfbrettd7655fr4n2y
   next: 13.0.4_biqbaboplfbrettd7655fr4n2y
-  nextjs-google-analytics: 2.2.0_next@13.0.4+react@18.2.0
+  nextjs-google-analytics: 2.2.1_next@13.0.4+react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-merge-refs: 2.0.1
@@ -2139,8 +2139,8 @@ packages:
       - '@babel/core'
       - babel-plugin-macros
 
-  /nextjs-google-analytics/2.2.0_next@13.0.4+react@18.2.0:
-    resolution: {integrity: sha512-UJz/nWEMnuPuEv2kwsX/4UOxZS49StvZ+GERBbtKnkHXrvL5tMIoeCzncM83Jd7GlUluoUW3KC39sAHm5JRcQQ==}
+  /nextjs-google-analytics/2.2.1_next@13.0.4+react@18.2.0:
+    resolution: {integrity: sha512-b5a7V+iWdrrcB2kQxcW9KYHYwtJJoY50a4E+b68TUba3YqTmwufs0u2HfPNxd1MauPmkxTBSx2IyaSUdgxLJ7Q==}
     peerDependencies:
       next: '>=11.0.0'
       react: '>=17.0.0'
