@@ -10,7 +10,7 @@ specifiers:
   '@types/react': 18.0.25
   clsx: 1.2.1
   eslint-config-globex: 7.5.1
-  framer-motion: 7.6.7
+  framer-motion: 7.6.9
   lefthook: 1.2.1
   next: 13.0.4
   nextjs-google-analytics: 2.2.1
@@ -25,7 +25,7 @@ dependencies:
   '@floating-ui/react-dom-interactions': 0.11.0_2zx2umvpluuhvlq44va5bta2da
   '@next/font': 13.0.4
   clsx: 1.2.1
-  framer-motion: 7.6.7_biqbaboplfbrettd7655fr4n2y
+  framer-motion: 7.6.9_biqbaboplfbrettd7655fr4n2y
   next: 13.0.4_biqbaboplfbrettd7655fr4n2y
   nextjs-google-analytics: 2.2.1_next@13.0.4+react@18.2.0
   react: 18.2.0
@@ -1407,8 +1407,8 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
-  /framer-motion/7.6.7_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-vEGsjXygf4qSmgXXsCT1FC56DjiZau9tSQTCchwAP2mOHnYHUy5gbthc4RXFWJh4Z/gFtqE8bzEmjahwOrfT7w==}
+  /framer-motion/7.6.9_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-byPSPOqKApmVUvbtvmFCyL09dqBNLUwkXRQMeTsawtF6YpiB54yCVzk+9YXAnoswMSgsB7CQaA6ls7e8QL+C+g==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
