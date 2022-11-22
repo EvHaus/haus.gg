@@ -16,7 +16,7 @@
 		"@floating-ui/react-dom-interactions": "0.11.0",
 		"@next/font": "13.0.4",
 		"clsx": "1.2.1",
-		"framer-motion": "7.6.7",
+		"framer-motion": "7.6.9",
 		"next": "13.0.4",
 		"nextjs-google-analytics": "2.2.1",
 		"react": "18.2.0",
