@@ -14,10 +14,10 @@
 	},
 	"dependencies": {
 		"@floating-ui/react-dom-interactions": "0.11.0",
-		"@next/font": "13.0.4",
+		"@next/font": "13.0.5",
 		"clsx": "1.2.1",
 		"framer-motion": "7.6.9",
-		"next": "13.0.4",
+		"next": "13.0.5",
 		"nextjs-google-analytics": "2.2.1",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
