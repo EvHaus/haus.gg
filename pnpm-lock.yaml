@@ -4,7 +4,7 @@ specifiers:
   '@eslint-config-globex/next': 7.5.1
   '@eslint-config-globex/react': 7.5.1
   '@eslint-config-globex/typescript': 7.5.1
-  '@floating-ui/react-dom-interactions': 0.11.0
+  '@floating-ui/react-dom-interactions': 0.12.0
   '@next/font': 13.0.5
   '@types/node': 18.11.9
   '@types/react': 18.0.25
@@ -22,7 +22,7 @@ specifiers:
   typescript: 4.9.3
 
 dependencies:
-  '@floating-ui/react-dom-interactions': 0.11.0_2zx2umvpluuhvlq44va5bta2da
+  '@floating-ui/react-dom-interactions': 0.12.0_2zx2umvpluuhvlq44va5bta2da
   '@next/font': 13.0.5
   clsx: 1.2.1
   framer-motion: 7.6.9_biqbaboplfbrettd7655fr4n2y
@@ -168,8 +168,8 @@ packages:
       '@floating-ui/core': 1.0.2
     dev: false
 
-  /@floating-ui/react-dom-interactions/0.11.0_2zx2umvpluuhvlq44va5bta2da:
-    resolution: {integrity: sha512-LQh607tGyme3fFv6QQU3/v1fXGOb8XIz3AnFBXq4pAlOKFg6OrKONjhsPZCP8ZOmxTW/P29grd8D312oeEN8zA==}
+  /@floating-ui/react-dom-interactions/0.12.0_2zx2umvpluuhvlq44va5bta2da:
+    resolution: {integrity: sha512-UBC37z3BvAZ4r3QzD6pDBn8v1S0xSNGLiqdueDM2Tgl/E1bPvEiSpu71uwOTm5qXM22mDGmohJfX/SXF/nQ8nw==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -178,6 +178,7 @@ packages:
       aria-hidden: 1.2.1_fan5qbzahqtxlm5dzefqlqx5ia
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      tabbable: 6.0.1
     transitivePeerDependencies:
       - '@types/react'
     dev: false
@@ -2881,6 +2882,10 @@ packages:
   /svg-tags/1.0.0:
     resolution: {integrity: sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==}
     dev: true
+
+  /tabbable/6.0.1:
+    resolution: {integrity: sha512-SYJSIgeyXW7EuX1ytdneO5e8jip42oHWg9xl/o3oTYhmXusZVgiA+VlPvjIN+kHii9v90AmzTZEBcsEvuAY+TA==}
+    dev: false
 
   /table/6.8.1:
     resolution: {integrity: sha512-Y4X9zqrCftUhMeH2EptSSERdVKt/nEdijTOacGD/97EKjhQ/Qs8RTlEGABSJNNN8lac9kheH+af7yAkEWlgneA==}
