@@ -18,7 +18,7 @@
 		"clsx": "1.2.1",
 		"framer-motion": "7.6.12",
 		"next": "13.0.5",
-		"nextjs-google-analytics": "2.2.1",
+		"nextjs-google-analytics": "2.2.2",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-merge-refs": "2.0.1"
