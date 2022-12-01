@@ -6,7 +6,7 @@ specifiers:
   '@eslint-config-globex/typescript': 7.5.1
   '@floating-ui/react-dom-interactions': 0.12.0
   '@next/font': 13.0.5
-  '@types/node': 18.11.9
+  '@types/node': 18.11.10
   '@types/react': 18.0.25
   clsx: 1.2.1
   eslint-config-globex: 7.5.1
@@ -36,7 +36,7 @@ devDependencies:
   '@eslint-config-globex/next': 7.5.1_next@13.0.5
   '@eslint-config-globex/react': 7.5.1_react@18.2.0
   '@eslint-config-globex/typescript': 7.5.1_typescript@4.9.3
-  '@types/node': 18.11.9
+  '@types/node': 18.11.10
   '@types/react': 18.0.25
   eslint-config-globex: 7.5.1
   lefthook: 1.2.3
@@ -416,8 +416,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/18.11.9:
-    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
+  /@types/node/18.11.10:
+    resolution: {integrity: sha512-juG3RWMBOqcOuXC643OAdSA525V44cVgGV6dUDuiFtss+8Fk5x1hI93Rsld43VeJVIeqlP9I7Fn9/qaVqoEAuQ==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
