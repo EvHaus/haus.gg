@@ -4,7 +4,7 @@ specifiers:
   '@eslint-config-globex/next': 7.5.1
   '@eslint-config-globex/react': 7.5.1
   '@eslint-config-globex/typescript': 7.5.1
-  '@floating-ui/react-dom-interactions': 0.12.0
+  '@floating-ui/react-dom-interactions': 0.13.0
   '@next/font': 13.0.6
   '@types/node': 18.11.10
   '@types/react': 18.0.26
@@ -22,7 +22,7 @@ specifiers:
   typescript: 4.9.3
 
 dependencies:
-  '@floating-ui/react-dom-interactions': 0.12.0_ib3m5ricvtkl2cll7qpr2f6lvq
+  '@floating-ui/react-dom-interactions': 0.13.0_ib3m5ricvtkl2cll7qpr2f6lvq
   '@next/font': 13.0.6
   clsx: 1.2.1
   framer-motion: 7.6.18_biqbaboplfbrettd7655fr4n2y
@@ -168,8 +168,8 @@ packages:
       '@floating-ui/core': 1.0.2
     dev: false
 
-  /@floating-ui/react-dom-interactions/0.12.0_ib3m5ricvtkl2cll7qpr2f6lvq:
-    resolution: {integrity: sha512-UBC37z3BvAZ4r3QzD6pDBn8v1S0xSNGLiqdueDM2Tgl/E1bPvEiSpu71uwOTm5qXM22mDGmohJfX/SXF/nQ8nw==}
+  /@floating-ui/react-dom-interactions/0.13.0_ib3m5ricvtkl2cll7qpr2f6lvq:
+    resolution: {integrity: sha512-R+jXsv3eJ8LQn879NMO9ONvk9Hy0XQiPvBWK+wdWADZsrvu7FmmlSq5xG/qid745g+uNs3xvhf+lNnCIlEZpEA==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
