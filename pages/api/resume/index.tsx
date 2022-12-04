@@ -183,7 +183,7 @@ const EXPERIENCE: Array<RoleItemType> = [{
 			'Designed & developed a variety of media projects for over 100 international clients.',
 			'Development of custom in-house bug tracking, project management, scheduling, billing and invoice web app using Dojo Toolkit & PHP.',
 			'Created and developed the Google Redesigned browser extension which, at its peak, was used by over 250,000 concurrent users. I built the underlying infrastructure too.',
-			'Togther with Lexan Software Inc, I was the art director and project manager for the iOS/Android game -- Tesseric.',
+			'Together with Lexan Software Inc, I was the art director and project manager for the iOS/Android game -- Tesseric.',
 		],
 		date: [new Date(1999, 5, 1), new Date(2011, 12, 1)],
 		dateNote: 'part-time',
