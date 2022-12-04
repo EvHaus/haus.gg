@@ -1,5 +1,5 @@
-import Button from '../components/Button';
 import React from 'react';
+import ResumeButton from '../components/ResumeButton';
 import SocialIcon from '../components/SocialIcon';
 import styles from './page.module.css';
 
@@ -23,17 +23,11 @@ const CIRCLE_OPACITY = 0.6;
 const Index = () => {
 	const circleStyle = { opacity: CIRCLE_OPACITY };
 
-	// const handleClick = async () => {
-	// 	const result = await fetch('/api/resume');
-	// 	const payload = await result.json();
-	// 	window.open(payload.data.url);
-	// };
-
 	return (
 		<div className={styles.view}>
 			<h1 className={styles.logo}>
-				<span className={styles.logoEv}>EV</span>
-				<span className={styles.logoHaus}>HAUS</span>
+				<span className={styles.logoEv}>Ev</span>
+				<span className={styles.logoHaus}>Haus</span>
 			</h1>
 			<div className={styles.orb}>
 				<div className={styles.orbInner}>
@@ -52,7 +46,7 @@ const Index = () => {
 				</div>
 			</div>
 			<div className={styles.resume}>
-				<Button label='My Resume' link='/api/resume' />
+				<ResumeButton />
 			</div>
 			<div className={styles.icons}>
 				<SocialIcon type='linkedin' />

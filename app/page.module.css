@@ -39,10 +39,12 @@
 .logoEv {
 	font-weight: 200;
 	margin-right: 8px;
+	text-transform: uppercase;
 }
 
 .logoHaus {
 	font-weight: 400;
+	text-transform: uppercase;
 }
 
 .icons {

@@ -8,10 +8,11 @@
 	font-weight: 100;
 	margin: auto;
 	outline: none;
-	padding: 8px 60px;
+	padding: 8px;
 	pointer-events: all;
 	text-transform: uppercase;
 	transition: 250ms ease border-color, 250ms ease color;
+	width: 220px;
 }
 
 .main:focus,
