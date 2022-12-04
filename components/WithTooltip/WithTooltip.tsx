@@ -101,9 +101,6 @@ const WithTooltip = forwardRef<HTMLElement, PropsType>(({
 	]);
 
 	const {getReferenceProps, getFloatingProps} = useInteractions([
-		// TODO: Form elements are auto-focused in the app for some reason.
-		// Until we can figure out, keep this off.
-		// useFocus(context),
 		useHover(context, {move: false}),
 		useRole(context, {role: 'tooltip'}),
 		useDismiss(context, {referencePress: true}),
