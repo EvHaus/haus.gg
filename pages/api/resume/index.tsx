@@ -32,6 +32,8 @@ import {
 import type { NextApiRequest, NextApiResponse } from 'next';
 import EducationBlock from './components/EducationBlock';
 import ExperienceBlock from './components/ExperienceBlock';
+import fs from 'fs';
+import path from 'path';
 import Pipe from './components/Pipe';
 import React from 'react';
 import type {RoleItemType} from './types';
@@ -322,23 +324,46 @@ const resume = async (
 	req: NextApiRequest,
 	res: NextApiResponse
 ) => {
-	// Generate resume
-	const generatedPdf = buildReport();
+	const filename = `resume-ev-haus.pdf`;
+	const dirpath = path.resolve('.next', 'static', 'resumes');
+	const filepath = path.join(dirpath, filename);
 
-	// The toBuffer hack is needed here to get custom fonts to load. See:
-	// https://github.com/diegomura/react-pdf/issues/1955#issuecomment-1257270423
-	const instance = pdf(generatedPdf);
-	const output = await instance.toBuffer();
+	// Create target directory if it doesn't exist. Needed for Vercel deployment
+	if (!fs.existsSync(dirpath)) fs.mkdirSync(dirpath, {recursive: true});
 
-	// During development it's more useful if the PDF is opened in the browser
-	// rather than gets downloaded.
-	const filetype = process.env.NODE_ENV === 'development' ? 'inline' : 'attachment';
+	// Before regenerating the resume, check if we already have a pre-generated one on the file system
+	if (!fs.existsSync(filepath)) {
+		// Generate resume
+		const generatedPdf = buildReport();
+
+		// The toBuffer hack is needed here to get custom fonts to load. See:
+		// https://github.com/diegomura/react-pdf/issues/1955#issuecomment-1257270423
+		const instance = pdf(generatedPdf);
+		const output = await instance.toBuffer();
+
+
+		// During development it's more useful if the PDF is opened in the browser
+		// rather than gets downloaded. This is done if you append ?live to the URL.
+		if ('live' in req.query) {
+			return res
+				.status(200)
+				.setHeader('Content-Disposition', `inline;filename="${filename}"`)
+				.setHeader('Content-Type', 'application/pdf')
+				.send(output);
+		}
+
+		try {
+			await fs.promises.writeFile(filepath, output);
+		} catch (err) {
+			return res
+				.status(500)
+				.json({error: `Failed to generate resume: ${(err as Error).message}`});
+		}
+	}
 
 	return res
 		.status(200)
-		.setHeader('Content-Disposition', `${filetype};filename="resume-ev-haus.pdf"`)
-		.setHeader('Content-Type', 'application/pdf')
-		.send(output);
+		.json({url: `/_next/static/resumes/${filename}`});
 };
 
 export default resume;

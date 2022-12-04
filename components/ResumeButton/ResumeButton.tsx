@@ -7,9 +7,15 @@ export const ResumeButton = () => {
 	const [isResumeBuilding, setIsResumeBuilding] = useState(false);
 
 	const handleClick = () => {
-		setIsResumeBuilding(true);
-		window.open('/api/resume');
-		setIsResumeBuilding(false);
+		const generate = async () => {
+			setIsResumeBuilding(true);
+			const request = await fetch('/api/resume');
+			const result = await request.json() as {url: string};
+			window.open(result.url);
+			setIsResumeBuilding(false);
+		};
+
+		generate();
 	};
 
 	return (
