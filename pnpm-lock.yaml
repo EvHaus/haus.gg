@@ -13,7 +13,7 @@ specifiers:
   clsx: 1.2.1
   date-fns: 2.29.3
   eslint-config-globex: 7.5.1
-  framer-motion: 7.6.18
+  framer-motion: 7.6.19
   lefthook: 1.2.4
   next: 13.0.6
   nextjs-google-analytics: 2.2.2
@@ -31,7 +31,7 @@ dependencies:
   '@react-pdf/types': 2.1.0
   clsx: 1.2.1
   date-fns: 2.29.3
-  framer-motion: 7.6.18_biqbaboplfbrettd7655fr4n2y
+  framer-motion: 7.6.19_biqbaboplfbrettd7655fr4n2y
   next: 13.0.6_biqbaboplfbrettd7655fr4n2y
   nextjs-google-analytics: 2.2.2_next@13.0.6+react@18.2.0
   react: 18.2.0
@@ -225,7 +225,7 @@ packages:
       '@motionone/easing': 10.14.0
       '@motionone/types': 10.14.0
       '@motionone/utils': 10.14.0
-      tslib: 2.4.0
+      tslib: 2.4.1
     dev: false
 
   /@motionone/dom/10.13.1:
@@ -236,14 +236,14 @@ packages:
       '@motionone/types': 10.14.0
       '@motionone/utils': 10.14.0
       hey-listen: 1.0.8
-      tslib: 2.4.0
+      tslib: 2.4.1
     dev: false
 
   /@motionone/easing/10.14.0:
     resolution: {integrity: sha512-2vUBdH9uWTlRbuErhcsMmt1jvMTTqvGmn9fHq8FleFDXBlHFs5jZzHJT9iw+4kR1h6a4SZQuCf72b9ji92qNYA==}
     dependencies:
       '@motionone/utils': 10.14.0
-      tslib: 2.4.0
+      tslib: 2.4.1
     dev: false
 
   /@motionone/generators/10.14.0:
@@ -251,7 +251,7 @@ packages:
     dependencies:
       '@motionone/types': 10.14.0
       '@motionone/utils': 10.14.0
-      tslib: 2.4.0
+      tslib: 2.4.1
     dev: false
 
   /@motionone/types/10.14.0:
@@ -263,7 +263,7 @@ packages:
     dependencies:
       '@motionone/types': 10.14.0
       hey-listen: 1.0.8
-      tslib: 2.4.0
+      tslib: 2.4.1
     dev: false
 
   /@next/env/13.0.6:
@@ -1613,8 +1613,8 @@ packages:
       unicode-trie: 2.0.0
     dev: false
 
-  /framer-motion/7.6.18_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-+njLqmMZBqf+GpIMRkuC7s9A9KrvOfMXm+B/yscKG+/SKAA+qdQFl/3ACU2tAhN7UFau1HuB/vBa/jrWBKVvDg==}
+  /framer-motion/7.6.19_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-U+ogwGwNw6Y+pdq6GZB5xvnvLDlq3FTmcKaG5MCUjXuqRLrjKbKTqN4iwZISv3ajwUfgNHM6+tu31LRbYfF9YQ==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
