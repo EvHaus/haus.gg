@@ -13,7 +13,7 @@
 		"typescript": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@floating-ui/react-dom-interactions": "0.13.0",
+		"@floating-ui/react-dom-interactions": "0.13.1",
 		"@next/font": "13.0.6",
 		"@react-pdf/renderer": "3.0.1",
 		"@react-pdf/types": "2.1.0",
