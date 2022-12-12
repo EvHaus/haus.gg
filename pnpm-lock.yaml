@@ -13,7 +13,7 @@ specifiers:
   clsx: 1.2.1
   date-fns: 2.29.3
   eslint-config-globex: 7.5.1
-  framer-motion: 7.7.0
+  framer-motion: 7.7.2
   lefthook: 1.2.4
   next: 13.0.6
   nextjs-google-analytics: 2.2.2
@@ -31,7 +31,7 @@ dependencies:
   '@react-pdf/types': 2.1.0
   clsx: 1.2.1
   date-fns: 2.29.3
-  framer-motion: 7.7.0_biqbaboplfbrettd7655fr4n2y
+  framer-motion: 7.7.2_biqbaboplfbrettd7655fr4n2y
   next: 13.0.6_biqbaboplfbrettd7655fr4n2y
   nextjs-google-analytics: 2.2.2_next@13.0.6+react@18.2.0
   react: 18.2.0
@@ -1613,27 +1613,19 @@ packages:
       unicode-trie: 2.0.0
     dev: false
 
-  /framer-motion/7.7.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-2QBUM+LanbQz6g6OCvkOjyI1nvvKNEtaBIr+LO4vK1hN88T2Jh7jIZmL/tdKb2NLnbhJwcfWGwSijrG36sbgcQ==}
+  /framer-motion/7.7.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-SDq4pansh+UxMtHuApQmyXbbb/oQu3LwhPByiGKXLrKRHxmHiq7VML0/mnFQQRIpWiYR/+wM4q8foFzeoaz8eg==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
       '@motionone/dom': 10.13.1
-      framesync: 6.1.2
       hey-listen: 1.0.8
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      style-value-types: 5.1.2
       tslib: 2.4.0
     optionalDependencies:
       '@emotion/is-prop-valid': 0.8.8
-    dev: false
-
-  /framesync/6.1.2:
-    resolution: {integrity: sha512-jBTqhX6KaQVDyus8muwZbBeGGP0XgujBRbQ7gM7BRdS3CadCZIHiawyzYLnafYcvZIh5j8WE7cxZKFn7dXhu9g==}
-    dependencies:
-      tslib: 2.4.0
     dev: false
 
   /fs-extra/10.1.0:
@@ -3052,13 +3044,6 @@ packages:
   /style-search/0.1.0:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
     dev: true
-
-  /style-value-types/5.1.2:
-    resolution: {integrity: sha512-Vs9fNreYF9j6W2VvuDTP7kepALi7sk0xtk2Tu8Yxi9UoajJdEVpNpCov0HsLTqXvNGKX+Uv09pkozVITi1jf3Q==}
-    dependencies:
-      hey-listen: 1.0.8
-      tslib: 2.4.0
-    dev: false
 
   /styled-jsx/5.1.0_react@18.2.0:
     resolution: {integrity: sha512-/iHaRJt9U7T+5tp6TRelLnqBqiaIT0HsO0+vgyj8hK2KUk7aejFqRrumqPUlAqDwAj8IbS/1hk3IhBAAK/FCUQ==}
