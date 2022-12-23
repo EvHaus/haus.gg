@@ -19,7 +19,7 @@
 		"@react-pdf/types": "2.1.0",
 		"clsx": "1.2.1",
 		"date-fns": "2.29.3",
-		"framer-motion": "8.0.1",
+		"framer-motion": "8.0.2",
 		"next": "13.1.0",
 		"nextjs-google-analytics": "2.2.2",
 		"react": "18.2.0",
