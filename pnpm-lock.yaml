@@ -6,7 +6,7 @@ specifiers:
   '@eslint-config-globex/typescript': 7.5.1
   '@floating-ui/react-dom-interactions': 0.13.3
   '@next/font': 13.1.1
-  '@react-pdf/renderer': 3.0.1
+  '@react-pdf/renderer': 3.0.2
   '@react-pdf/types': 2.1.0
   '@types/node': 18.11.18
   '@types/react': 18.0.26
@@ -27,7 +27,7 @@ specifiers:
 dependencies:
   '@floating-ui/react-dom-interactions': 0.13.3_ib3m5ricvtkl2cll7qpr2f6lvq
   '@next/font': 13.1.1
-  '@react-pdf/renderer': 3.0.1_react@18.2.0
+  '@react-pdf/renderer': 3.0.2_react@18.2.0
   '@react-pdf/types': 2.1.0
   clsx: 1.2.1
   date-fns: 2.29.3
@@ -412,7 +412,7 @@ packages:
     resolution: {integrity: sha512-URgdd1J187mNYXiRwzGJTg9wZN3ekN7hvEtzBzi9NoLpzGFuxMJMWohguVenpFVLzhmWPCiL9xst79RS7ZyF/A==}
     dependencies:
       '@babel/runtime': 7.20.6
-      '@react-pdf/types': 2.1.0
+      '@react-pdf/types': 2.1.1
       cross-fetch: 3.1.5
       fontkit: 2.0.2
       is-url: 1.2.4
@@ -436,11 +436,11 @@ packages:
       '@babel/runtime': 7.20.6
       '@react-pdf/fns': 2.0.0
       '@react-pdf/image': 2.2.0
-      '@react-pdf/pdfkit': 3.0.0
+      '@react-pdf/pdfkit': 3.0.1
       '@react-pdf/primitives': 3.0.1
       '@react-pdf/stylesheet': 4.0.0
       '@react-pdf/textkit': 4.1.0
-      '@react-pdf/types': 2.1.0
+      '@react-pdf/types': 2.1.1
       '@react-pdf/yoga': 3.0.0
       cross-fetch: 3.1.5
       emoji-regex: 8.0.0
@@ -449,8 +449,8 @@ packages:
       - encoding
     dev: false
 
-  /@react-pdf/pdfkit/3.0.0:
-    resolution: {integrity: sha512-IzMW5KLVaJSkFapl2j77rTZnP0RPk1HWZRbHsVYW0WRtfSSUP1szrGLQXgIogpvVLBFW2CCYXsdshghTEGP2ZA==}
+  /@react-pdf/pdfkit/3.0.1:
+    resolution: {integrity: sha512-KzHZjkzLCVsZEWErvnh7NtuJfHNThDHgOrhdP7js7z9u5BLI0hwdGhy9N99FTYzpFjhkGLlGeyF0jBLooBevuQ==}
     dependencies:
       '@babel/runtime': 7.20.6
       '@react-pdf/png-js': 2.2.0
@@ -477,7 +477,7 @@ packages:
       '@react-pdf/fns': 2.0.0
       '@react-pdf/primitives': 3.0.1
       '@react-pdf/textkit': 4.1.0
-      '@react-pdf/types': 2.1.0
+      '@react-pdf/types': 2.1.1
       abs-svg-path: 0.1.1
       color-string: 1.9.1
       normalize-svg-path: 1.1.0
@@ -485,18 +485,18 @@ packages:
       svg-arc-to-cubic-bezier: 3.2.0
     dev: false
 
-  /@react-pdf/renderer/3.0.1_react@18.2.0:
-    resolution: {integrity: sha512-NuyXB8dsKVO1r+MBXl/SHZ8rAV979TgnRg8/5L9oiPYwG+WsV4gu2xm2bqoRdU8ltasKkVALK7hdgwh9XX+ZCA==}
+  /@react-pdf/renderer/3.0.2_react@18.2.0:
+    resolution: {integrity: sha512-lrYZWEZzt0P0Cdz6/My03+gDs//g++LeHjWzBM8dZYCad3HBa3EFFDZjosD+jyq3VYvetGN9bqzwTg+ODhx+8g==}
     peerDependencies:
       react: ^16.8.6 || ^17.0.0
     dependencies:
       '@babel/runtime': 7.20.6
       '@react-pdf/font': 2.3.1
       '@react-pdf/layout': 3.2.1
-      '@react-pdf/pdfkit': 3.0.0
+      '@react-pdf/pdfkit': 3.0.1
       '@react-pdf/primitives': 3.0.1
       '@react-pdf/render': 3.2.1
-      '@react-pdf/types': 2.1.0
+      '@react-pdf/types': 2.1.1
       queue: 6.0.2
       react: 18.2.0
       react-reconciler: 0.23.0_react@18.2.0
@@ -510,7 +510,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.20.6
       '@react-pdf/fns': 2.0.0
-      '@react-pdf/types': 2.1.0
+      '@react-pdf/types': 2.1.1
       color-string: 1.9.1
       hsl-to-hex: 1.0.0
       media-engine: 1.0.3
@@ -528,6 +528,10 @@ packages:
 
   /@react-pdf/types/2.1.0:
     resolution: {integrity: sha512-PmmcPFlehRmLEE7p5bhapNya1NS3lV77dRNs9YEf1wNVbKsf10cF4yXDq813cNwm2YYIhCIgaU98O5GBBxMZaQ==}
+    dev: false
+
+  /@react-pdf/types/2.1.1:
+    resolution: {integrity: sha512-wMv2FCSyQHMCWeQa/Bwnd3eZc/4HtRrB10HMObPzT6E5fIsmv25tPdqfpuQ1bU9u306q/POKAGEvjCnDLX9B6g==}
     dev: false
 
   /@react-pdf/yoga/3.0.0:
