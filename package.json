@@ -16,7 +16,7 @@
 		"@floating-ui/react-dom-interactions": "0.13.3",
 		"@next/font": "13.1.1",
 		"@react-pdf/renderer": "3.0.2",
-		"@react-pdf/types": "2.1.0",
+		"@react-pdf/types": "2.1.1",
 		"clsx": "1.2.1",
 		"date-fns": "2.29.3",
 		"framer-motion": "8.0.2",

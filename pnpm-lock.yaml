@@ -7,7 +7,7 @@ specifiers:
   '@floating-ui/react-dom-interactions': 0.13.3
   '@next/font': 13.1.1
   '@react-pdf/renderer': 3.0.2
-  '@react-pdf/types': 2.1.0
+  '@react-pdf/types': 2.1.1
   '@types/node': 18.11.18
   '@types/react': 18.0.26
   clsx: 1.2.1
@@ -28,7 +28,7 @@ dependencies:
   '@floating-ui/react-dom-interactions': 0.13.3_ib3m5ricvtkl2cll7qpr2f6lvq
   '@next/font': 13.1.1
   '@react-pdf/renderer': 3.0.2_react@18.2.0
-  '@react-pdf/types': 2.1.0
+  '@react-pdf/types': 2.1.1
   clsx: 1.2.1
   date-fns: 2.29.3
   framer-motion: 8.0.2_biqbaboplfbrettd7655fr4n2y
@@ -524,10 +524,6 @@ packages:
       '@react-pdf/fns': 2.0.0
       hyphen: 1.6.4
       unicode-properties: 1.4.1
-    dev: false
-
-  /@react-pdf/types/2.1.0:
-    resolution: {integrity: sha512-PmmcPFlehRmLEE7p5bhapNya1NS3lV77dRNs9YEf1wNVbKsf10cF4yXDq813cNwm2YYIhCIgaU98O5GBBxMZaQ==}
     dev: false
 
   /@react-pdf/types/2.1.1:
