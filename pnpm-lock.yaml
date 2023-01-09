@@ -14,7 +14,7 @@ specifiers:
   clsx: 1.2.1
   date-fns: 2.29.3
   eslint-config-globex: 7.5.1
-  framer-motion: 8.3.2
+  framer-motion: 8.3.3
   lefthook: 1.2.6
   next: 13.1.1
   nextjs-google-analytics: 2.2.2
@@ -32,7 +32,7 @@ dependencies:
   '@react-pdf/types': 2.1.1
   clsx: 1.2.1
   date-fns: 2.29.3
-  framer-motion: 8.3.2_biqbaboplfbrettd7655fr4n2y
+  framer-motion: 8.3.3_biqbaboplfbrettd7655fr4n2y
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
   nextjs-google-analytics: 2.2.2_next@13.1.1+react@18.2.0
   react: 18.2.0
@@ -1623,8 +1623,8 @@ packages:
       unicode-trie: 2.0.0
     dev: false
 
-  /framer-motion/8.3.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-Tkw2Ylw8LYeEHAZX1+1hYOG5c0FFPo+V8olnudJt3Hd8TdirLqLKZXa0gbevJfG3BnAjkmgxrwY+MAv5MNYGIg==}
+  /framer-motion/8.3.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-K7YpdFSfcs8M12m1gd8AankcEeYh8DhQKPBbCecniSWdOwcfrACiwMptCepMCdDehKmzHo1iDxYXy4FEhw9yaw==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
