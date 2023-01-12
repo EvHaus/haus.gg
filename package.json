@@ -32,7 +32,7 @@
 		"@eslint-config-globex/typescript": "7.6.0",
 		"@types/node": "18.11.18",
 		"@types/react": "18.0.26",
-		"@vercel/analytics": "0.1.6",
+		"@vercel/analytics": "0.1.7",
 		"eslint-config-globex": "7.6.0",
 		"lefthook": "1.2.7",
 		"prettier-package-json": "2.8.0",
