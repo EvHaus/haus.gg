@@ -13,8 +13,8 @@ import {
 	useHover,
 	useInteractions,
 	useRole,
-} from '@floating-ui/react-dom-interactions';
-import type {Coords, Placement} from '@floating-ui/react-dom-interactions';
+} from '@floating-ui/react';
+import type {Coords, Placement} from '@floating-ui/react';
 import React, {cloneElement, forwardRef, useMemo, useRef, useState} from 'react';
 import clsx from 'clsx';
 import {mergeRefs} from 'react-merge-refs';

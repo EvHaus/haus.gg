@@ -4,7 +4,7 @@ specifiers:
   '@eslint-config-globex/next': 7.6.0
   '@eslint-config-globex/react': 7.6.0
   '@eslint-config-globex/typescript': 7.6.0
-  '@floating-ui/react-dom-interactions': 0.13.3
+  '@floating-ui/react': 0.17.0
   '@next/font': 13.1.2
   '@react-pdf/renderer': 3.0.2
   '@react-pdf/types': 2.1.1
@@ -25,7 +25,7 @@ specifiers:
   typescript: 4.9.4
 
 dependencies:
-  '@floating-ui/react-dom-interactions': 0.13.3_ib3m5ricvtkl2cll7qpr2f6lvq
+  '@floating-ui/react': 0.17.0_ib3m5ricvtkl2cll7qpr2f6lvq
   '@next/font': 13.1.2
   '@react-pdf/renderer': 3.0.2_react@18.2.0
   '@react-pdf/types': 2.1.1
@@ -162,40 +162,40 @@ packages:
       - supports-color
     dev: true
 
-  /@floating-ui/core/1.0.2:
-    resolution: {integrity: sha512-Skfy0YS3NJ5nV9us0uuPN0HDk1Q4edljaOhRBJGDWs9EBa7ZVMYBHRFlhLvvmwEoaIM9BlH6QJFn9/uZg0bACg==}
+  /@floating-ui/core/1.1.0:
+    resolution: {integrity: sha512-zbsLwtnHo84w1Kc8rScAo5GMk1GdecSlrflIbfnEBJwvTSj1SL6kkOYV+nHraMCPEy+RNZZUaZyL8JosDGCtGQ==}
     dev: false
 
-  /@floating-ui/dom/1.0.7:
-    resolution: {integrity: sha512-6RsqvCYe0AYWtsGvuWqCm7mZytnXAZCjWtsWu1Kg8dI3INvj/DbKlDsZO+mKSaQdPT12uxIW9W2dAWJkPx4Y5g==}
+  /@floating-ui/dom/1.1.0:
+    resolution: {integrity: sha512-TSogMPVxbRe77QCj1dt8NmRiJasPvuc+eT5jnJ6YpLqgOD2zXc5UA3S1qwybN+GVCDNdKfpKy1oj8RpzLJvh6A==}
     dependencies:
-      '@floating-ui/core': 1.0.2
+      '@floating-ui/core': 1.1.0
     dev: false
 
-  /@floating-ui/react-dom-interactions/0.13.3_ib3m5ricvtkl2cll7qpr2f6lvq:
-    resolution: {integrity: sha512-AnCW06eIZxzD/Hl1Qbi2JkQRU5KpY7Dn81k3xRfbvs+HylhB+t3x88/GNKLK39mMTlJ/ylxm5prUpiLrTWvifQ==}
+  /@floating-ui/react-dom/1.2.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-o1uQ9gPhgBajY/9T0boFNOw9MoxcuHOnVortmdlGCViM7I/aONbY+G1wejbqydHQ7+9j3p7hIsAUMrr3huV/JQ==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      '@floating-ui/react-dom': 1.0.1_biqbaboplfbrettd7655fr4n2y
+      '@floating-ui/dom': 1.1.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@floating-ui/react/0.17.0_ib3m5ricvtkl2cll7qpr2f6lvq:
+    resolution: {integrity: sha512-LYlTmiB1O2TmeNub1agGYJrO7Qkw1B0Q53aElN5dgZDO5v3yzYJmrGm/xmfD+0T03yEECzPKdwlSFCEPWKMLEQ==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@floating-ui/react-dom': 1.2.0_biqbaboplfbrettd7655fr4n2y
       aria-hidden: 1.2.2_kzbn2opkn2327fwg5yzwzya5o4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       tabbable: 6.0.1
     transitivePeerDependencies:
       - '@types/react'
-    dev: false
-
-  /@floating-ui/react-dom/1.0.1_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-UW0t1Gi8ikbDRr8cQPVcqIDMBwUEENe5V4wlHWdrJ5egFnRQFBV9JirauTBFI6S8sM1qFUC1i+qa3g87E6CLTw==}
-    peerDependencies:
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-    dependencies:
-      '@floating-ui/dom': 1.0.7
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /@humanwhocodes/config-array/0.11.8:
