@@ -6,7 +6,7 @@ specifiers:
   '@eslint-config-globex/typescript': 7.6.2
   '@floating-ui/react': 0.18.0
   '@next/font': 13.1.4
-  '@react-pdf/renderer': 3.0.2
+  '@react-pdf/renderer': 3.0.3
   '@react-pdf/types': 2.1.1
   '@types/node': 18.11.18
   '@types/react': 18.0.27
@@ -27,7 +27,7 @@ specifiers:
 dependencies:
   '@floating-ui/react': 0.18.0_5ndqzdd6t4rivxsukjv3i3ak2q
   '@next/font': 13.1.4
-  '@react-pdf/renderer': 3.0.2_react@18.2.0
+  '@react-pdf/renderer': 3.0.3_react@18.2.0
   '@react-pdf/types': 2.1.1
   clsx: 1.2.1
   date-fns: 2.29.3
@@ -72,13 +72,6 @@ packages:
       chalk: 2.4.2
       js-tokens: 4.0.0
     dev: true
-
-  /@babel/runtime/7.20.6:
-    resolution: {integrity: sha512-Q+8MqP7TiHMWzSfwiJwXCjyf4GYA4Dgw3emg/7xmwsdLJOZUp+nMqcOwOzzYheuM1rhDu8FSj2l0aoMygEuXuA==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.13.11
-    dev: false
 
   /@babel/runtime/7.20.7:
     resolution: {integrity: sha512-UF0tvkUtxwAgZ5W/KrkHf0Rn0fdnLDU9ScxBrEVNUprE/MzirjK4MJUX1/BVDv00Sv8cljtukVK1aky++X1SjQ==}
@@ -484,12 +477,12 @@ packages:
       svg-arc-to-cubic-bezier: 3.2.0
     dev: false
 
-  /@react-pdf/renderer/3.0.2_react@18.2.0:
-    resolution: {integrity: sha512-lrYZWEZzt0P0Cdz6/My03+gDs//g++LeHjWzBM8dZYCad3HBa3EFFDZjosD+jyq3VYvetGN9bqzwTg+ODhx+8g==}
+  /@react-pdf/renderer/3.0.3_react@18.2.0:
+    resolution: {integrity: sha512-REcrv4KC/rSssLVp8tY5VOdpfbFAgaI8QPoBbZsg8nrBMtNYiKJSLDYJZnOmCMImf91P3rSa33H0m8Zh30/1xw==}
     peerDependencies:
       react: ^16.8.6 || ^17.0.0
     dependencies:
-      '@babel/runtime': 7.20.6
+      '@babel/runtime': 7.20.7
       '@react-pdf/font': 2.3.1
       '@react-pdf/layout': 3.2.1
       '@react-pdf/pdfkit': 3.0.1
