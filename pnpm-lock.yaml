@@ -4,7 +4,7 @@ specifiers:
   '@eslint-config-globex/next': 7.6.2
   '@eslint-config-globex/react': 7.7.0
   '@eslint-config-globex/typescript': 7.6.2
-  '@floating-ui/react': 0.18.0
+  '@floating-ui/react': 0.18.1
   '@next/font': 13.1.4
   '@react-pdf/renderer': 3.0.3
   '@react-pdf/types': 2.1.1
@@ -25,7 +25,7 @@ specifiers:
   typescript: 4.9.4
 
 dependencies:
-  '@floating-ui/react': 0.18.0_5ndqzdd6t4rivxsukjv3i3ak2q
+  '@floating-ui/react': 0.18.1_5ndqzdd6t4rivxsukjv3i3ak2q
   '@next/font': 13.1.4
   '@react-pdf/renderer': 3.0.3_react@18.2.0
   '@react-pdf/types': 2.1.1
@@ -176,8 +176,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@floating-ui/react/0.18.0_5ndqzdd6t4rivxsukjv3i3ak2q:
-    resolution: {integrity: sha512-zxgwWigxaph1TIBdezCDdc3eo+4FUDKY2MiBR3gywZtx5Eeb0KBRRZ9PyzznTXuYO5Y9BFHAC0Yikqp7rr+oKQ==}
+  /@floating-ui/react/0.18.1_5ndqzdd6t4rivxsukjv3i3ak2q:
+    resolution: {integrity: sha512-Uqntjem19/3ghAwKSaMU/719P/riiox13rkAzMhCthmAAhTzvvmNka52L5s9Gi/cjAfNNR5/RjkD0YKqTecWzQ==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
