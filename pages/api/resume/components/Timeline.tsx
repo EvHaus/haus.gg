@@ -47,7 +47,6 @@ const Timeline = ({color, date}: PropsType) => (
 			<Text style={[styles.label, {color}]}>
 				{date ? format(date, 'yyyy') : 'Now'}
 			</Text>
-			{/* @ts-expect-error Dunno what's up */}
 			<Svg height='16' style={styles.dotSvg} width='16'>
 				<Circle
 					cx='8'
