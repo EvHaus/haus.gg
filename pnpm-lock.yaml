@@ -4,7 +4,7 @@ specifiers:
   '@eslint-config-globex/next': 7.6.2
   '@eslint-config-globex/react': 7.7.0
   '@eslint-config-globex/typescript': 7.6.2
-  '@floating-ui/react': 0.18.1
+  '@floating-ui/react': 0.19.0
   '@next/font': 13.1.6
   '@react-pdf/renderer': 3.0.3
   '@react-pdf/types': 2.1.1
@@ -25,7 +25,7 @@ specifiers:
   typescript: 4.9.4
 
 dependencies:
-  '@floating-ui/react': 0.18.1_5ndqzdd6t4rivxsukjv3i3ak2q
+  '@floating-ui/react': 0.19.0_5ndqzdd6t4rivxsukjv3i3ak2q
   '@next/font': 13.1.6
   '@react-pdf/renderer': 3.0.3_react@18.2.0
   '@react-pdf/types': 2.1.1
@@ -159,30 +159,30 @@ packages:
     resolution: {integrity: sha512-zbsLwtnHo84w1Kc8rScAo5GMk1GdecSlrflIbfnEBJwvTSj1SL6kkOYV+nHraMCPEy+RNZZUaZyL8JosDGCtGQ==}
     dev: false
 
-  /@floating-ui/dom/1.1.0:
-    resolution: {integrity: sha512-TSogMPVxbRe77QCj1dt8NmRiJasPvuc+eT5jnJ6YpLqgOD2zXc5UA3S1qwybN+GVCDNdKfpKy1oj8RpzLJvh6A==}
+  /@floating-ui/dom/1.1.1:
+    resolution: {integrity: sha512-TpIO93+DIujg3g7SykEAGZMDtbJRrmnYRCNYSjJlvIbGhBjRSNTLVbNeDQBrzy9qDgUbiWdc7KA0uZHZ2tJmiw==}
     dependencies:
       '@floating-ui/core': 1.1.0
     dev: false
 
-  /@floating-ui/react-dom/1.2.1_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-YCLlqibZtgUhxUpxkSp1oekvYgH/jI4KdZEJv85E62twlZHN43xdlQNe6JcF4ROD3/Zu6juNHN+aOygN+6yZjg==}
+  /@floating-ui/react-dom/1.2.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-DbmFBLwFrZhtXgCI2ra7wXYT8L2BN4/4AMQKyu05qzsVji51tXOfF36VE2gpMB6nhJGHa85PdEg75FB4+vnLFQ==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      '@floating-ui/dom': 1.1.0
+      '@floating-ui/dom': 1.1.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@floating-ui/react/0.18.1_5ndqzdd6t4rivxsukjv3i3ak2q:
-    resolution: {integrity: sha512-Uqntjem19/3ghAwKSaMU/719P/riiox13rkAzMhCthmAAhTzvvmNka52L5s9Gi/cjAfNNR5/RjkD0YKqTecWzQ==}
+  /@floating-ui/react/0.19.0_5ndqzdd6t4rivxsukjv3i3ak2q:
+    resolution: {integrity: sha512-fgYvN4ksCi5OvmPXkyOT8o5a8PSKHMzPHt+9mR6KYWdF16IAjWRLZPAAziI2sznaWT23drRFrYw64wdvYqqaQw==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      '@floating-ui/react-dom': 1.2.1_biqbaboplfbrettd7655fr4n2y
+      '@floating-ui/react-dom': 1.2.2_biqbaboplfbrettd7655fr4n2y
       aria-hidden: 1.2.2_3stiutgnnbnfnf3uowm5cip22i
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
