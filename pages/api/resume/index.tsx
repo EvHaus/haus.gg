@@ -218,10 +218,8 @@ const buildReport = () => {
 					</View>
 				</View>
 				<View style={styles.sidebar}>
-					{/* @ts-expect-error Dunno what's up */}
 					<Svg style={styles.sidebarBackground} viewBox='0 0 100 390'>
 						<Defs>
-							{/* @ts-expect-error Dunno what's up */}
 							<LinearGradient
 								id='sidebarGradient'
 								x1='1'
@@ -234,7 +232,6 @@ const buildReport = () => {
 								<Stop offset='40%' stopColor='#33295E' />
 								<Stop offset='100%' stopColor='#20213C' />
 							</LinearGradient>
-							{/* @ts-expect-error Dunno what's up */}
 							<LinearGradient
 								id='sidebarCircleGradient'
 								x1='1'
