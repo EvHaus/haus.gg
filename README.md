@@ -3,7 +3,7 @@
 > This is my personal site
 
 - Built with `nextjs`
-- Deployed with `now.sh`
+- Deployed with `Vercel`
 
 ## Development
 
@@ -13,8 +13,8 @@ Then open http://localhost:3000/ to see the app.
 
 ## Domain
 
-**Host**: gandi.net
-**Username**: globex
+- **Host**: gandi.net
+- **Username**: globex
 
 ## DNS Registrar
 
