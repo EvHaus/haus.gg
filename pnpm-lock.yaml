@@ -1,9 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@eslint-config-globex/next': 7.6.2
-  '@eslint-config-globex/react': 7.7.0
-  '@eslint-config-globex/typescript': 7.6.2
+  '@eslint-config-globex/next': 7.6.3
+  '@eslint-config-globex/react': 7.7.1
+  '@eslint-config-globex/typescript': 7.7.0
   '@floating-ui/react': 0.19.2
   '@react-pdf/renderer': 3.1.6
   '@react-pdf/types': 2.2.0
@@ -11,7 +11,7 @@ specifiers:
   '@types/react': 18.0.28
   clsx: 1.2.1
   date-fns: 2.29.3
-  eslint-config-globex: 7.7.0
+  eslint-config-globex: 7.7.1
   framer-motion: 9.1.6
   lefthook: 1.3.0
   next: 13.2.1
@@ -37,12 +37,12 @@ dependencies:
   react-merge-refs: 2.0.1
 
 devDependencies:
-  '@eslint-config-globex/next': 7.6.2_next@13.2.1
-  '@eslint-config-globex/react': 7.7.0_react@18.2.0
-  '@eslint-config-globex/typescript': 7.6.2_typescript@4.9.5
+  '@eslint-config-globex/next': 7.6.3_next@13.2.1
+  '@eslint-config-globex/react': 7.7.1_react@18.2.0
+  '@eslint-config-globex/typescript': 7.7.0_typescript@4.9.5
   '@types/node': 18.14.1
   '@types/react': 18.0.28
-  eslint-config-globex: 7.7.0
+  eslint-config-globex: 7.7.1
   lefthook: 1.3.0
   prettier-package-json: 2.8.0
   stylelint-config-globex: 3.7.0
@@ -101,8 +101,8 @@ packages:
     dev: false
     optional: true
 
-  /@eslint-config-globex/next/7.6.2_next@13.2.1:
-    resolution: {integrity: sha512-8QWNd7EzWyL4Cm7AenHyf1J6xiClKhBu4BivOsq37WPNM3LIfcSd1BOGvxmr8yW4PABybsylkC+y3q/LvFwfEw==}
+  /@eslint-config-globex/next/7.6.3_next@13.2.1:
+    resolution: {integrity: sha512-QsEIdi5R4pibdnnnOfaZFO2LljbwkZyyyINsIKJUqo4djcney/8L5wyJSq0ploc82X/fn+Bokq9f90rO0RNlrg==}
     peerDependencies:
       next: '*'
     dependencies:
@@ -110,8 +110,8 @@ packages:
       next: 13.2.1_biqbaboplfbrettd7655fr4n2y
     dev: true
 
-  /@eslint-config-globex/react/7.7.0_react@18.2.0:
-    resolution: {integrity: sha512-N20tgSmeycq9Bjv/NnV/Ds4XRmH7bA44VEzu9D9l4W2o9ZuFCDDPYIeTmRpxdlO9GhNHoiSUNf5+oTToF95dug==}
+  /@eslint-config-globex/react/7.7.1_react@18.2.0:
+    resolution: {integrity: sha512-wikRRku9aTcYTITH9r3dVqgXT/CTUGYRxExnbYtoGV/4KStzrBoOy166X/MX2wsJwBCuhurQBRJwAQVLDqCj/g==}
     peerDependencies:
       react: '*'
     dependencies:
@@ -123,8 +123,8 @@ packages:
       - eslint
     dev: true
 
-  /@eslint-config-globex/typescript/7.6.2_typescript@4.9.5:
-    resolution: {integrity: sha512-yvVRwIvKKDXQandKTRDpTT8kjAR57LF7Kk3YmUpDpGeXdQ6MOf9aiyFjx93nSCTYdKSogU01E3ime2guKCfM6A==}
+  /@eslint-config-globex/typescript/7.7.0_typescript@4.9.5:
+    resolution: {integrity: sha512-F2tC9hdS/bZ/uwntFN7iPmt2Ib7rbviygyfyyRkox11btDxv4rDjEtC48aZvMHrEveLByixq1Ls1b9q++KAIkw==}
     peerDependencies:
       typescript: '*'
     dependencies:
@@ -1202,8 +1202,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-globex/7.7.0:
-    resolution: {integrity: sha512-7uvyHfc9FR5JxXrlQKYIs+o/3YHmxsRhdg2ogCJ4eSQb6G6vvOdTqkpIALxRhBh10mVJlA35wYu4DKK7nL5JyQ==}
+  /eslint-config-globex/7.7.1:
+    resolution: {integrity: sha512-swlBo7tYur6FBMP9MkmIhym+grBmU4hCe+/A7NWemSpqv0ZPSpn3+T9lCxF98dlaEvEuSvVw1GWRY00/+5BRUg==}
     hasBin: true
     dependencies:
       eslint: 8.34.0
