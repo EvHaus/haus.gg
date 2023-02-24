@@ -9,11 +9,11 @@ const SillyComment = () => {
 	useEffect(() => {
 		if (isRendered) {
 			const comment = document.createComment(`
-				_
+				 _
 				| |
-	_____   __ | |__   __ _ _   _ ___
+	 _____   __ | |__   __ _ _   _ ___
 	/ _ \\ \\ / / | '_ \\ / _' | | | / __|
-	|  __/\\ V /  | | | | (_| | |_| \\__ \\
+   |  __/\\ V /  | | | | (_| | |_| \\__ \\
 	\\___| \\_/   |_| |_|\\__,_|\\__,_|___/
 
 	If this code works - I wrote it.
