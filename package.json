@@ -13,7 +13,7 @@
 		"typescript": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@floating-ui/react": "0.20.1",
+		"@floating-ui/react": "0.21.0",
 		"@react-pdf/renderer": "3.1.7",
 		"@react-pdf/types": "2.3.0",
 		"clsx": "1.2.1",
