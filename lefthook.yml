@@ -15,13 +15,16 @@ pre-commit:
   commands:
     stylelint:
       glob: "*.{css}"
-      run: pnpm stylelint-globex --fix {staged_files} && git add {staged_files}
+      run: pnpm stylelint-globex --fix {staged_files}
+      stage_fixed: true
     eslint:
       glob: "*.{js,jsx,ts,tsx}"
-      run: pnpm eslint-globex --fix {staged_files} && git add {staged_files}
+      run: pnpm eslint-globex --fix {staged_files}
+      stage_fixed: true
     prettier-package-json:
       glob: "package.json"
-      run: pnpm prettier-package-json --use-tabs --write {staged_files} && git add {staged_files}
+      run: pnpm prettier-package-json --use-tabs --write {staged_files}
+      stage_fixed: true
     typescript:
       glob: "*.{ts,tsx}"
       run: pnpm tsc --project ./tsconfig.json --noEmit
