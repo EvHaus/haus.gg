@@ -6,7 +6,7 @@ specifiers:
   '@eslint-config-globex/typescript': 7.7.0
   '@floating-ui/react': 0.21.1
   '@react-pdf/renderer': 3.1.8
-  '@react-pdf/types': 2.3.0
+  '@react-pdf/types': 2.3.1
   '@types/node': 18.15.3
   '@types/react': 18.0.28
   clsx: 1.2.1
@@ -26,7 +26,7 @@ specifiers:
 dependencies:
   '@floating-ui/react': 0.21.1_zula6vjvt3wdocc4mwcxqa6nzi
   '@react-pdf/renderer': 3.1.8_react@18.2.0
-  '@react-pdf/types': 2.3.0
+  '@react-pdf/types': 2.3.1
   clsx: 1.2.1
   date-fns: 2.29.3
   framer-motion: 10.3.2_biqbaboplfbrettd7655fr4n2y
@@ -467,10 +467,6 @@ packages:
       '@react-pdf/fns': 2.0.1
       hyphen: 1.6.4
       unicode-properties: 1.4.1
-    dev: false
-
-  /@react-pdf/types/2.3.0:
-    resolution: {integrity: sha512-fI+M4jK7cHhWmmr4tBaksEFvMOh3DLKxCRPg83Uj1n4C30RCoCejlz3wa1ABlRRp1zmTfY9SmLH50ydy0tPjNw==}
     dev: false
 
   /@react-pdf/types/2.3.1:
