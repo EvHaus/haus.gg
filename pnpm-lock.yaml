@@ -5,7 +5,7 @@ specifiers:
   '@eslint-config-globex/react': 7.7.1
   '@eslint-config-globex/typescript': 7.8.0
   '@floating-ui/react': 0.22.0
-  '@react-pdf/renderer': 3.1.8
+  '@react-pdf/renderer': 3.1.9
   '@react-pdf/types': 2.3.1
   '@types/node': 18.15.9
   '@types/react': 18.0.29
@@ -25,7 +25,7 @@ specifiers:
 
 dependencies:
   '@floating-ui/react': 0.22.0_aen5vu2fkbnw3ssyd5drxdxkh4
-  '@react-pdf/renderer': 3.1.8_react@18.2.0
+  '@react-pdf/renderer': 3.1.9_react@18.2.0
   '@react-pdf/types': 2.3.1
   clsx: 1.2.1
   date-fns: 2.29.3
@@ -425,8 +425,8 @@ packages:
       - encoding
     dev: false
 
-  /@react-pdf/layout/3.5.1:
-    resolution: {integrity: sha512-htBnbSNrftYo/iAIi1WjdrCiYVOwT0NVmiQDmGKwugE0qFPpbYm1gdjkb7CKXJdOEVncPipG5LDuTrQLvUkHFw==}
+  /@react-pdf/layout/3.6.0:
+    resolution: {integrity: sha512-xrcVWxtXpobW0iqTd8OmMCVMmeGUM46PYq7B1MGR1fI1QG/EKe4HzFdhSdd0werZYj+t1TRC8+tVSX5POs5SYA==}
     dependencies:
       '@babel/runtime': 7.21.0
       '@react-pdf/fns': 2.0.1
@@ -438,7 +438,7 @@ packages:
       '@react-pdf/types': 2.3.1
       '@react-pdf/yoga': 4.1.2
       cross-fetch: 3.1.5
-      emoji-regex: 8.0.0
+      emoji-regex: 10.2.1
       queue: 6.0.2
     transitivePeerDependencies:
       - encoding
@@ -480,14 +480,14 @@ packages:
       svg-arc-to-cubic-bezier: 3.2.0
     dev: false
 
-  /@react-pdf/renderer/3.1.8_react@18.2.0:
-    resolution: {integrity: sha512-/oxjZLd/rcqkhXzWLwOUrjG/Ol2ZVmDCneuKG1Qmruyko3g++QIlp/141BGHN4JXGvcK9JbO8cBYRhAdwKLIWw==}
+  /@react-pdf/renderer/3.1.9_react@18.2.0:
+    resolution: {integrity: sha512-kfEH7O+Jy7aihbUqrT9Ej1gx8/twRWvFMfHlACr29QsN+s+w0XzWpHCvbjkinVFABYcvsenluiirik6mf4qwRQ==}
     peerDependencies:
       react: ^16.8.6 || ^17.0.0 || ^18.0.0
     dependencies:
       '@babel/runtime': 7.21.0
       '@react-pdf/font': 2.3.4
-      '@react-pdf/layout': 3.5.1
+      '@react-pdf/layout': 3.6.0
       '@react-pdf/pdfkit': 3.0.2
       '@react-pdf/primitives': 3.0.1
       '@react-pdf/render': 3.2.4
@@ -1175,8 +1175,13 @@ packages:
       esutils: 2.0.3
     dev: true
 
+  /emoji-regex/10.2.1:
+    resolution: {integrity: sha512-97g6QgOk8zlDRdgq1WxwgTMgEWGVAQvB5Fdpgc1MkNy56la5SKP9GsMXKDOdqwn90/41a8yPwIGk1Y6WVbeMQA==}
+    dev: false
+
   /emoji-regex/8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
+    dev: true
 
   /emoji-regex/9.2.2:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
