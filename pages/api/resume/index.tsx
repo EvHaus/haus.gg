@@ -1,10 +1,5 @@
 /* eslint-disable max-len */
 
-import EducationBlock from './components/EducationBlock';
-import ExperienceBlock from './components/ExperienceBlock';
-import Pipe from './components/Pipe';
-import SectionTitle from './components/SectionTitle';
-import type {RoleItemType} from './types';
 import {
 	AQUA,
 	BLACK,
@@ -26,16 +21,21 @@ import {
 	LinearGradient,
 	Link,
 	Page,
+	pdf,
 	Rect,
 	Stop,
 	StyleSheet,
 	Svg,
 	Text,
 	View,
-	pdf,
 } from '@react-pdf/renderer';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import EducationBlock from './components/EducationBlock';
+import ExperienceBlock from './components/ExperienceBlock';
+import Pipe from './components/Pipe';
 import React from 'react';
+import type {RoleItemType} from './types';
+import SectionTitle from './components/SectionTitle';
 
 Font.register({
 	family: 'Roboto',
