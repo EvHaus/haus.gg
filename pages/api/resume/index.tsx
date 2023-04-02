@@ -1,5 +1,10 @@
 /* eslint-disable max-len */
 
+import EducationBlock from './components/EducationBlock';
+import ExperienceBlock from './components/ExperienceBlock';
+import Pipe from './components/Pipe';
+import SectionTitle from './components/SectionTitle';
+import type {RoleItemType} from './types';
 import {
 	AQUA,
 	BLACK,
@@ -21,21 +26,16 @@ import {
 	LinearGradient,
 	Link,
 	Page,
-	pdf,
 	Rect,
 	Stop,
 	StyleSheet,
 	Svg,
 	Text,
 	View,
+	pdf,
 } from '@react-pdf/renderer';
 import type { NextApiRequest, NextApiResponse } from 'next';
-import EducationBlock from './components/EducationBlock';
-import ExperienceBlock from './components/ExperienceBlock';
-import Pipe from './components/Pipe';
 import React from 'react';
-import type {RoleItemType} from './types';
-import SectionTitle from './components/SectionTitle';
 
 Font.register({
 	family: 'Roboto',
@@ -132,6 +132,7 @@ const EXPERIENCE: Array<RoleItemType> = [{
 	company: 'Zenhub',
 	roles: [{
 		accomplishments: [
+			'Responsible for engineering due diligence as the company secured $6M in seed and $10M in Series A funding.',
 			'Led hiring & onboarding of hybrid/remote team of ~25 engineers & managers.',
 			'Established a culture of ownership, individual responsibility, and personal growth',
 			'Setup engineering KPIs, monitored performance, throughput, velocity, and optimized internal workflows and culture to improve those metrics',
@@ -140,6 +141,7 @@ const EXPERIENCE: Array<RoleItemType> = [{
 			'Shipped production code, mostly focused on optimizing our internal systems, technical debt, and customer retention.',
 			'Worked with marketing team to raise brand awareness by writing technical articles, appearing on podcasts and giving conference talks.',
 			'Contributed to & embraced open source initiatives to drive internal goals.',
+			'Established a DevOps team and completed SOC2 Type 2 certification.',
 		],
 		date: [new Date(2019, 8, 9), null],
 		title: 'Head of Technology',
@@ -157,8 +159,8 @@ const EXPERIENCE: Array<RoleItemType> = [{
 			'Steered engineering initiatives; identified & filed patent applications.',
 			'Created and refined software patterns and engineering best-practices.',
 			'Oversaw the DevOps team and helped refine the cloud infrastructure.',
-			'Engaged with partners and customers to lead technical conversations and audits.',
-			'Continued to be a hands-on coder, shipping many client-facing product features.',
+			// 'Engaged with partners and customers to lead technical conversations and audits.',
+			// 'Continued to be a hands-on coder, shipping many client-facing product features.',
 		],
 		date: [new Date(2016, 9, 12), new Date(2019, 4, 23)],
 		title: 'Technical Director',
