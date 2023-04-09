@@ -5,6 +5,7 @@ export const ResumeButton = () => (
 	<a
 		className={styles.main}
 		href='/ev-haus-resume.pdf'
+		rel='noreferrer'
 		target='_blank'>
 		My Resume
 	</a>

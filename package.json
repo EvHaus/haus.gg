@@ -4,7 +4,7 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "next build",
-		"dev": "next",
+		"dev": "next --turbo",
 		"eslint": "eslint-globex .",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"start": "next start",

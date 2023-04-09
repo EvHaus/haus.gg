@@ -21,8 +21,8 @@ import {
 	LinearGradient,
 	Link,
 	Page,
-	pdf,
 	Rect,
+	renderToStream,
 	Stop,
 	StyleSheet,
 	Svg,
@@ -325,11 +325,7 @@ const resume = async (
 
 	// Generate resume
 	const generatedPdf = buildReport();
-
-	// The toBuffer hack is needed here to get custom fonts to load. See:
-	// https://github.com/diegomura/react-pdf/issues/1955#issuecomment-1257270423
-	const instance = pdf(generatedPdf);
-	const output = await instance.toBuffer();
+	const output = await renderToStream(generatedPdf);
 
 	return res
 		.status(200)
