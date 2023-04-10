@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@floating-ui/react':
-    specifier: 0.22.3
-    version: 0.22.3(react-dom@18.2.0)(react@18.2.0)
+    specifier: 0.23.0
+    version: 0.23.0(react-dom@18.2.0)(react@18.2.0)
   '@react-pdf/renderer':
     specifier: 3.1.9
     version: 3.1.9(react@18.2.0)
@@ -236,8 +236,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@floating-ui/react@0.22.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-RlF+7yU3/abTZcUez44IHoEH89yDHHonkYzZocynTWbl6J6MiMINMbyZSmSKdRKdadrC+MwQLdEexu++irvZhQ==}
+  /@floating-ui/react@0.23.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Id9zTLSjHtcCjBQm0Stc/fRUBGrnHurL/a1HrtQg8LvL6Ciw9KHma2WT++F17kEfhsPkA0UHYxmp+ijmAy0TCw==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
