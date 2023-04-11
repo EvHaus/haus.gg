@@ -17,8 +17,8 @@ dependencies:
     specifier: 2.29.3
     version: 2.29.3
   framer-motion:
-    specifier: 10.11.2
-    version: 10.11.2(react-dom@18.2.0)(react@18.2.0)
+    specifier: 10.11.4
+    version: 10.11.4(react-dom@18.2.0)(react@18.2.0)
   next:
     specifier: 13.3.0
     version: 13.3.0(react-dom@18.2.0)(react@18.2.0)
@@ -1661,8 +1661,8 @@ packages:
       is-callable: 1.2.7
     dev: true
 
-  /framer-motion@10.11.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-IrwuC9regNOU99JoM/Z62CAMA3awGV6AcF7e3bcgXk/ZoNlGSt5aVq0J7UAwtLmCkwVlRvBkiMnvv2mZ1GW2pg==}
+  /framer-motion@10.11.4(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-G69oXNILHETM95lI7UNORG8T7lVN9GnwAf6V8OV7asdWLo7cLVsCFXgPQveWb4fSIDC0FnQQhFnx6blVdmdl3A==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
