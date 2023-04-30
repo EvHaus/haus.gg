@@ -69,9 +69,8 @@ const WithTooltip = forwardRef<HTMLElement, PropsType>(({
 
 	const {
 		context,
-		floating,
 		placement: calculatedPlacement,
-		reference,
+		refs,
 		strategy,
 		x,
 		y,
@@ -95,8 +94,8 @@ const WithTooltip = forwardRef<HTMLElement, PropsType>(({
 	const placement = forcedPlacement ? forcedPlacement : calculatedPlacement;
 
 	// Preserve the consumer's ref
-	const ref = useMemo(() => mergeRefs([reference, parentRef]), [
-		reference,
+	const ref = useMemo(() => mergeRefs([refs.setReference, parentRef]), [
+		refs.setReference,
 		parentRef,
 	]);
 
@@ -146,11 +145,11 @@ const WithTooltip = forwardRef<HTMLElement, PropsType>(({
 									styles.main,
 									styles[placement]
 								),
-								ref: floating,
+								ref: refs.setFloating,
 								style: {
-									left: x ?? 0,
+									left: x ? x : 0,
 									position: strategy,
-									top: y ?? 0,
+									top: y ? y : 0,
 								},
 							})}>
 							{tooltip}
