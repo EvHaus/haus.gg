@@ -1,9 +1,13 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   '@floating-ui/react':
-    specifier: 0.24.1
-    version: 0.24.1(react-dom@18.2.0)(react@18.2.0)
+    specifier: 0.24.2
+    version: 0.24.2(react-dom@18.2.0)(react@18.2.0)
   '@react-pdf/renderer':
     specifier: 3.1.9
     version: 3.1.9(react@18.2.0)
@@ -236,8 +240,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@floating-ui/react@0.24.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-qjCKUZDEz/4bnJmu4gn66TqsoX912/re8JGEi3pXazsphmyh327l0UpTgpBAT3WkNbnzAH7Adt3wKlLMNtfupw==}
+  /@floating-ui/react@0.24.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-8sdLmcC85J6M2H0AL8yOQuiWD4T0gNMSLpuJjmXyEA6ndfmxXR0hwKFkczB4xRNFhKbwoQeuh8z561HE2vOdZw==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
