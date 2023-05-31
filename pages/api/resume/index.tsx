@@ -245,7 +245,6 @@ const buildReport = () => {
 							</LinearGradient>
 						</Defs>
 
-						{/* @ts-expect-error Dunno what's up */}
 						<Rect fill="url('#sidebarGradient')" height='100%' width='100%' />
 						<Circle
 							cx='95'
