@@ -12,8 +12,8 @@ dependencies:
     specifier: 3.1.9
     version: 3.1.9(react@18.2.0)
   '@react-pdf/types':
-    specifier: 2.3.1
-    version: 2.3.1
+    specifier: 2.3.2
+    version: 2.3.2
   clsx:
     specifier: 1.2.1
     version: 1.2.1
@@ -385,7 +385,7 @@ packages:
     resolution: {integrity: sha512-ICvVH0GW3kgocxVfE0mFY3EcnAoxRolkOfhPCfLu8mRbwJaHRiKX5+8SRKbPADZNdHrF9ngt4LpUxThy+bdZXg==}
     dependencies:
       '@babel/runtime': 7.22.3
-      '@react-pdf/types': 2.3.1
+      '@react-pdf/types': 2.3.2
       cross-fetch: 3.1.6
       fontkit: 2.0.2
       is-url: 1.2.4
@@ -413,7 +413,7 @@ packages:
       '@react-pdf/primitives': 3.0.1
       '@react-pdf/stylesheet': 4.1.5
       '@react-pdf/textkit': 4.2.0
-      '@react-pdf/types': 2.3.1
+      '@react-pdf/types': 2.3.2
       '@react-pdf/yoga': 4.1.2
       cross-fetch: 3.1.6
       emoji-regex: 10.2.1
@@ -450,7 +450,7 @@ packages:
       '@react-pdf/fns': 2.0.1
       '@react-pdf/primitives': 3.0.1
       '@react-pdf/textkit': 4.2.0
-      '@react-pdf/types': 2.3.1
+      '@react-pdf/types': 2.3.2
       abs-svg-path: 0.1.1
       color-string: 1.9.1
       normalize-svg-path: 1.1.0
@@ -469,7 +469,7 @@ packages:
       '@react-pdf/pdfkit': 3.0.2
       '@react-pdf/primitives': 3.0.1
       '@react-pdf/render': 3.2.4
-      '@react-pdf/types': 2.3.1
+      '@react-pdf/types': 2.3.2
       events: 3.3.0
       object-assign: 4.1.1
       prop-types: 15.8.1
@@ -485,7 +485,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.22.3
       '@react-pdf/fns': 2.0.1
-      '@react-pdf/types': 2.3.1
+      '@react-pdf/types': 2.3.2
       color-string: 1.9.1
       hsl-to-hex: 1.0.0
       media-engine: 1.0.3
@@ -501,8 +501,8 @@ packages:
       unicode-properties: 1.4.1
     dev: false
 
-  /@react-pdf/types@2.3.1:
-    resolution: {integrity: sha512-FiwAsNp2oQ2W39xAU1PCjY6YNjEuypQykEA6VMz4WZ4ERvyOBB4M5B8063lA8YYBcjYB8xQOa9og4UH1eqMbgg==}
+  /@react-pdf/types@2.3.2:
+    resolution: {integrity: sha512-pFOLqSWp8esMitKKENk8Pi4pBk0NS1LLUYzbbEHeWTU2X5debuvjbcgzfgJw4lj/ZhIK9ji1WfypOjngKGKFdg==}
     dev: false
 
   /@react-pdf/yoga@4.1.2:
