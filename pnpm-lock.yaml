@@ -9,8 +9,8 @@ dependencies:
     specifier: 0.24.2
     version: 0.24.2(react-dom@18.2.0)(react@18.2.0)
   '@react-pdf/renderer':
-    specifier: 3.1.11
-    version: 3.1.11(react@18.2.0)
+    specifier: 3.1.12
+    version: 3.1.12(react@18.2.0)
   '@react-pdf/types':
     specifier: 2.3.3
     version: 2.3.3
@@ -458,8 +458,8 @@ packages:
       svg-arc-to-cubic-bezier: 3.2.0
     dev: false
 
-  /@react-pdf/renderer@3.1.11(react@18.2.0):
-    resolution: {integrity: sha512-te/RTcyTkIg6zlvuoUYs5cEXPyZPjADrhcm/6EA2OudMmmwHlTrsinMgLuB8aGlSjmgo3anlu1soIC2j+KsyTQ==}
+  /@react-pdf/renderer@3.1.12(react@18.2.0):
+    resolution: {integrity: sha512-y4H2ELH0okJP7+ig+uNjFAfuAanWiF3mxsKsE7ZBuhF4tabbMt9fX+pQ7qn4xrzEWX0vlso6s6ebkkeGdSGWzA==}
     peerDependencies:
       react: ^16.8.6 || ^17.0.0 || ^18.0.0
     dependencies:
