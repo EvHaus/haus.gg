@@ -32,7 +32,7 @@
 		"@types/node": "20.2.5",
 		"@types/react": "18.2.13",
 		"eslint-config-globex": "7.7.2",
-		"lefthook": "1.4.2",
+		"lefthook": "1.4.3",
 		"prettier-package-json": "2.8.0",
 		"stylelint-config-globex": "3.10.0",
 		"typescript": "5.1.3"
