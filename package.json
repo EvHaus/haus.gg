@@ -35,7 +35,7 @@
 		"lefthook": "1.4.3",
 		"prettier-package-json": "2.8.0",
 		"stylelint-config-globex": "3.10.0",
-		"typescript": "5.1.5"
+		"typescript": "5.1.6"
 	},
 	"packageManager": "pnpm@8.6.5"
 }
