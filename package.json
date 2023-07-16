@@ -16,7 +16,7 @@
 		"@floating-ui/react": "0.24.8",
 		"@react-pdf/renderer": "3.1.12",
 		"@react-pdf/types": "2.3.3",
-		"clsx": "1.2.1",
+		"clsx": "2.0.0",
 		"date-fns": "2.30.0",
 		"framer-motion": "10.12.21",
 		"next": "13.4.10",
