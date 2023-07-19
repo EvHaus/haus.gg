@@ -1,5 +1,6 @@
-import {type Style, StyleSheet, View} from '@react-pdf/renderer';
+import {StyleSheet, View} from '@react-pdf/renderer';
 import React from 'react';
+import {type Style} from '@react-pdf/types';
 
 type PropsType = {
 	children: React.ReactNode,
