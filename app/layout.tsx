@@ -1,6 +1,6 @@
 import Analytics from '../components/Analytics';
 import {clsx} from 'clsx';
-import type { Metadata } from 'next';
+import {type Metadata} from 'next';
 import {Montserrat} from 'next/font/google';
 import React from 'react';
 import SillyComment from '../components/SillyComment';

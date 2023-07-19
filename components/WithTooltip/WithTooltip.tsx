@@ -5,8 +5,10 @@ import {
 	arrow,
 	autoPlacement,
 	autoUpdate,
+	type Coords,
 	FloatingPortal,
 	offset,
+	type Placement,
 	shift,
 	useDismiss,
 	useFloating,
@@ -14,7 +16,6 @@ import {
 	useInteractions,
 	useRole,
 } from '@floating-ui/react';
-import type {Coords, Placement} from '@floating-ui/react';
 import React, {cloneElement, forwardRef, useMemo, useRef, useState} from 'react';
 import clsx from 'clsx';
 import {mergeRefs} from 'react-merge-refs';

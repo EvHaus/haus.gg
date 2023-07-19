@@ -29,12 +29,12 @@ import {
 	Text,
 	View,
 } from '@react-pdf/renderer';
-import type { NextApiRequest, NextApiResponse } from 'next';
+import { type NextApiRequest, type NextApiResponse } from 'next';
 import EducationBlock from './components/EducationBlock';
 import ExperienceBlock from './components/ExperienceBlock';
 import Pipe from './components/Pipe';
 import React from 'react';
-import type {RoleItemType} from './types';
+import {type RoleItemType} from './types';
 import SectionTitle from './components/SectionTitle';
 
 Font.register({

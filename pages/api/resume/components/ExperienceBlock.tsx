@@ -5,7 +5,7 @@ import Block from './Block';
 import {differenceInCalendarMonths} from 'date-fns';
 import ListItem from './ListItem';
 import React from 'react';
-import type {RoleItemType} from '../types';
+import {type RoleItemType} from '../types';
 import Timeline from './Timeline';
 
 type PropsType = {
