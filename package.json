@@ -29,7 +29,7 @@
 		"@eslint-config-globex/next": "7.6.4",
 		"@eslint-config-globex/react": "7.7.1",
 		"@eslint-config-globex/typescript": "7.8.0",
-		"@types/node": "20.4.4",
+		"@types/node": "20.4.5",
 		"@types/react": "18.2.16",
 		"eslint-config-globex": "7.7.2",
 		"lefthook": "1.4.7",
