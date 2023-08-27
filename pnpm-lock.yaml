@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@floating-ui/react':
-    specifier: 0.25.1
-    version: 0.25.1(react-dom@18.2.0)(react@18.2.0)
+    specifier: 0.25.2
+    version: 0.25.2(react-dom@18.2.0)(react@18.2.0)
   '@react-pdf/renderer':
     specifier: 3.1.12
     version: 3.1.12(react@18.2.0)
@@ -241,8 +241,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@floating-ui/react@0.25.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-lxuWxfSgDJwOeZK07PIDjTSlH0CY6LRDKo6eI0H7TnctP+5IAn0n8+npNveM0L2wNIVdAr0S8RvvoHfhzPbBAQ==}
+  /@floating-ui/react@0.25.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-3e10G9LFOgl32/SMWLBOwT7oVCtB+d5zBsU2GxTSVOvRgZexwno5MlYbc0BaXr+TR5EEGpqe9tg9OUbjlrVRnQ==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
