@@ -10,6 +10,7 @@
     },
     "rules": {
       "@next/next/no-html-link-for-pages": ["error", "app"],
-      "import/consistent-type-specifier-style": ["error", "prefer-inline"]
+      "import/consistent-type-specifier-style": ["error", "prefer-inline"],
+      "react/prefer-read-only-props": "off"
     }
 }
