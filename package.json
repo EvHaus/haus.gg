@@ -23,7 +23,7 @@
 		"nextjs-google-analytics": "2.3.3",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"react-merge-refs": "2.0.2"
+		"react-merge-refs": "2.1.1"
 	},
 	"devDependencies": {
 		"@eslint-config-globex/next": "7.6.4",
