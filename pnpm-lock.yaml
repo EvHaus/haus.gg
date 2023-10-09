@@ -53,8 +53,8 @@ devDependencies:
     specifier: 20.8.3
     version: 20.8.3
   '@types/react':
-    specifier: 18.2.25
-    version: 18.2.25
+    specifier: 18.2.26
+    version: 18.2.26
   eslint-config-globex:
     specifier: 7.7.2
     version: 7.7.2(@typescript-eslint/parser@5.62.0)
@@ -575,8 +575,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react@18.2.25:
-    resolution: {integrity: sha512-24xqse6+VByVLIr+xWaQ9muX1B4bXJKXBbjszbld/UEDslGLY53+ZucF44HCmLbMPejTzGG9XgR+3m2/Wqu1kw==}
+  /@types/react@18.2.26:
+    resolution: {integrity: sha512-ZaMtQo/fasHwMSRTED+u4Cjnkl0uuqEFJ2rKF0DQXji1v24DaNdSe9am4ldiDKFD/MpzbyS8UEOceh1/Oiw89g==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
