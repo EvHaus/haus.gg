@@ -12,8 +12,8 @@ dependencies:
     specifier: 3.1.14
     version: 3.1.14(react@18.2.0)
   '@react-pdf/types':
-    specifier: 2.3.3
-    version: 2.3.3
+    specifier: 2.3.4
+    version: 2.3.4
   clsx:
     specifier: 2.0.0
     version: 2.0.0
@@ -513,10 +513,6 @@ packages:
       '@react-pdf/fns': 2.0.1
       hyphen: 1.7.0
       unicode-properties: 1.4.1
-    dev: false
-
-  /@react-pdf/types@2.3.3:
-    resolution: {integrity: sha512-I3BVu5vF0xxX6rvqZHt4gCjFAt6X+mak5bwYQyf6bm21IIMDXXBtgXqWEl1wosWizArox7fcN/XbEnysrf/8Dw==}
     dev: false
 
   /@react-pdf/types@2.3.4:
