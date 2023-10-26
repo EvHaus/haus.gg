@@ -30,7 +30,7 @@
 		"@eslint-config-globex/react": "7.7.1",
 		"@eslint-config-globex/typescript": "7.8.0",
 		"@types/node": "20.8.9",
-		"@types/react": "18.2.32",
+		"@types/react": "18.2.33",
 		"eslint-config-globex": "7.7.2",
 		"lefthook": "1.5.2",
 		"prettier-package-json": "2.8.0",
