@@ -1,4 +1,3 @@
-import React from 'react';
 import ResumeButton from '../components/ResumeButton';
 import SocialIcon from '../components/SocialIcon';
 import styles from './page.module.css';
@@ -31,7 +30,7 @@ const Index = () => {
 			</h1>
 			<div className={styles.orb}>
 				<div className={styles.orbInner}>
-					{Array.from(new Array(CIRCLE_COUNT)).map((v, i) => {
+					{Array.from(new Array(CIRCLE_COUNT)).map((_v, i) => {
 						const circleStyleUnique = {
 							color: CIRCLE_COLORS[i],
 						};
@@ -39,8 +38,9 @@ const Index = () => {
 						return (
 							<div
 								className={styles.orbCircle}
-								key={i}
-								style={{...circleStyle, ...circleStyleUnique}} />
+								key={`${i}`}
+								style={{ ...circleStyle, ...circleStyleUnique }}
+							/>
 						);
 					})}
 				</div>
@@ -50,7 +50,7 @@ const Index = () => {
 			</div>
 			<div className={styles.icons}>
 				<SocialIcon type='linkedin' />
-				<SocialIcon type='twitter' />
+				<SocialIcon type='x' />
 				<SocialIcon type='instagram' />
 				<SocialIcon type='github' />
 				<SocialIcon type='medium' />

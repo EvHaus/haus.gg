@@ -1,8 +1,7 @@
-import {StyleSheet, Text, View} from '@react-pdf/renderer';
-import React from 'react';
+import { StyleSheet, Text, View } from '@react-pdf/renderer';
 
 type PropsType = {
-	children: string,
+	children: string;
 };
 
 const styles = StyleSheet.create({
@@ -15,11 +14,11 @@ const styles = StyleSheet.create({
 	},
 });
 
-const ListItem = ({
-	children,
-}: PropsType) => (
+const ListItem = ({ children }: PropsType) => (
 	<View style={styles.main}>
-		<View style={styles.bullet}><Text>&bull;</Text></View>
+		<View style={styles.bullet}>
+			<Text>&bull;</Text>
+		</View>
 		<Text>{children}</Text>
 	</View>
 );

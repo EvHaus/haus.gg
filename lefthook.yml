@@ -3,30 +3,30 @@ colors: false
 post-merge:
   commands:
     install:
-      run: pnpm install
+      run: bun i
 
 post-rebase:
   commands:
     install:
-      run: pnpm install
+      run: bun i
 
 pre-commit:
   parallel: true
   commands:
-    stylelint:
-      glob: "*.{css}"
-      run: pnpm stylelint-globex --fix {staged_files}
-      stage_fixed: true
-    eslint:
+    biome:
       glob: "*.{js,jsx,ts,tsx}"
-      run: pnpm eslint-globex --fix {staged_files}
+      run: bun biome check --apply-unsafe {staged_files}
       stage_fixed: true
     prettier-package-json:
       glob: "package.json"
-      run: pnpm prettier-package-json --use-tabs --write {staged_files}
+      run: bun prettier-package-json --use-tabs --write {staged_files}
+      stage_fixed: true
+    stylelint:
+      glob: "*.{css}"
+      run: bun stylelint-globex --fix {staged_files}
       stage_fixed: true
     typescript:
       glob: "*.{ts,tsx}"
-      run: pnpm tsc --project ./tsconfig.json --noEmit
+      run: bun tsc --project ./tsconfig.json --noEmit
       
        

@@ -1,10 +1,9 @@
-import {BLACK, PURPLE} from '../utils/colors';
-import {StyleSheet, Text, View} from '@react-pdf/renderer';
-import React from 'react';
+import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import { BLACK, PURPLE } from '../utils/colors';
 
 type PropsType = {
-	children: string,
-	theme?: 'dark' | 'light',
+	children: string;
+	theme?: 'dark' | 'light';
 };
 
 const styles = StyleSheet.create({
@@ -19,10 +18,7 @@ const styles = StyleSheet.create({
 	},
 });
 
-const SectionTitle = ({
-	children,
-	theme = 'light',
-}: PropsType) => (
+const SectionTitle = ({ children, theme = 'light' }: PropsType) => (
 	<View style={[styles.main, styles[theme]]}>
 		<Text>{children}</Text>
 	</View>

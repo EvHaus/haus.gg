@@ -3,13 +3,13 @@
 	"version": "0.11.0",
 	"license": "MIT",
 	"scripts": {
+		"biome:check": "biome check --apply-unsafe .",
 		"build": "next build",
 		"dev": "next --turbo",
-		"eslint": "eslint-globex .",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"start": "next start",
 		"stylelint": "stylelint-globex app/**/*.css components/**/*.css",
-		"test": "pnpm typescript && pnpm eslint && pnpm stylelint && pnpm packagelint",
+		"test": "bun typescript && bun biome:check && bun stylelint && bun packagelint",
 		"typescript": "tsc --noEmit"
 	},
 	"dependencies": {
@@ -26,12 +26,8 @@
 		"react-merge-refs": "2.1.1"
 	},
 	"devDependencies": {
-		"@eslint-config-globex/next": "7.6.4",
-		"@eslint-config-globex/react": "7.7.1",
-		"@eslint-config-globex/typescript": "7.8.0",
-		"@types/node": "20.10.0",
+		"@biomejs/biome": "1.4.0",
 		"@types/react": "18.2.39",
-		"eslint-config-globex": "7.7.2",
 		"lefthook": "1.5.4",
 		"prettier-package-json": "2.8.0",
 		"stylelint-config-globex": "3.12.0",

@@ -1,7 +1,5 @@
 // @ts-check
 
-/* eslint-disable import/no-commonjs */
-
 /**
  * @type {import('next').NextConfig}
  **/

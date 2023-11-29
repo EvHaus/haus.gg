@@ -1,1 +1,1 @@
-export {default} from './SocialIcon';
+export { default } from './SocialIcon';

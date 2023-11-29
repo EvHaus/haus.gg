@@ -1,1 +1,1 @@
-export {default} from './ResumeButton';
+export { default } from './ResumeButton';

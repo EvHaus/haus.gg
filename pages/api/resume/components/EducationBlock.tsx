@@ -1,7 +1,6 @@
-import {StyleSheet, Text, View} from '@react-pdf/renderer';
+import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import { ORANGE } from '../utils/colors';
 import Block from './Block';
-import {ORANGE} from '../utils/colors';
-import React from 'react';
 import Timeline from './Timeline';
 
 const styles = StyleSheet.create({
@@ -27,9 +26,7 @@ const styles = StyleSheet.create({
 
 const EducationBlock = () => (
 	<Block style={styles.main}>
-		<Timeline
-			color={ORANGE}
-			date={new Date(2010, 4, 1)} />
+		<Timeline color={ORANGE} date={new Date(2010, 4, 1)} />
 		<View style={styles.content}>
 			<View style={styles.header}>
 				<Text style={styles.schoolName}>

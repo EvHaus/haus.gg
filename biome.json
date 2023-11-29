@@ -1,0 +1,53 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.4.0/schema.json",
+	"files": {
+		"ignore": [".next"]
+	},
+	"formatter": {
+		"enabled": true
+	},
+	"javascript": {
+		"formatter": {
+			"jsxQuoteStyle": "single",
+			"quoteStyle": "single"
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"a11y": {
+				"noAutofocus": "off"
+			},
+			"complexity": {
+				"noVoid": "error"
+			},
+			"correctness": {
+				"useHookAtTopLevel": "error",
+				"useExhaustiveDependencies": "off"
+			},
+			"nursery": {
+				"noAriaHiddenOnFocusable": "error",
+				"useAwait": "error",
+				"noDefaultExport": "off",
+				"noDuplicateJsonKeys": "error",
+				"noUnusedImports": "error",
+				"useGroupedTypeImport": "error",
+				"useRegexLiterals": "error",
+				"useValidAriaRole": "error"
+			},
+			"style": {
+				"useCollapsedElseIf": "error",
+				"useShorthandAssign": "error"
+			},
+			"suspicious": {
+				"noApproximativeNumericConstant": "error",
+				"noConsoleLog": "error",
+				"noMisrefactoredShorthandAssign": "error"
+			}
+		}
+	},
+	"organizeImports": {
+		"enabled": true
+	}
+}

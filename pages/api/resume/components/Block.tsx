@@ -1,10 +1,10 @@
-import {StyleSheet, View} from '@react-pdf/renderer';
+import { StyleSheet, View } from '@react-pdf/renderer';
+import type { Style } from '@react-pdf/types';
 import React from 'react';
-import {type Style} from '@react-pdf/types';
 
 type PropsType = {
-	children: React.ReactNode,
-	style?: Style,
+	children: React.ReactNode;
+	style?: Style;
 };
 
 const styles = StyleSheet.create({
@@ -16,10 +16,8 @@ const styles = StyleSheet.create({
 	},
 });
 
-const Block = ({children, style}: PropsType) => (
-	<View style={[styles.main, style ? style : {}]}>
-		{children}
-	</View>
+const Block = ({ children, style }: PropsType) => (
+	<View style={[styles.main, style ? style : {}]}>{children}</View>
 );
 
 export default Block;

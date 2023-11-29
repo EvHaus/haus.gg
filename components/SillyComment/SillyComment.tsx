@@ -1,6 +1,6 @@
 'use client';
 
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 
 // Avoid the comment from being injected twice when in dev mode
 let isRendered = false;
@@ -18,7 +18,10 @@ const SillyComment = () => {
 
 	If this code works - I wrote it.
 	Otherwise, I don't know where it came from. `);
-			document.documentElement.insertBefore(comment, document.documentElement.firstChild);
+			document.documentElement.insertBefore(
+				comment,
+				document.documentElement.firstChild,
+			);
 		}
 		isRendered = true;
 	}, []);

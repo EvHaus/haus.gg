@@ -1,11 +1,10 @@
-import {Circle, StyleSheet, Svg, Text, View} from '@react-pdf/renderer';
-import {format} from 'date-fns';
-import React from 'react';
-import {WHITE} from '../utils/colors';
+import { Circle, StyleSheet, Svg, Text, View } from '@react-pdf/renderer';
+import { format } from 'date-fns';
+import { WHITE } from '../utils/colors';
 
 type PropsType = {
-	color: string,
-	date?: Date | null,
+	color: string;
+	date?: Date | null;
 };
 
 const styles = StyleSheet.create({
@@ -40,24 +39,16 @@ const styles = StyleSheet.create({
 	},
 });
 
-const Timeline = ({color, date}: PropsType) => (
+const Timeline = ({ color, date }: PropsType) => (
 	<View style={styles.main}>
-		<View style={[styles.line, {borderRightColor: color}]} />
+		<View style={[styles.line, { borderRightColor: color }]} />
 		<View style={styles.dot}>
-			<Text style={[styles.label, {color}]}>
+			<Text style={[styles.label, { color }]}>
 				{date ? format(date, 'yyyy') : 'Now'}
 			</Text>
 			<Svg height='16' style={styles.dotSvg} width='16'>
-				<Circle
-					cx='8'
-					cy='8'
-					fill={WHITE}
-					r='8' />
-				<Circle
-					cx='8'
-					cy='8'
-					fill={color}
-					r='6' />
+				<Circle cx='8' cy='8' fill={WHITE} r='8' />
+				<Circle cx='8' cy='8' fill={color} r='6' />
 			</Svg>
 		</View>
 	</View>
