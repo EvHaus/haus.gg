@@ -1,4 +1,9 @@
-import { Link, StyleSheet, Text, View } from '@react-pdf/renderer';
+import {
+	Link,
+	StyleSheet,
+	Text,
+	View,
+} from '@joshuajaco/react-pdf-renderer-bundled';
 import { differenceInCalendarMonths } from 'date-fns';
 import type { RoleItemType } from '../types';
 import Block from './Block';

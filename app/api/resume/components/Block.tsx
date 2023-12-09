@@ -1,4 +1,4 @@
-import { StyleSheet, View } from '@react-pdf/renderer';
+import { StyleSheet, View } from '@joshuajaco/react-pdf-renderer-bundled';
 import type { Style } from '@react-pdf/types';
 import React from 'react';
 

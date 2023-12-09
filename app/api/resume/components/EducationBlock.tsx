@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import { StyleSheet, Text, View } from '@joshuajaco/react-pdf-renderer-bundled';
 import { ORANGE } from '../utils/colors';
 import Block from './Block';
 import Timeline from './Timeline';

@@ -13,8 +13,7 @@ import {
 	Text,
 	View,
 	renderToStream,
-} from '@react-pdf/renderer';
-import type { NextApiRequest, NextApiResponse } from 'next';
+} from '@joshuajaco/react-pdf-renderer-bundled';
 import EducationBlock from './components/EducationBlock';
 import ExperienceBlock from './components/ExperienceBlock';
 import Pipe from './components/Pipe';
@@ -367,18 +366,20 @@ const buildReport = () => {
 	return <Resume />;
 };
 
-const resume = async (req: NextApiRequest, res: NextApiResponse) => {
+export async function GET() {
 	const filename = 'ev-haus-resume.pdf';
 
 	// Generate resume
 	const generatedPdf = buildReport();
-	const output = await renderToStream(generatedPdf);
+	const output = (await renderToStream(
+		generatedPdf,
+	)) as unknown as ReadableStream;
 
-	return res
-		.status(200)
-		.setHeader('Content-Disposition', `inline;filename="${filename}"`)
-		.setHeader('Content-Type', 'application/pdf')
-		.send(output);
-};
-
-export default resume;
+	return new Response(output, {
+		status: 200,
+		headers: {
+			'Content-Disposition': `inline;filename="${filename}"`,
+			'Content-Type': 'application/pdf',
+		},
+	});
+}

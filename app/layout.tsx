@@ -56,6 +56,6 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
 	themeColor: '#222',
-}
+};
 
 export default Layout;

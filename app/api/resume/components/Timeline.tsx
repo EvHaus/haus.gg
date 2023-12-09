@@ -1,4 +1,10 @@
-import { Circle, StyleSheet, Svg, Text, View } from '@react-pdf/renderer';
+import {
+	Circle,
+	StyleSheet,
+	Svg,
+	Text,
+	View,
+} from '@joshuajaco/react-pdf-renderer-bundled';
 import { format } from 'date-fns';
 import { WHITE } from '../utils/colors';
 
