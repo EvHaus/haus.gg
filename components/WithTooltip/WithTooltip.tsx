@@ -15,13 +15,8 @@ import {
 } from '@floating-ui/react';
 import clsx from 'clsx';
 import { AnimatePresence, motion } from 'framer-motion';
-import React, {
-	cloneElement,
-	forwardRef,
-	useMemo,
-	useRef,
-	useState,
-} from 'react';
+import type React from 'react';
+import { cloneElement, forwardRef, useMemo, useRef, useState } from 'react';
 import { mergeRefs } from 'react-merge-refs';
 import styles from './WithTooltip.module.css';
 

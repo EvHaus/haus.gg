@@ -1,6 +1,6 @@
 import { StyleSheet, View } from '@joshuajaco/react-pdf-renderer-bundled';
 import type { Style } from '@react-pdf/types';
-import React from 'react';
+import type React from 'react';
 
 type PropsType = {
 	children: React.ReactNode;
