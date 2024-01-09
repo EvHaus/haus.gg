@@ -1,7 +1,7 @@
 import { clsx } from 'clsx';
 import type { Metadata, Viewport } from 'next';
 import { Montserrat } from 'next/font/google';
-import React from 'react';
+import type React from 'react';
 import Analytics from '../components/Analytics';
 import SillyComment from '../components/SillyComment';
 import styles from './layout.module.css';
