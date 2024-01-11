@@ -1,8 +1,7 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
-		"ignore": ["./.next"],
-		"ignoreUnknown": true
+		"ignore": [".next"]
 	},
 	"formatter": {
 		"enabled": true
@@ -34,6 +33,12 @@
 				"noGlobalEval": "error",
 				"noMisleadingCharacterClass": "error",
 				"noThenProperty": "error",
+				"useConsistentArrayType": {
+					"level": "error",
+					"options": {
+						"syntax": "generic"
+					}
+				},
 				"noUnusedImports": "error",
 				"noUselessTernary": "error",
 				"useExportType": "error",
