@@ -36,7 +36,8 @@
 	},
 	"comments": {
 		"dependencies": {
-			"@joshuajaco/react-pdf-renderer-bundled": "Using this package instead of @react-pdf/renderer due to this https://github.com/diegomura/react-pdf/issues/2350 incompatibility with Next App Router"
+			"@joshuajaco/react-pdf-renderer-bundled": "Using this package instead of @react-pdf/renderer due to this https://github.com/diegomura/react-pdf/issues/2350 incompatibility with Next App Router",
+			"@react-pdf/types": "Cannot upgrade this past 2.3.5 due to incompatibility with the @joshuajaco/react-pdf-renderer-bundled fork"
 		}
 	}
 }
