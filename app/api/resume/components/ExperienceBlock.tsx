@@ -81,8 +81,8 @@ const ExperienceBlock = ({ item }: PropsType) => {
 									{dateNote ? `, ${dateNote}` : null})
 								</Text>
 							</View>
-							{accomplishments.map((item, i) => (
-								<ListItem key={`${i}`}>{item}</ListItem>
+							{accomplishments.map((item) => (
+								<ListItem key={item}>{item}</ListItem>
 							))}
 						</View>
 					);

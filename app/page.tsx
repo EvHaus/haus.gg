@@ -38,7 +38,10 @@ const Index = () => {
 						return (
 							<div
 								className={styles.orbCircle}
-								key={`${i}`}
+								key={`${
+									// biome-ignore lint/suspicious/noArrayIndexKey: Index is stable here
+									i
+								}`}
 								style={{ ...circleStyle, ...circleStyleUnique }}
 							/>
 						);
