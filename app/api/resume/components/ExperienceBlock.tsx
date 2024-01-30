@@ -3,7 +3,7 @@ import {
 	StyleSheet,
 	Text,
 	View,
-} from '@joshuajaco/react-pdf-renderer-bundled';
+} from '@react-pdf/renderer';
 import { differenceInCalendarMonths } from 'date-fns';
 import type { RoleItemType } from '../types';
 import Block from './Block';

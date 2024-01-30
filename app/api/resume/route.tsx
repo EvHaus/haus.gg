@@ -13,7 +13,7 @@ import {
 	Text,
 	View,
 	renderToStream,
-} from '@joshuajaco/react-pdf-renderer-bundled';
+} from '@react-pdf/renderer';
 import EducationBlock from './components/EducationBlock';
 import ExperienceBlock from './components/ExperienceBlock';
 import Pipe from './components/Pipe';

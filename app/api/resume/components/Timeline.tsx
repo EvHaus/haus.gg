@@ -4,7 +4,7 @@ import {
 	Svg,
 	Text,
 	View,
-} from '@joshuajaco/react-pdf-renderer-bundled';
+} from '@react-pdf/renderer';
 import { format } from 'date-fns';
 import { WHITE } from '../utils/colors';
 

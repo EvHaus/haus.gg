@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from '@joshuajaco/react-pdf-renderer-bundled';
+import { StyleSheet, Text, View } from '@react-pdf/renderer';
 import { BLACK, PURPLE } from '../utils/colors';
 
 type PropsType = {

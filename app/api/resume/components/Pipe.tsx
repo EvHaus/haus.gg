@@ -1,4 +1,4 @@
-import { StyleSheet, Text } from '@joshuajaco/react-pdf-renderer-bundled';
+import { StyleSheet, Text } from '@react-pdf/renderer';
 import { YELLOW } from '../utils/colors';
 
 const styles = StyleSheet.create({
