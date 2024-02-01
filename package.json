@@ -27,7 +27,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.5.3",
-		"@types/node": "20.11.15",
+		"@types/node": "20.11.16",
 		"@types/react": "18.2.51",
 		"lefthook": "1.6.1",
 		"prettier-package-json": "2.8.0",
