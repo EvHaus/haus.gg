@@ -1,5 +1,8 @@
 import { Link, StyleSheet, Text, View } from '@react-pdf/renderer';
-import { differenceInCalendarMonths } from 'date-fns';
+import {
+	formatDuration,
+	intervalToDuration,
+} from 'date-fns';
 import type { RoleItemType } from '../types';
 import Block from './Block';
 import ListItem from './ListItem';
@@ -52,36 +55,26 @@ const ExperienceBlock = ({ item }: PropsType) => {
 					</Link>
 				</View>
 				<Text>{about}</Text>
-				{roles.map(({ accomplishments, date, dateNote, title }, i) => {
-					const months = differenceInCalendarMonths(
-						date[1] || new Date(),
-						date[0],
-					);
-					const years = Math.floor(months / 12);
-					const monthsLeft = months - years * 12;
-					return (
-						<View
-							key={title}
-							style={[
-								styles.role,
-								i === roles.length - 1 ? styles.roleLast : {},
-							]}
-						>
-							<View style={styles.header}>
-								<Text style={styles.titleName}>{title}</Text>
-								<Text>
-									({years} years
-									{monthsLeft > 0 ? `, ${monthsLeft} months` : null}
-									{date[1] === null ? ' and counting' : null}
-									{dateNote ? `, ${dateNote}` : null})
-								</Text>
-							</View>
-							{accomplishments.map((item) => (
-								<ListItem key={item}>{item}</ListItem>
-							))}
+				{roles.map(({ accomplishments, date, dateNote, title }, i) => (
+					<View
+						key={title}
+						style={[
+							styles.role,
+							i === roles.length - 1 ? styles.roleLast : {},
+						]}
+					>
+						<View style={styles.header}>
+							<Text style={styles.titleName}>{title}</Text>
+							<Text>
+								({formatDuration(intervalToDuration({end: date[1] || new Date(), start: date[0]}), {format: ['years', 'months']})}{date[1] === null ? ' and counting' : null}
+								{dateNote ? `, ${dateNote}` : null})
+							</Text>
 						</View>
-					);
-				})}
+						{accomplishments.map((item) => (
+							<ListItem key={item}>{item}</ListItem>
+						))}
+					</View>
+				))}
 			</View>
 		</Block>
 	);

@@ -129,24 +129,32 @@ const styles = StyleSheet.create({
 const EXPERIENCE: Array<RoleItemType> = [
 	{
 		about:
-			'Zenhub is a productivity platform SaaS business with around 50 employees. As a member of the leadership team, I am responsible for everything relating to engineering. The product is shipped to Cloud & On-Premise customers.',
+			"Zenhub is a product competing against Jira & Asana, but unlike Jira -- it's loved by developers. As a member of the leadership team, I am responsible for everything engineering related. The product is used by Cloud & On-Premise customers (eg. NASA, Apple, Adobe, Comcast).",
 		colors: [BLUE, BLUE_DARK],
 		company: 'Zenhub',
 		roles: [
 			{
 				accomplishments: [
-					'Responsible for engineering due diligence as the company secured $6M in seed and $10M in Series A funding.',
-					'Led hiring & onboarding of hybrid/remote team of ~25 engineers & managers.',
-					'Established a culture of ownership, individual responsibility, and personal growth',
-					'Setup engineering KPIs, monitored performance, throughput, velocity, and optimized internal workflows and culture to improve those metrics',
-					'Released a large number of core product features & technical migrations.',
-					'Oversaw the modernization of legacy systems with minimal downtime for customers (our tech stack is React, GraphQL, Ruby on Rails, and Kubernetes)',
-					'Shipped production code, mostly focused on optimizing our internal systems, technical debt, and customer retention.',
-					'Worked with marketing team to raise brand awareness by writing technical articles, appearing on podcasts and giving conference talks.',
-					'Contributed to & embraced open source initiatives to drive internal goals.',
-					'Established a DevOps team and completed SOC2 Type 2 certification.',
+					"Executing on the company's vision to transform the product from a plugin to a platform.",
+					'Helping the team bring LLM-powered AI features to market and establishing Zenhub as a market leader for AI-powered product management.',
+					'Seeking out growth opportunities via strategic partnerships & third-party integrations.',
 				],
-				date: [new Date(2019, 8, 9), null],
+				date: [new Date(2023, 10, 25), null],
+				title: 'VP of Engineering',
+			},
+			{
+				accomplishments: [
+					'Technical due diligence as the company secured $6M in seed & $10M in Series A funding.',
+					'Led hiring & onboarding of hybrid/remote team of ~25 engineers & managers.',
+					'Established a culture of ownership, individual responsibility, and personal growth.',
+					'Setup engineering KPIs, monitored performance, and optimized internal workflows leading to a 2x increase in throughput.',
+					'Oversaw the modernization of legacy systems with minimal downtime for customers (our tech stack is React, GraphQL, Ruby on Rails, Rust and Kubernetes).',
+					'Shipped code & optimized internal systems. Improved technical debt & customer retention.',
+					'Worked with marketing team to raise brand awareness by writing technical articles, appearing on podcasts and giving conference talks.',
+					'Established a security-focused DevOps team and completed SOC2 Type 2 certification.',
+					// 'Contributed to & embraced open source initiatives to drive internal goals.',
+				],
+				date: [new Date(2019, 8, 9), new Date(2023, 10, 25)],
 				title: 'Head of Technology',
 			},
 		],
@@ -154,18 +162,18 @@ const EXPERIENCE: Array<RoleItemType> = [
 	},
 	{
 		about:
-			'Cumul8 (subsidiary of Eight Solutions) was a public media technology company that initially focused on software products for the visual effects industry. Over my 7 years there, the company has pivoted to focus on big data and industrial IoT for Enterprise.',
+			'Cumul8 (a sister company to Gener8) was a public media technology company that initially focused on software products for the visual effects industry. Over my 7 years there, the company pivoted to focus on big data and machine learning for Enterprise IoT.',
 		colors: [PURPLE, PURPLE_DARK],
 		company: 'Cumul8 Technologies Inc.',
 		roles: [
 			{
 				accomplishments: [
-					'Led the managed a software team of 20 devs (mix of remote & in-house).',
+					'Led and managed a software team of 20 developers (mix of remote & in-house).',
 					'Influenced product strategy, roadmaps, and provided technical guidance to CEO.',
 					'Drove the automation and QA efforts and coordinated outsourced vendors.',
-					'Steered engineering initiatives; identified & filed patent applications.',
-					'Created and refined software patterns and engineering best-practices.',
-					'Oversaw the DevOps team and helped refine the cloud infrastructure.',
+					'Steered engineering initiatives and completed patent applications.',
+					// 'Oversaw the DevOps team and helped refine the cloud infrastructure.',
+					// 'Created and refined software patterns and engineering best-practices.',
 					// 'Engaged with partners and customers to lead technical conversations and audits.',
 					// 'Continued to be a hands-on coder, shipping many client-facing product features.',
 				],
@@ -175,13 +183,20 @@ const EXPERIENCE: Array<RoleItemType> = [
 			{
 				accomplishments: [
 					'Influenced the hiring strategy and grew the team from 3 to 12 developers',
-					'Assisted the senior management team in securing and executing on client contracts.',
 					'Built and maintained the microservices software architecture platform',
 					'Architected the React-based implementation of the Cumul8 BI analytics platform.',
-					'Acted as representative for the company at local tech meetups and conferences.',
+					// 'Assisted the senior management team in securing and executing on client contracts.',
+					// 'Acted as representative for the company at local tech meetups and conferences.',
 				],
 				date: [new Date(2015, 3, 22), new Date(2016, 9, 12)],
-				title: 'Lead Developer / Programmer',
+				title: 'Lead Developer',
+			},
+			{
+				accomplishments: [
+					'Automation & software development for the VFX industry.',
+				],
+				date: [new Date(2011, 3, 21), new Date(2015, 3, 22)],
+				title: 'Jr. Programmer',
 			},
 		],
 		url: 'https://www.cumul8.com/',
@@ -193,10 +208,10 @@ const EXPERIENCE: Array<RoleItemType> = [
 		roles: [
 			{
 				accomplishments: [
-					'Designed & developed a variety of media projects for over 100 international clients.',
-					'Development of custom in-house bug tracking, project management, scheduling, billing and invoice web app using Dojo Toolkit & PHP.',
+					'Designed & developed a variety of tech & media projects for over 100 international clients.',
+					'Development of custom in-house bug tracking, project management, scheduling, billing and invoice webapp using Dojo Toolkit & PHP.',
 					'Created and developed the Google Redesigned browser extension which, at its peak, was used by over 250,000 concurrent users. I built the underlying infrastructure too.',
-					'Together with Lexan Software Inc, I was the art director and project manager for the iOS/Android game -- Tesseric.',
+					// 'Together with Lexan Software Inc, I was the art director and project manager for the iOS/Android game -- Tesseric.',
 				],
 				date: [new Date(1999, 5, 1), new Date(2011, 12, 1)],
 				dateNote: 'part-time',
@@ -320,7 +335,7 @@ const buildReport = () => {
 								MySQL <Pipe /> PostgreSQL <Pipe /> MongoDB
 							</Text>
 							<Text>
-								Photoshop <Pipe /> Figma <Pipe /> Sketch <Pipe /> Abstract
+								Adobe CS <Pipe /> Figma <Pipe /> Sketch
 							</Text>
 						</View>
 						<SectionTitle theme='dark'>Open Source Contributions</SectionTitle>
@@ -337,12 +352,8 @@ const buildReport = () => {
 						<View style={[styles.sidebarSection, styles.sidebarText]}>
 							<Text>
 								I&apos;m a self-taught coder, a professionally trained designer,
-								animator and musician. I&apos;ve been working with web
-								applications since the early 2000s in a variety of roles. I am
-								obsessed with high quality, attention to detail and efficiency.
-								I strive for balance and rationale in my decisions, and I&apos;m
-								constantly learning. Most of my experience is at small start-ups
-								helping them realize their full potential.
+								animator and musician. I&apos;ve been working on web
+								technologies since the early 2000s in a variety of roles. I spent most of my professional career at small startups where I've worn many hats and juggled many balls. I love bringing ideas to market and building high output teams. Even though I've been doing this for nearly 2 decades, I still spend much of my free time working on open source projects and looking for ways to grow my technical skills.
 							</Text>
 						</View>
 						<View
@@ -353,8 +364,7 @@ const buildReport = () => {
 							]}
 						>
 							<Text>
-								For references, additional information or a complete portfolio
-								of works please contact me at ev@haus.gg
+								Contact me for references & other information.
 							</Text>
 						</View>
 					</View>
