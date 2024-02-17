@@ -353,7 +353,13 @@ const buildReport = () => {
 							<Text>
 								I&apos;m a self-taught coder, a professionally trained designer,
 								animator and musician. I&apos;ve been working on web
-								technologies since the early 2000s in a variety of roles. I spent most of my professional career at small startups where I've worn many hats and juggled many balls. I love bringing ideas to market and building high output teams. Even though I've been doing this for nearly 2 decades, I still spend much of my free time working on open source projects and looking for ways to grow my technical skills.
+								technologies since the early 2000s in a variety of roles. I
+								spent most of my professional career at small startups where
+								I've worn many hats and juggled many balls. I love bringing
+								ideas to market and building high output teams. Even though I've
+								been doing this for nearly 2 decades, I still spend much of my
+								free time working on open source projects and looking for ways
+								to grow my technical skills.
 							</Text>
 						</View>
 						<View
@@ -363,9 +369,7 @@ const buildReport = () => {
 								styles.sidebarFooterText,
 							]}
 						>
-							<Text>
-								Contact me for references & other information.
-							</Text>
+							<Text>Contact me for references & other information.</Text>
 						</View>
 					</View>
 				</View>

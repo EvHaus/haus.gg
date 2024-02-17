@@ -1,8 +1,5 @@
 import { Link, StyleSheet, Text, View } from '@react-pdf/renderer';
-import {
-	formatDuration,
-	intervalToDuration,
-} from 'date-fns';
+import { formatDuration, intervalToDuration } from 'date-fns';
 import type { RoleItemType } from '../types';
 import Block from './Block';
 import ListItem from './ListItem';
@@ -58,15 +55,20 @@ const ExperienceBlock = ({ item }: PropsType) => {
 				{roles.map(({ accomplishments, date, dateNote, title }, i) => (
 					<View
 						key={title}
-						style={[
-							styles.role,
-							i === roles.length - 1 ? styles.roleLast : {},
-						]}
+						style={[styles.role, i === roles.length - 1 ? styles.roleLast : {}]}
 					>
 						<View style={styles.header}>
 							<Text style={styles.titleName}>{title}</Text>
 							<Text>
-								({formatDuration(intervalToDuration({end: date[1] || new Date(), start: date[0]}), {format: ['years', 'months']})}{date[1] === null ? ' and counting' : null}
+								(
+								{formatDuration(
+									intervalToDuration({
+										end: date[1] || new Date(),
+										start: date[0],
+									}),
+									{ format: ['years', 'months'] },
+								)}
+								{date[1] === null ? ' and counting' : null}
 								{dateNote ? `, ${dateNote}` : null})
 							</Text>
 						</View>
