@@ -1,6 +1,6 @@
 'use client';
 
-import WithTooltip from '../WithTooltip';
+import WithTooltip from '../WithTooltip/WithTooltip';
 import styles from './SocialIcon.module.css';
 import Email from './icons/Email';
 import Github from './icons/Github';

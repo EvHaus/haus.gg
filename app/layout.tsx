@@ -2,8 +2,8 @@ import { clsx } from 'clsx';
 import type { Metadata, Viewport } from 'next';
 import { Montserrat } from 'next/font/google';
 import type React from 'react';
-import Analytics from '../components/Analytics';
-import SillyComment from '../components/SillyComment';
+import Analytics from '../components/Analytics/Analytics';
+import SillyComment from '../components/SillyComment/SillyComment';
 import styles from './layout.module.css';
 
 type PropsType = {

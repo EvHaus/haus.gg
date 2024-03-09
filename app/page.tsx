@@ -1,5 +1,5 @@
-import ResumeButton from '../components/ResumeButton';
-import SocialIcon from '../components/SocialIcon';
+import ResumeButton from '../components/ResumeButton/ResumeButton';
+import SocialIcon from '../components/SocialIcon/SocialIcon';
 import styles from './page.module.css';
 
 // Array of colors for the circle
