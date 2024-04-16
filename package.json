@@ -26,7 +26,7 @@
 		"react-merge-refs": "2.1.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.6.4",
+		"@biomejs/biome": "1.7.0",
 		"@types/node": "20.12.7",
 		"@types/react": "18.2.79",
 		"lefthook": "1.6.10",
