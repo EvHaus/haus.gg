@@ -28,7 +28,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.7.1",
 		"@types/node": "20.12.7",
-		"@types/react": "18.2.79",
+		"@types/react": "18.3.0",
 		"lefthook": "1.6.10",
 		"prettier-package-json": "2.8.0",
 		"stylelint-config-globex": "3.13.0",
