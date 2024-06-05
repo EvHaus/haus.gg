@@ -3,7 +3,7 @@
 	"version": "0.11.0",
 	"license": "MIT",
 	"scripts": {
-		"biome:check": "biome check --apply-unsafe .",
+		"biome:check": "biome check --write",
 		"build": "next build",
 		"dev": "next --turbo",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
