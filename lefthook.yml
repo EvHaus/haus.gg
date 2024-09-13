@@ -21,12 +21,6 @@ pre-commit:
       glob: "package.json"
       run: bun prettier-package-json --use-tabs --write {staged_files}
       stage_fixed: true
-    stylelint:
-      glob: "*.{css}"
-      run: bun stylelint-globex --fix {staged_files}
-      stage_fixed: true
     typescript:
       glob: "*.{ts,tsx}"
       run: bun tsc --project ./tsconfig.json --noEmit
-      
-       

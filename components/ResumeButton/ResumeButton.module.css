@@ -1,7 +1,7 @@
 .main {
 	background: transparent;
-	border: 2px solid #4D568E;
-	color: #7A83B8;
+	border: 2px solid #4d568e;
+	color: #7a83b8;
 	cursor: pointer;
 	display: block;
 	font-size: 14px;
@@ -20,6 +20,6 @@
 
 .main:focus,
 .main:hover {
-	border: 2px solid #FFF;
-	color: #FFF
+	border: 2px solid #fff;
+	color: #fff;
 }

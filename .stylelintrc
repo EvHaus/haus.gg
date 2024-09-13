@@ -1,7 +1,0 @@
-{
-  "extends": "stylelint-config-globex",
-  "rules": {
-      "color-no-hex": null,
-      "font-weight-notation": null
-  }
-}

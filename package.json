@@ -8,8 +8,7 @@
 		"dev": "next --turbo",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"start": "next start",
-		"stylelint": "stylelint-globex app/**/*.css components/**/*.css",
-		"test": "bun typescript && bun biome:check && bun stylelint && bun packagelint",
+		"test": "bun typescript && bun biome:check && bun packagelint",
 		"typescript": "tsc --noEmit"
 	},
 	"dependencies": {
@@ -31,7 +30,6 @@
 		"@types/react": "18.3.5",
 		"lefthook": "1.7.15",
 		"prettier-package-json": "2.8.0",
-		"stylelint-config-globex": "3.14.1",
 		"typescript": "5.6.2"
 	}
 }

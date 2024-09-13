@@ -1,9 +1,12 @@
 .main {
-	color: #4D568E;
+	color: #4d568e;
 	outline: none;
 	padding: 8px;
 	pointer-events: all;
 	transition: 250ms ease color;
 }
 
-.main:focus, .main:hover { color: #FFF }
+.main:focus,
+.main:hover {
+	color: #fff;
+}

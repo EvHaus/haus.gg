@@ -1,6 +1,6 @@
 .main {
 	background: #222;
-	color: #FFF;
+	color: #fff;
 	display: flex;
 	flex-direction: column;
 	font-family: var(--font-montserrat);
