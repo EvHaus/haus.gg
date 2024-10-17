@@ -25,7 +25,7 @@
 		"react-merge-refs": "2.1.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.3",
+		"@biomejs/biome": "1.9.4",
 		"@types/react": "18.3.11",
 		"lefthook": "1.7.21",
 		"prettier-package-json": "2.8.0",
