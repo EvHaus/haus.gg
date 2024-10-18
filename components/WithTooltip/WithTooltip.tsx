@@ -109,8 +109,10 @@ const WithTooltip = forwardRef<HTMLElement, PropsType>(
 
 		const arrowStyle = getArrowStyle(md.arrow, placement);
 		const translateY =
+			// biome-ignore lint/nursery/noNestedTernary: This is fine
 			placement === 'bottom' ? 10 : placement === 'top' ? -10 : 0;
 		const translateX =
+			// biome-ignore lint/nursery/noNestedTernary: This is fine
 			placement === 'right' ? 10 : placement === 'left' ? -10 : 0;
 
 		return (
