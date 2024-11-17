@@ -13,7 +13,7 @@
 	},
 	"dependencies": {
 		"@floating-ui/react": "0.26.28",
-		"@react-pdf/renderer": "4.1.1",
+		"@react-pdf/renderer": "4.1.2",
 		"@react-pdf/types": "2.7.0",
 		"clsx": "2.1.1",
 		"date-fns": "4.1.0",
