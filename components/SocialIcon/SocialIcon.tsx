@@ -1,5 +1,6 @@
 'use client';
 
+import type React from 'react';
 import WithTooltip from '../WithTooltip/WithTooltip';
 import styles from './SocialIcon.module.css';
 import Email from './icons/Email';
@@ -11,7 +12,7 @@ import StackOverflow from './icons/StackOverflow';
 import X from './icons/X';
 
 type ItemType = {
-	icon: JSX.Element;
+	icon: React.JSX.Element;
 	name: string;
 	url: string;
 };

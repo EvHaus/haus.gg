@@ -21,7 +21,7 @@ import { mergeRefs } from 'react-merge-refs';
 import styles from './WithTooltip.module.css';
 
 type PropsType = {
-	children: JSX.Element;
+	children: React.JSX.Element;
 	// Force placement
 	placement?: Placement;
 	// This is the body of the tooltip
