@@ -8,7 +8,7 @@
 		"dev": "next --turbo",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"start": "next start",
-		"test": "bun typescript && bun biome:check && bun packagelint",
+		"test": "bun biome:check && bun typescript && bun packagelint",
 		"typescript": "tsc --noEmit"
 	},
 	"dependencies": {
