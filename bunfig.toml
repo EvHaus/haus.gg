@@ -1,2 +1,4 @@
-[install]
-saveTextLockfile = true
+# Can't use this yet as Vercel doesn't know how to use Bun's text lockfile yet and thus installs
+# dependencies that differ from the lockfile. This can use issue with pinned dependencies.
+#[install]
+#saveTextLockfile = true
