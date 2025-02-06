@@ -84,7 +84,8 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		fontFamily: 'Roboto',
 		letterSpacing: -0.25,
-		lineHeight: 1.25,
+		// Can't set this due to https://github.com/diegomura/react-pdf/issues/2988
+		// lineHeight: 1.25
 	},
 	sidebar: {
 		color: WHITE,
