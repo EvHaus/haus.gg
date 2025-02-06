@@ -10,7 +10,7 @@
         "@react-pdf/render": "<=4.0.1",
         "@react-pdf/renderer": "<=4.1.2",
         "@react-pdf/stylesheet": "<=5.0.1",
-        "@react-pdf/textkit": "<=5.0.2",
+        "@react-pdf/textkit": "5.0.2",
         "@react-pdf/types": "2.7.0",
         "clsx": "2.1.1",
         "date-fns": "4.1.0",
