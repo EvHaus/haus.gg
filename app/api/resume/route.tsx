@@ -33,6 +33,7 @@ import {
 	WHITE,
 } from './utils/colors';
 
+// @ts-expect-error See https://github.com/diegomura/react-pdf/issues/3088#issuecomment-2693236439
 Font.register({
 	family: 'Roboto',
 	fonts: [
