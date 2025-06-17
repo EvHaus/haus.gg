@@ -14,7 +14,11 @@ import {
 	useRole,
 } from '@floating-ui/react';
 import clsx from 'clsx';
-import { AnimatePresence, motion } from 'framer-motion';
+import {
+	AnimatePresence,
+	type TargetAndTransition,
+	motion,
+} from 'motion/react';
 import type React from 'react';
 import { cloneElement, forwardRef, useMemo, useRef, useState } from 'react';
 import { mergeRefs } from 'react-merge-refs';
@@ -135,9 +139,17 @@ const WithTooltip = forwardRef<HTMLElement, PropsType>(
 					{isOpen && tooltip != null ? (
 						<FloatingPortal>
 							<motion.div
-								animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+								animate={
+									{
+										opacity: 1,
+										translateX: 0,
+										translateY: 0,
+									} as TargetAndTransition
+								}
 								exit={{ opacity: 0 }}
-								initial={{ opacity: 0, translateX, translateY }}
+								initial={
+									{ opacity: 0, translateX, translateY } as TargetAndTransition
+								}
 								transition={{
 									damping: 20,
 									stiffness: 300,
