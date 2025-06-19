@@ -7,12 +7,12 @@ import {
 	Link,
 	Page,
 	Rect,
+	renderToStream,
 	Stop,
 	StyleSheet,
 	Svg,
 	Text,
 	View,
-	renderToStream,
 } from '@react-pdf/renderer';
 import EducationBlock from './components/EducationBlock';
 import ExperienceBlock from './components/ExperienceBlock';
@@ -391,10 +391,10 @@ export async function GET() {
 	)) as unknown as ReadableStream;
 
 	return new Response(output, {
-		status: 200,
 		headers: {
 			'Content-Disposition': `inline;filename="${filename}"`,
 			'Content-Type': 'application/pdf',
 		},
+		status: 200,
 	});
 }

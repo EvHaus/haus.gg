@@ -14,7 +14,9 @@
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: 250ms ease border-color, 250ms ease color;
+	transition:
+		250ms ease border-color,
+		250ms ease color;
 	width: 220px;
 }
 

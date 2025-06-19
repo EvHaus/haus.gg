@@ -2,7 +2,6 @@
 
 import type React from 'react';
 import WithTooltip from '../WithTooltip/WithTooltip';
-import styles from './SocialIcon.module.css';
 import Email from './icons/Email';
 import Github from './icons/Github';
 import Instagram from './icons/Instagram';
@@ -10,6 +9,7 @@ import LinkedIn from './icons/LinkedIn';
 import Medium from './icons/Medium';
 import StackOverflow from './icons/StackOverflow';
 import X from './icons/X';
+import styles from './SocialIcon.module.css';
 
 type ItemType = {
 	icon: React.JSX.Element;

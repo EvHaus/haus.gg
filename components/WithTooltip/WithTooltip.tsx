@@ -1,11 +1,11 @@
 import {
-	type Coords,
-	FloatingPortal,
-	type Placement,
 	arrow,
 	autoPlacement,
 	autoUpdate,
+	type Coords,
+	FloatingPortal,
 	offset,
+	type Placement,
 	shift,
 	useDismiss,
 	useFloating,
@@ -16,8 +16,8 @@ import {
 import clsx from 'clsx';
 import {
 	AnimatePresence,
-	type TargetAndTransition,
 	motion,
+	type TargetAndTransition,
 } from 'motion/react';
 import type React from 'react';
 import { cloneElement, forwardRef, useMemo, useRef, useState } from 'react';
@@ -113,10 +113,10 @@ const WithTooltip = forwardRef<HTMLElement, PropsType>(
 
 		const arrowStyle = getArrowStyle(md.arrow, placement);
 		const translateY =
-			// biome-ignore lint/nursery/noNestedTernary: This is fine
+			// biome-ignore lint/style/noNestedTernary: This is fine
 			placement === 'bottom' ? 10 : placement === 'top' ? -10 : 0;
 		const translateX =
-			// biome-ignore lint/nursery/noNestedTernary: This is fine
+			// biome-ignore lint/style/noNestedTernary: This is fine
 			placement === 'right' ? 10 : placement === 'left' ? -10 : 0;
 
 		return (

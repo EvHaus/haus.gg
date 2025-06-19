@@ -82,7 +82,9 @@
 
 .orbCircle {
 	border-radius: 100%;
-	box-shadow: 0 0 60px currentColor, inset 0 0 60px currentColor;
+	box-shadow:
+		0 0 60px currentColor,
+		inset 0 0 60px currentColor;
 	box-sizing: border-box;
 	height: 120px;
 	position: absolute;
