@@ -8,4 +8,4 @@ jobs:
     ping:
         runs-on: ubuntu-latest
         steps:
-        - run: curl --silent --show-error --fail https://haus.gg
+        - run: curl --silent --show-error --fail https://www.haus.gg
