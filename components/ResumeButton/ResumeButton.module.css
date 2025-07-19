@@ -1,27 +1,27 @@
 .main {
-	background: transparent;
-	border: 2px solid #4d568e;
-	color: #7a83b8;
-	cursor: pointer;
 	display: block;
+	width: 220px;
+	padding: 8px;
+	margin: auto;
 	font-size: 14px;
 	font-weight: 500;
-	letter-spacing: -0.5px;
-	margin: auto;
-	outline: none;
-	padding: 8px;
-	pointer-events: all;
+	color: #7a83b8;
 	text-align: center;
-	text-decoration: none;
 	text-transform: uppercase;
+	letter-spacing: -0.5px;
+	text-decoration: none;
+	pointer-events: all;
+	cursor: pointer;
+	outline: none;
+	background: transparent;
+	border: 2px solid #4d568e;
 	transition:
 		250ms ease border-color,
 		250ms ease color;
-	width: 220px;
 }
 
 .main:focus,
 .main:hover {
-	border: 2px solid #fff;
 	color: #fff;
+	border: 2px solid #fff;
 }

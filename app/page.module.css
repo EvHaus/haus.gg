@@ -1,22 +1,21 @@
 .view {
-	background: radial-gradient(#21213c, #000);
-	inset: 0;
 	position: absolute;
+	inset: 0;
 	user-select: none;
+	background: radial-gradient(#21213c, #000);
 }
 
 .logo {
 	--glow: rgba(178, 189, 255, 0.3);
 	--glow2: rgba(132, 150, 249, 0.1);
-	align-items: center;
-	display: flex;
-	font-size: 42px;
-	inset: -60px 0 0;
-	justify-content: center;
-	letter-spacing: 1px;
-	padding-top: 140px;
-	pointer-events: none;
 	position: absolute;
+	inset: -60px 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 140px;
+	font-size: 42px;
+	letter-spacing: 1px;
 	text-shadow:
 		0 0 5px var(--glow),
 		0 0 10px var(--glow),
@@ -26,12 +25,13 @@
 		0 0 80px var(--glow2),
 		0 0 100px var(--glow2),
 		0 0 150px var(--glow2);
+	pointer-events: none;
 	user-select: none;
 }
 
 .logoEv {
-	font-weight: 200;
 	margin-right: 8px;
+	font-weight: 200;
 	text-transform: uppercase;
 }
 
@@ -41,21 +41,21 @@
 }
 
 .icons {
-	align-items: center;
-	display: flex;
+	position: absolute;
 	inset: 320px 0 0;
+	display: flex;
+	align-items: center;
 	justify-content: center;
 	pointer-events: none;
-	position: absolute;
 }
 
 .resume {
-	align-items: center;
-	display: flex;
+	position: absolute;
 	inset: 200px 0 0;
+	display: flex;
+	align-items: center;
 	justify-content: center;
 	pointer-events: none;
-	position: absolute;
 }
 
 .orb {
@@ -94,16 +94,16 @@
 
 .orbCircle::before,
 .orbCircle::after {
+	position: absolute;
+	inset: 0;
+	box-sizing: border-box;
+	display: block;
+	width: 0;
+	height: 0;
+	margin: auto;
+	content: '';
 	border-radius: 100%;
 	box-shadow: 0 0 60px 2px currentColor;
-	box-sizing: border-box;
-	content: '';
-	display: block;
-	height: 0;
-	inset: 0;
-	margin: auto;
-	position: absolute;
-	width: 0;
 }
 
 .orbCircle::before {

@@ -1,8 +1,8 @@
 .main {
-	color: #4d568e;
-	outline: none;
 	padding: 8px;
+	color: #4d568e;
 	pointer-events: all;
+	outline: none;
 	transition: 250ms ease color;
 }
 
