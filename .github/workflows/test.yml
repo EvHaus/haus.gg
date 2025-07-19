@@ -17,8 +17,3 @@ jobs:
     
     - name: Test
       run: bun run test
-
-    - name: Verify
-      uses: wei/curl@master
-      with:
-        args: https://haus.gg
