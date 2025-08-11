@@ -28,7 +28,7 @@
 		"@biomejs/biome": "2.1.4",
 		"@types/node": "24.2.1",
 		"@types/react": "19.1.9",
-		"@typescript/native-preview": "7.0.0-dev.20250810.1",
+		"@typescript/native-preview": "7.0.0-dev.20250811.1",
 		"lefthook": "1.12.2",
 		"prettier-package-json": "2.8.0",
 		"typescript": "5.9.2"
