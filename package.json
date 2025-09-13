@@ -27,7 +27,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.2.4",
 		"@types/node": "24.3.3",
-		"@types/react": "19.1.12",
+		"@types/react": "19.1.13",
 		"@typescript/native-preview": "7.0.0-dev.20250912.1",
 		"lefthook": "1.13.0",
 		"prettier-package-json": "2.8.0",
