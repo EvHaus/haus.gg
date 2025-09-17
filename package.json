@@ -29,7 +29,7 @@
 		"@types/node": "24.5.1",
 		"@types/react": "19.1.13",
 		"@typescript/native-preview": "7.0.0-dev.20250917.1",
-		"lefthook": "1.13.0",
+		"lefthook": "1.13.1",
 		"prettier-package-json": "2.8.0",
 		"typescript": "5.9.2"
 	}
