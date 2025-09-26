@@ -20,7 +20,7 @@
         "@biomejs/biome": "2.2.4",
         "@types/node": "24.5.2",
         "@types/react": "19.1.13",
-        "@typescript/native-preview": "7.0.0-dev.20250925.1",
+        "@typescript/native-preview": "7.0.0-dev.20250926.1",
         "lefthook": "1.13.4",
         "prettier-package-json": "2.8.0",
         "typescript": "5.9.2",
@@ -162,21 +162,21 @@
 
     "@types/react": ["@types/react@19.1.13", "", { "dependencies": { "csstype": "^3.0.2" } }, "sha512-hHkbU/eoO3EG5/MZkuFSKmYqPbSVk5byPFa3e7y/8TybHiLMACgI8seVYlicwk7H5K/rI2px9xrQp/C+AUDTiQ=="],
 
-    "@typescript/native-preview": ["@typescript/native-preview@7.0.0-dev.20250925.1", "", { "optionalDependencies": { "@typescript/native-preview-darwin-arm64": "7.0.0-dev.20250925.1", "@typescript/native-preview-darwin-x64": "7.0.0-dev.20250925.1", "@typescript/native-preview-linux-arm": "7.0.0-dev.20250925.1", "@typescript/native-preview-linux-arm64": "7.0.0-dev.20250925.1", "@typescript/native-preview-linux-x64": "7.0.0-dev.20250925.1", "@typescript/native-preview-win32-arm64": "7.0.0-dev.20250925.1", "@typescript/native-preview-win32-x64": "7.0.0-dev.20250925.1" }, "bin": { "tsgo": "bin/tsgo.js" } }, "sha512-gthaZy3GVmZSCVk9fl9ipF+tDkwqOx2ob68nmH1HLaT4XdX6E7O3btHtwkIxiQaG+z0GXwcYH/NEo8qS3juvBg=="],
+    "@typescript/native-preview": ["@typescript/native-preview@7.0.0-dev.20250926.1", "", { "optionalDependencies": { "@typescript/native-preview-darwin-arm64": "7.0.0-dev.20250926.1", "@typescript/native-preview-darwin-x64": "7.0.0-dev.20250926.1", "@typescript/native-preview-linux-arm": "7.0.0-dev.20250926.1", "@typescript/native-preview-linux-arm64": "7.0.0-dev.20250926.1", "@typescript/native-preview-linux-x64": "7.0.0-dev.20250926.1", "@typescript/native-preview-win32-arm64": "7.0.0-dev.20250926.1", "@typescript/native-preview-win32-x64": "7.0.0-dev.20250926.1" }, "bin": { "tsgo": "bin/tsgo.js" } }, "sha512-zMCq8D8RWDUnuQ/xqoI+pB1XQeUjndF8OSB9r/Qv3x8mwlu60ov35JDM0pEfR0SuYZL4v5vLvtu25rFn2rRKig=="],
 
-    "@typescript/native-preview-darwin-arm64": ["@typescript/native-preview-darwin-arm64@7.0.0-dev.20250925.1", "", { "os": "darwin", "cpu": "arm64" }, "sha512-Mu0V/Lb0bB1IwvEW6GHk/1hMK0TVZyu2vWbNHaFZm+21mqlEnNK/H5bAi6VZNlVJwJf6lvTG3TdNQEECaaWAVg=="],
+    "@typescript/native-preview-darwin-arm64": ["@typescript/native-preview-darwin-arm64@7.0.0-dev.20250926.1", "", { "os": "darwin", "cpu": "arm64" }, "sha512-gnfz/RY+akGaZER1M9h+k8VW3wO4RRBeDHbC7NrDzEDmynOWN5clIBNXew3vMiyPJ31hMh4DdkEk5uXiQCkM4A=="],
 
-    "@typescript/native-preview-darwin-x64": ["@typescript/native-preview-darwin-x64@7.0.0-dev.20250925.1", "", { "os": "darwin", "cpu": "x64" }, "sha512-K7aCZ8iGB4q7Q3HDvHJHHvMqHUt7i4PFkrz0WD6TUiiWs8BPGnVBrSYeQhCSh2GDhRrcQ7SbKZjL/7RXTyFwKw=="],
+    "@typescript/native-preview-darwin-x64": ["@typescript/native-preview-darwin-x64@7.0.0-dev.20250926.1", "", { "os": "darwin", "cpu": "x64" }, "sha512-XsxKy+Szc7Uy46eEpUuGYsPJkIfz1OzYZaGd+oCcg0Q4ASc/DS4+07+8aDHYBrdClFrq505pi51XTUUt85i3Pw=="],
 
-    "@typescript/native-preview-linux-arm": ["@typescript/native-preview-linux-arm@7.0.0-dev.20250925.1", "", { "os": "linux", "cpu": "arm" }, "sha512-TicMESUOpyqw4WmwSHCppABHuT4RU8i+cAnGHxArYxexV9cOqP+iEhnpuRC+uhUCHD4IVX62jPN2ZvNmvt1OKg=="],
+    "@typescript/native-preview-linux-arm": ["@typescript/native-preview-linux-arm@7.0.0-dev.20250926.1", "", { "os": "linux", "cpu": "arm" }, "sha512-1pl+o6TXYAmzCloM46ZbkhVlMnot2tWTkPhEfx7vjd6C7jy+XSEg/fU7FkVaAwiKZHS98ncTG8oVxn3iF/xFfg=="],
 
-    "@typescript/native-preview-linux-arm64": ["@typescript/native-preview-linux-arm64@7.0.0-dev.20250925.1", "", { "os": "linux", "cpu": "arm64" }, "sha512-S2Uclj4YAueB21CYnimRMVeognpLc/4KGxi4TAutN9gZC5Jdk6MwFnQA+RQsP4ptmikimBxh78Fcs2nE/pNaKQ=="],
+    "@typescript/native-preview-linux-arm64": ["@typescript/native-preview-linux-arm64@7.0.0-dev.20250926.1", "", { "os": "linux", "cpu": "arm64" }, "sha512-I5sRB90v4cvDZAAuKMxIhu7QbWji+GbTX5QrzKnvkDaJamG8xknA0wmRrnZ2pRBVZZ2GDd/veNVHMUMkJCApgw=="],
 
-    "@typescript/native-preview-linux-x64": ["@typescript/native-preview-linux-x64@7.0.0-dev.20250925.1", "", { "os": "linux", "cpu": "x64" }, "sha512-3vv38yKlQGcv+lya83e59lnKE9N5VBlA5tz8UBlmpRMRScR7WwUYKuwgvsxPdRrpCp/4UjDMIq+Xld5M5oZnGA=="],
+    "@typescript/native-preview-linux-x64": ["@typescript/native-preview-linux-x64@7.0.0-dev.20250926.1", "", { "os": "linux", "cpu": "x64" }, "sha512-NiIGbFhDPnOBoFGQkaOFn2DR2uiFYeRCU9HzXoomxfV4piCke5pJ69WXmmeYKWQEc5hb4RIdahAGs5B5kgkFLw=="],
 
-    "@typescript/native-preview-win32-arm64": ["@typescript/native-preview-win32-arm64@7.0.0-dev.20250925.1", "", { "os": "win32", "cpu": "arm64" }, "sha512-+zJmqeuJtT9+g7fieVAdo1ZPoGtBLyUruVJJeoUuaKm4AbjmVTvOv7m3XQs8ZDPOMy57tXklQlCAlq4LI6jmzg=="],
+    "@typescript/native-preview-win32-arm64": ["@typescript/native-preview-win32-arm64@7.0.0-dev.20250926.1", "", { "os": "win32", "cpu": "arm64" }, "sha512-uw56c9jmhLheZEVbR5py4ZxgR0Hm1q+rY3mRZo72PpDV6dEyCKVTRlLasz9z2pnv61xkk8+1J5yUBOrAvZPjqQ=="],
 
-    "@typescript/native-preview-win32-x64": ["@typescript/native-preview-win32-x64@7.0.0-dev.20250925.1", "", { "os": "win32", "cpu": "x64" }, "sha512-QoPz+7IzS+izWCKTg/axmj+yNRTivBI+xfTnnF8ak3MWE69ljxgSCEplryFCFSTxaesa7rGUtq3IpFmXm8yKhQ=="],
+    "@typescript/native-preview-win32-x64": ["@typescript/native-preview-win32-x64@7.0.0-dev.20250926.1", "", { "os": "win32", "cpu": "x64" }, "sha512-4mlt6Ri8RMSE45VgaEk3ARVtj1ftITtHuaDFdyhqkuQZgRDexPtJuZalEpJYdZUnZSaRkS8nYatyNzdU1uCP+A=="],
 
     "abs-svg-path": ["abs-svg-path@0.1.1", "", {}, "sha512-d8XPSGjfyzlXC3Xx891DJRyZfqk5JU0BJrDQcsWomFIV1/BIzPW5HDH5iDdWpqWaav0YVIEzT1RHTwWr0FFshA=="],
 
