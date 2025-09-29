@@ -26,7 +26,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.2.4",
-		"@types/node": "24.5.2",
+		"@types/node": "24.6.0",
 		"@types/react": "19.1.15",
 		"@typescript/native-preview": "7.0.0-dev.20250929.1",
 		"lefthook": "1.13.5",
