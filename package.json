@@ -31,6 +31,6 @@
 		"@typescript/native-preview": "7.0.0-dev.20250930.1",
 		"lefthook": "1.13.6",
 		"prettier-package-json": "2.8.0",
-		"typescript": "5.9.2"
+		"typescript": "5.9.3"
 	}
 }
