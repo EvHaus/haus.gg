@@ -25,7 +25,7 @@
 		"react-merge-refs": "3.0.2"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.2.4",
+		"@biomejs/biome": "2.2.5",
 		"@types/node": "24.6.2",
 		"@types/react": "19.2.0",
 		"@typescript/native-preview": "7.0.0-dev.20251002.1",
