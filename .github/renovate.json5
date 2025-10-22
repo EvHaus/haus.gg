@@ -1,0 +1,10 @@
+{
+	"automerge": true,
+	"extends": ["config:base"],
+	"packageRules": [{
+      "description": "Update these noisy dependencies once a month",
+      "matchPackageNames": ["@types/node", "@typescript/native-preview", "lefthook"],
+      "groupName": "eslint",
+      "schedule": ["* * 1 * *"]
+    }]
+}
