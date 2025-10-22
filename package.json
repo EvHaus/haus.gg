@@ -5,7 +5,7 @@
 	"scripts": {
 		"biome:check": "biome check --write",
 		"build": "next build",
-		"dev": "next --turbo",
+		"dev": "next",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"start": "next start",
 		"test": "bun biome:check && bun typescript && bun packagelint",
