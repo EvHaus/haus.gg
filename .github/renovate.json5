@@ -4,7 +4,7 @@
 	"packageRules": [{
       "description": "Update these noisy dependencies once a month",
       "matchPackageNames": ["@types/node", "@typescript/native-preview", "lefthook"],
-      "groupName": "eslint",
+      "groupName": "noisy-dependencies",
       "schedule": ["* * 1 * *"]
     }]
 }
