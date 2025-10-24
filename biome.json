@@ -82,7 +82,6 @@
 			"nursery": {
 				"noFloatingPromises": "error",
 				"noImportCycles": "warn",
-				"useAnchorHref": "error",
 				"useSortedClasses": "error"
 			},
 			"performance": {
