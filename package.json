@@ -14,7 +14,7 @@
 	"dependencies": {
 		"@floating-ui/react": "0.27.16",
 		"@react-pdf/renderer": "4.3.2",
-		"@react-pdf/types": "2.9.1",
+		"@react-pdf/types": "2.9.2",
 		"clsx": "2.1.1",
 		"date-fns": "4.1.0",
 		"motion": "12.23.26",
