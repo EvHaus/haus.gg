@@ -59,41 +59,43 @@
 }
 
 .orb {
-	animation-duration: 10000ms;
-	animation-iteration-count: infinite;
-	animation-name: orbZoom;
-	animation-timing-function: ease-in-out;
-	height: 120px;
-	inset: -160px 0 0;
-	margin: auto;
 	position: absolute;
+	inset: -160px 0 0;
+	width: 120px;
+	height: 120px;
+	margin: auto;
 	transform: rotateX(60deg) rotateZ(-30deg);
 	transform-style: preserve-3d;
-	width: 120px;
+	animation-name: orbZoom;
+	animation-duration: 10000ms;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
 
 .orbInner {
-	animation-duration: 10000ms;
-	animation-iteration-count: infinite;
-	animation-name: orbRotate;
-	animation-timing-function: ease-in-out;
 	transform-style: preserve-3d;
+	animation-name: orbRotate;
+	animation-duration: 10000ms;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
 
 .orbCircle {
+	position: absolute;
+	box-sizing: border-box;
+	width: 120px;
+	height: 120px;
 	border-radius: 100%;
 	box-shadow:
 		0 0 60px currentColor,
 		inset 0 0 60px currentColor;
-	box-sizing: border-box;
-	height: 120px;
-	position: absolute;
 	transform-style: preserve-3d;
-	width: 120px;
 }
 
+/* biome-ignore lint/correctness/noUnknownPseudoElement: Fix me later */
 .orbCircle::before,
-.orbCircle::after {
+/* biome-ignore lint/correctness/noUnknownPseudoElement: Fix me later */
+	.orbCircle::after {
 	position: absolute;
 	inset: 0;
 	box-sizing: border-box;
@@ -106,9 +108,11 @@
 	box-shadow: 0 0 60px 2px currentColor;
 }
 
+/* biome-ignore lint/correctness/noUnknownPseudoElement: Fix me later */
 .orbCircle::before {
 	transform: translateZ(-90px);
 }
+/* biome-ignore lint/correctness/noUnknownPseudoElement: Fix me later */
 .orbCircle::after {
 	transform: translateZ(90px);
 }
